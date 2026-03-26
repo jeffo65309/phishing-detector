@@ -1,0 +1,10 @@
+torch
+transformers
+transformers-interpret
+dnspython
+dkimpy
+pyspf
+requests
+lime
+numpy
+python-dotenv

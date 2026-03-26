@@ -1,0 +1,18 @@
+# Environment variables (secrets)
+.env
+
+# Virtual environment tells github to ignore it as its to big and everyone can make thier own virtual env
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE files
+.vscode/
+.idea/
+
+# OS junk files
+.DS_Store
+Thumbs.db
