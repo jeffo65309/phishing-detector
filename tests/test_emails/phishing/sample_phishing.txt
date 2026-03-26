@@ -1,0 +1,11 @@
+From: "PayPal Security" <security@paypal-security.com>
+Subject: URGENT: Your Account Has Been Limited
+
+URGENT: Your PayPal account has been limited due to unusual activity.
+
+Please verify your account immediately by clicking here:
+http://paypal-security-verify.com/login
+
+Failure to do so will result in permanent account closure.
+
+PayPal Security Team
