@@ -9,10 +9,10 @@ from email.parser import BytesParser
 # Add the components folder so I can import my modules
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
-from components.text_checkerAI import TextChecker
-from components.url_checker import URLChecker
-from components.metadata_checker import MetadataChecker
-from components.scorer import Scorer
+from src.components.text_checkerAI import TextChecker
+from src.components.url_checker import URLChecker
+from src.components.metadata_checker import MetadataChecker
+from src.components.scorer import Scorer
 
 class PhishingDetector:
     # Main program - this will run all the checks

@@ -8,3 +8,4 @@ requests
 lime
 numpy
 python-dotenv
+shap

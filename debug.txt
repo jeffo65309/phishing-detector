@@ -1,0 +1,307 @@
+
+2026-04-06 19:46:31.076668
+Sender domain: 'microsoft.com'
+In whitelist? True
+Trusted domains: ['ljmu.ac.uk', 'google.com', 'microsoft.com', 'outlook.com', 'hotmail.com', 'gmail.com', 'yahoo.com', 'bbc.co.uk', 'gov.uk', 'amazon.co.uk', 'paypal.com', 'dropbox.com', 'netflix.com', 'vanquis.co.uk', 'customer.vanquis.co.uk']
+RETURNING 0% FROM WHITELIST
+----------------------------------------
+
+2026-04-06 19:47:42.982826
+Sender domain: 'customer.vanquis.co.uk'
+In whitelist? True
+Trusted domains: ['ljmu.ac.uk', 'google.com', 'microsoft.com', 'outlook.com', 'hotmail.com', 'gmail.com', 'yahoo.com', 'bbc.co.uk', 'gov.uk', 'amazon.co.uk', 'paypal.com', 'dropbox.com', 'netflix.com', 'vanquis.co.uk', 'customer.vanquis.co.uk']
+RETURNING 0% FROM WHITELIST
+----------------------------------------
+
+2026-04-06 19:53:35.297677
+Sender domain: 'customer.vanquis.co.uk'
+In whitelist? True
+Trusted domains: ['ljmu.ac.uk', 'google.com', 'microsoft.com', 'outlook.com', 'hotmail.com', 'gmail.com', 'yahoo.com', 'bbc.co.uk', 'gov.uk', 'amazon.co.uk', 'paypal.com', 'dropbox.com', 'netflix.com', 'vanquis.co.uk', 'customer.vanquis.co.uk']
+RETURNING 0% FROM WHITELIST
+----------------------------------------
+
+2026-04-06 19:55:42.704584
+Sender domain: 'paypal-security.com'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-06 20:07:44.315778
+Sender domain: 'paypal-security.com'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-06 20:07:56.261748
+Sender domain: 'paypal-security.com'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-06 20:08:15.696678
+Sender domain: 'microsoft.com'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-06 20:41:07.806946
+Sender domain: 'microsoft.com'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-06 20:43:27.279190
+Sender domain: 'amazon.co.uk'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-06 20:44:05.104813
+Sender domain: 'paypal.com'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-06 20:50:00.759641
+Sender domain: 'paypal.com'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-06 21:02:02.937078
+Sender domain: 'paypal-security.com'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+[GUI] About to call scorer.combine
+[GUI] sender_domain value: 'paypal-security.com'
+[Scorer] Received sender_domain: 'paypal-security.com'
+[Scorer] Is whitelisted? False
+
+2026-04-06 21:02:51.919406
+Sender domain: 'paypal.com'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+[GUI] About to call scorer.combine
+[GUI] sender_domain value: 'paypal.com'
+[Scorer] Received sender_domain: 'paypal.com'
+[Scorer] Is whitelisted? False
+
+2026-04-06 21:17:17.165442
+Sender domain: 'paypal-security.com'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+[GUI] About to call scorer.combine
+[GUI] sender_domain value: 'paypal-security.com'
+[Scorer] Received sender_domain: 'paypal-security.com'
+[Scorer] Is whitelisted? False
+
+2026-04-06 21:17:23.147224
+Sender domain: 'paypal.com'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+[GUI] About to call scorer.combine
+[GUI] sender_domain value: 'paypal.com'
+[Scorer] Received sender_domain: 'paypal.com'
+[Scorer] Is whitelisted? True
+
+2026-04-06 21:18:12.427852
+Sender domain: 'microsoft.com'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+[GUI] About to call scorer.combine
+[GUI] sender_domain value: 'microsoft.com'
+[Scorer] Received sender_domain: 'microsoft.com'
+[Scorer] Is whitelisted? True
+
+2026-04-06 21:19:14.026020
+Sender domain: 'microsoft-verify.com'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+[GUI] About to call scorer.combine
+[GUI] sender_domain value: 'microsoft-verify.com'
+[Scorer] Received sender_domain: 'microsoft-verify.com'
+[Scorer] Is whitelisted? False
+
+2026-04-06 21:26:24.286869
+Sender domain: 'dropbox.com'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+[GUI] About to call scorer.combine
+[GUI] sender_domain value: 'dropbox.com'
+[Scorer] Received sender_domain: 'dropbox.com'
+[Scorer] Is whitelisted? True
+
+2026-04-06 21:26:36.878642
+Sender domain: 'apple-id-verify.net'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+[GUI] About to call scorer.combine
+[GUI] sender_domain value: 'apple-id-verify.net'
+[Scorer] Received sender_domain: 'apple-id-verify.net'
+[Scorer] Is whitelisted? False
+
+2026-04-06 21:26:55.235107
+Sender domain: 'nhs.uk'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+[GUI] About to call scorer.combine
+[GUI] sender_domain value: 'nhs.uk'
+[Scorer] Received sender_domain: 'nhs.uk'
+[Scorer] Is whitelisted? False
+
+2026-04-06 21:27:47.802746
+Sender domain: 'hmrc-gov.net'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+[GUI] About to call scorer.combine
+[GUI] sender_domain value: 'hmrc-gov.net'
+[Scorer] Received sender_domain: 'hmrc-gov.net'
+[Scorer] Is whitelisted? False
+
+2026-04-06 21:28:03.547411
+Sender domain: 'barclays.co.uk'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+[GUI] About to call scorer.combine
+[GUI] sender_domain value: 'barclays.co.uk'
+[Scorer] Received sender_domain: 'barclays.co.uk'
+[Scorer] Is whitelisted? False
+
+2026-04-06 21:29:11.424430
+Sender domain: 'nhs.uk'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+[GUI] About to call scorer.combine
+[GUI] sender_domain value: 'nhs.uk'
+[Scorer] Received sender_domain: 'nhs.uk'
+[Scorer] Is whitelisted? True
+
+2026-04-06 21:39:37.226457
+Sender domain: 'nhs.uk'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+[GUI] About to call scorer.combine
+[GUI] sender_domain value: 'nhs.uk'
+[Scorer] Received sender_domain: 'nhs.uk'
+[Scorer] Is whitelisted? True

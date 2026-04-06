@@ -1,0 +1,21 @@
+{
+    "trusted_domains": [
+        "ljmu.ac.uk",
+        "google.com",
+        "microsoft.com",
+        "outlook.com",
+        "hotmail.com",
+        "gmail.com",
+        "yahoo.com",
+        "bbc.co.uk",
+        "gov.uk",
+        "amazon.co.uk",
+        "paypal.com",
+        "dropbox.com",
+        "netflix.com",
+        "vanquis.co.uk",
+        "customer.vanquis.co.uk",
+        "nhs.uk"
+    ],
+    "spoofed_override_threshold": 50
+}
