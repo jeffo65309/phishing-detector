@@ -47,34 +47,8 @@ You can get a free token from huggingface.co/settings/tokens. If you don't do th
 
 ### Quick test (just the AI)
 
-python src/core/detector.py
+python gui_app.py
 
-This runs the AI model on a sample phishing email.
-
-### Full test (all three checks)
-
-python tests/test_full_system.py
-
-This runs everything and shows the final verdict.
-
-### Test your own email
-
-1. Open `tests/test_full_system.py`
-2. Scroll to the bottom and find `email_body` and `email_headers`
-3. Replace them with your email text and the sender info
-4. Run it again
-
-### See why it was flagged
-
-If you want to see which words triggered the AI:
-python tests/test_fast.py
-
-Type `y` when it asks. This takes 1-2 seconds.
-
-For a more detailed breakdown (slower but shows more):
-python tests/test_lime.py
-
-This takes 1-3 minutes but shows the weight of each word.
 
 ## How the Scoring Works
 
@@ -101,15 +75,20 @@ phishing-project/
 │ │ ├── metadata_checker.py # SPF/DKIM/DMARC
 │ │ ├── scorer.py # Combines everything
 │ │ ├── fast_explainer.py # Quick word explanation
-│ │ └── lime_explainer.py # Detailed LIME analysis
+│ │ ├── lime_explainer.py # Detailed LIME analysis
+│ │ └── shap_explainer.py # SHAP analysis
 │ └── core/
 │ └── detector.py # Main hub
 ├── tests/
 │ ├── test_full_system.py # Full test
 │ ├── test_fast.py # Quick explainer
-│ └── test_lime.py # LIME explainer
+│ ├── test_lime.py # LIME explainer
+│ ├── test_shap.py # SHAP explainer
+│ └── test_data.py # Shared test email
+├── gui_app.py # GUI application
+├── whitelist.json # Trusted domains
 ├── requirements.txt # Packages needed
-└── README.md # This file
+└── README.md # This filee
 
 
 ## Common Problems
