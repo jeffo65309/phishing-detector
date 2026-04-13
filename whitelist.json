@@ -17,5 +17,5 @@
         "customer.vanquis.co.uk",
         "nhs.uk"
     ],
-    "spoofed_override_threshold": 50
+    "spoofed_override_threshold": 40
 }

@@ -1,5 +1,5 @@
-# SHAP Explainer with URL and Metadata
-# Uses pipeline for model loading (simpler and more reliable)
+# SHAP Explainer - Improved Version
+# Uses pipeline for model loading and produces cleaner output
 
 from transformers import pipeline
 import shap
@@ -21,28 +21,27 @@ class ShapExplainer:
             max_length=512
         )
         
-        # Create SHAP explainer
-        self.explainer = shap.Explainer(self.pipe)
+        # Create SHAP explainer with a text masker
+        self.masker = shap.maskers.Text(tokenizer=self.pipe.tokenizer)
+        self.explainer = shap.Explainer(self.pipe, self.masker)
         
         # Add URL and metadata checkers
         self.urlChecker = URLChecker()
         self.metadataChecker = MetadataChecker()
         
-        # Persuasion map for translating words to principles
+        # Persuasion map
         self.persuasionMap = {
             "urgent": "scarcity", "immediately": "scarcity", "deadline": "scarcity",
-            "expires": "scarcity", "limited": "scarcity", "last": "scarcity",
-            "today": "scarcity", "now": "scarcity", "soon": "scarcity",
             "verify": "authority", "confirm": "authority", "security": "authority",
             "team": "authority", "admin": "authority", "support": "authority",
             "account": "phishing_context", "password": "phishing_context",
-            "click": "phishing_action", "link": "phishing_action"
+            "click": "phishing_action", "link": "phishing_action",
+            "suspended": "scarcity", "limited": "scarcity", "locked": "scarcity"
         }
         
         print("      [ShapExplainer] Ready!")
     
     def mapWord(self, word):
-        """Map a word to its persuasion principle"""
         clean = re.sub(r'[^\w\s]', '', word).lower()
         if clean in self.persuasionMap:
             return self.persuasionMap[clean]
@@ -52,19 +51,19 @@ class ShapExplainer:
         return "unknown"
     
     def explainEmail(self, email_text, email_headers=None):
-        """Run SHAP and return explanation with URL and metadata scores"""
+        """Run SHAP and return explanation"""
         
         print("      [ShapExplainer] Running SHAP (this takes 30-60 seconds)...")
         
-        # STEP 1: Get text score from pipeline
+        # Get text score
         result = self.pipe(email_text)
         textScore = int(result[0]['score'] * 100)
         
-        # STEP 2: Get URL score
+        # Get URL score
         urlResult = self.urlChecker.analyseEmail(email_text)
         urlScore = urlResult['score']
         
-        # STEP 3: Get metadata score (if headers provided)
+        # Get metadata score
         if email_headers:
             metaResult = self.metadataChecker.analyseEmail(email_headers)
             metaScore = metaResult['score']
@@ -73,41 +72,60 @@ class ShapExplainer:
             metaScore = 0
             spoofed = False
         
-        # STEP 4: Get SHAP values
+        # Get SHAP values
         shap_values = self.explainer([email_text])
         
-        # STEP 5: Extract word importance from SHAP
+        # Extract word importance
         rawWords = []
         if hasattr(shap_values, 'data') and len(shap_values.data) > 0:
             tokens = shap_values.data[0]
             if hasattr(shap_values, 'values') and len(shap_values.values) > 0:
                 values = shap_values.values[0]
                 
-                # Handle value shape (for binary classification)
-                if len(values.shape) > 1:
-                    # Take the column with highest absolute values (phishing class)
-                    col_means = np.abs(values).mean(axis=0)
-                    best_col = np.argmax(col_means)
-                    values = values[:, best_col]
+                # For binary classification, take the second column (phishing)
+                if len(values.shape) > 1 and values.shape[1] > 1:
+                    values = values[:, 1]
                 
-                # Combine tokens into words
+                # Group tokens into words
+                current_word = ""
+                current_weight = 0.0
                 for i, token in enumerate(tokens):
-                    if i < len(values):
-                        weight = float(values[i])
-                        # Filter out punctuation and special tokens
-                        if token and not token.startswith('[') and len(token) > 1 and token not in ['.', ',', ':', ';', '!', '?']:
-                            rawWords.append((token, weight))
+                    if token.startswith('##'):
+                        current_word += token[2:]
+                        if i < len(values):
+                            current_weight += float(values[i])
+                    else:
+                        if current_word:
+                            # Clean up the word
+                            clean_word = re.sub(r'[^\w\s]', '', current_word)
+                            if clean_word and len(clean_word) > 1:
+                                rawWords.append((clean_word, current_weight))
+                        current_word = token
+                        current_weight = float(values[i]) if i < len(values) else 0.0
+                
+                # Add last word
+                if current_word:
+                    clean_word = re.sub(r'[^\w\s]', '', current_word)
+                    if clean_word and len(clean_word) > 1:
+                        rawWords.append((clean_word, current_weight))
         
-        # Sort by absolute weight and take top 20
-        rawWords.sort(key=lambda x: abs(x[1]), reverse=True)
-        rawWords = rawWords[:20]
+        # Remove duplicates and sort by absolute weight
+        seen = set()
+        unique_words = []
+        for word, weight in rawWords:
+            if word.lower() not in seen:
+                seen.add(word.lower())
+                unique_words.append((word, weight))
         
-        # STEP 6: Map to persuasion principles
+        unique_words.sort(key=lambda x: abs(x[1]), reverse=True)
+        topWords = unique_words[:15]
+        
+        # Map to persuasion principles
         mappedWords = []
         persuasionBreakdown = {}
         unmappedWords = []
         
-        for word, weight in rawWords:
+        for word, weight in topWords:
             principle = self.mapWord(word)
             mappedWords.append({
                 "word": word,
@@ -122,20 +140,16 @@ class ShapExplainer:
                     persuasionBreakdown[principle] = []
                 persuasionBreakdown[principle].append({"word": word, "weight": weight})
         
-        # STEP 7: Build summary
+        # Build summary
         summaryParts = []
-        
-        # First, show mapped persuasion words
         for principle, words in persuasionBreakdown.items():
             if principle != "unknown" and principle != "phishing_context":
                 wordList = [w["word"] for w in words[:3]]
                 summaryParts.append(f"{principle} ({', '.join(wordList)})")
         
-        # Then, show important words not in map
         if unmappedWords:
             summaryParts.append(f"other words ({', '.join(unmappedWords[:5])})")
         
-        # Add URL issues to summary
         if urlResult['has_urls'] and urlResult['issues']:
             for issue in urlResult['issues'][:2]:
                 summaryParts.append(issue)
@@ -145,13 +159,15 @@ class ShapExplainer:
         else:
             summary = "No clear patterns detected"
         
-        # STEP 8: Return everything
+        # Scale weights to be more readable (multiply by 1000)
+        scaledWords = [(word, round(weight * 1000, 2)) for word, weight in topWords]
+        
         return {
             "textScore": textScore,
             "urlScore": urlScore,
             "metaScore": metaScore,
             "spoofed": spoofed,
-            "rawWords": rawWords,
+            "rawWords": scaledWords,
             "mappedWords": mappedWords,
             "persuasionBreakdown": persuasionBreakdown,
             "unmappedWords": unmappedWords,
@@ -159,27 +175,3 @@ class ShapExplainer:
             "urls": urlResult,
             "time": "shap"
         }
-
-
-# Quick test when run directly
-if __name__ == "__main__":
-    print("=" * 60)
-    print("TESTING SHAP EXPLAINER")
-    print("=" * 60)
-    
-    explainer = ShapExplainer()
-    
-    test_email = """URGENT: Your PayPal account has been limited.
-Please verify your account immediately by clicking here:
-http://paypal-security-verify.com/login"""
-    
-    result = explainer.explainEmail(test_email)
-    
-    print(f"\nText score: {result['textScore']}%")
-    print(f"URL score: {result['urlScore']}%")
-    print(f"Meta score: {result['metaScore']}%")
-    print(f"Spoofed: {result['spoofed']}")
-    print(f"\nSummary: {result['summary']}")
-    print("\nTop 10 words:")
-    for word, weight in result['rawWords'][:10]:
-        print(f"   {word}: {weight:.4f}")

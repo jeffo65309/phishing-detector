@@ -8,6 +8,7 @@ import os
 import threading
 from email import policy
 from email.parser import BytesParser
+import re
 
 # Add parent folder to path
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
@@ -132,6 +133,41 @@ PayPal Security Team"""
         self.email_text.delete(1.0, tk.END)
         self.results_text.delete(1.0, tk.END)
         self.status_label.config(text="Cleared")
+
+    def highlight_urgency_words(self, email_text):
+            """Return email text with urgency words highlighted in brackets"""
+            urgency_words = ["urgent", "immediately", "deadline", "expires", "limited", 
+                            "last chance", "today only", "now", "soon", "warning",
+                            "action required", "verify", "confirm", "suspended", "locked",
+                            "immediate", "failure", "permanent", "closure", "within",
+                            "click", "here", "update", "validate", "restore"]
+            
+            highlighted = email_text
+            
+            for word in urgency_words:
+            # Use regex to match whole words only (not parts of words)
+            # This prevents double bracketing
+                pattern = r'\b' + re.escape(word) + r'\b'
+                highlighted = re.sub(pattern, f'[{word.upper()}]', highlighted, flags=re.IGNORECASE)
+            
+            return highlighted
+
+    def disable_links(self, text, score):
+        """Replace URLs with plain text if score is high risk (RED)"""
+        import re
+        
+        # Only disable links for HIGH RISK (RED) emails
+        if score < 71:
+            return text
+        
+        # Find all URLs and replace them with plain text
+        url_pattern = r'https?://[^\s<>"{}|\\^`\[\]]+'
+        
+        def replace_url(match):
+            url = match.group(0)
+            return f"[LINK DISABLED: {url}]"
+        
+        return re.sub(url_pattern, replace_url, text)    
     
     def parse_email(self, content):
         """Split email content into headers and body, keep raw bytes for DKIM"""
@@ -248,36 +284,74 @@ PayPal Security Team"""
         """Display the results in the GUI"""
         self.results_text.delete(1.0, tk.END)
         
-        # Build results text
-        results = "=" * 50 + "\n"
-        results += "DETECTION RESULTS\n"
-        results += "=" * 50 + "\n\n"
+        # Configure colour tags
+        self.results_text.tag_config("red", foreground="red")
+        self.results_text.tag_config("green", foreground="green")
+        self.results_text.tag_config("orange", foreground="orange")
         
-        results += "Text score: " + str(self.last_scores['textScore']) + "% (" + self.last_scores['textVerdict'] + ")\n"
-        results += "URL score:  " + str(self.last_scores['urlScore']) + "%\n"
-        results += "Metadata:   " + str(self.last_scores['metaScore']) + "%\n\n"
+        # Title
+        self.results_text.insert(tk.END, "=" * 50 + "\n")
+        self.results_text.insert(tk.END, "DETECTION RESULTS\n")
+        self.results_text.insert(tk.END, "=" * 50 + "\n\n")
         
+        # Scores
+        self.results_text.insert(tk.END, "Text score: " + str(self.last_scores['textScore']) + "% (" + self.last_scores['textVerdict'] + ")\n")
+        self.results_text.insert(tk.END, "URL score:  " + str(self.last_scores['urlScore']) + "%\n")
+        self.results_text.insert(tk.END, "Metadata:   " + str(self.last_scores['metaScore']) + "%\n\n")
+        
+        # Spoofed warning (red)
         if self.last_scores['spoofed']:
-            results += "WARNING: Sender appears to be spoofed - " + self.last_scores['sender'] + "\n\n"
+            self.results_text.insert(tk.END, "WARNING: Sender appears to be spoofed - " + self.last_scores['sender'] + "\n\n", "red")
         
-        # Add whitelist warning if present
+        # Whitelist warning (orange)
         if self.last_scores.get('warning'):
-            results += "WARNING: " + self.last_scores['warning'] + "\n\n"
+            self.results_text.insert(tk.END, "WARNING: " + self.last_scores['warning'] + "\n\n", "orange")
         
+        # URL issues
         if self.last_scores['urlIssues']:
-            results += "URL issues found:\n"
+            self.results_text.insert(tk.END, "URL issues found:\n")
             for issue in self.last_scores['urlIssues'][:3]:
-                results += "  - " + issue + "\n"
-            results += "\n"
+                self.results_text.insert(tk.END, "  - " + issue + "\n")
+            self.results_text.insert(tk.END, "\n")
+
+        # Show highlighted urgency words (with links disabled for high risk)
+        email_to_show = self.last_email
+        if final['finalScore'] >= 71:
+            email_to_show = self.disable_links(email_to_show, final['finalScore'])
         
-        results += "FINAL VERDICT: " + final['verdict'] + "\n"
-        results += "Confidence: " + str(final['finalScore']) + "%\n"
-        results += "Reason: " + final['reason'] + "\n"
+        highlighted_email = self.highlight_urgency_words(email_to_show)
+        self.results_text.insert(tk.END, "\n" + "-" * 40 + "\n")
+        self.results_text.insert(tk.END, "SUSPICIOUS WORDS HIGHLIGHTED:\n")
+        self.results_text.insert(tk.END, "-" * 40 + "\n")
         
-        results += "\n" + "-" * 40 + "\n"
-        results += "Click 'Get Detailed Explanation' for word-by-word analysis\n"
+        if len(highlighted_email) > 400:
+            self.results_text.insert(tk.END, highlighted_email[:400] + "...\n")
+        else:
+            self.results_text.insert(tk.END, highlighted_email + "\n")
         
-        self.results_text.insert(tk.END, results)
+        # Final verdict
+        self.results_text.insert(tk.END, "FINAL VERDICT: " + final['verdict'] + "\n")
+        self.results_text.insert(tk.END, "Confidence: " + str(final['finalScore']) + "%\n")
+        
+        # Risk Level with colour
+        self.results_text.insert(tk.END, "Risk Level: ")
+        
+        if final['finalScore'] >= 71:
+            self.results_text.insert(tk.END, "RED", "red")
+            risk_message = " (HIGH RISK - Dangerous elements would be disabled)"
+        elif final['finalScore'] >= 21:
+            self.results_text.insert(tk.END, "AMBER", "orange")
+            risk_message = " (SUSPICIOUS - Check before clicking links)"
+        else:
+            self.results_text.insert(tk.END, "GREEN", "green")
+            risk_message = " (LOW RISK - No action needed)"
+        
+        self.results_text.insert(tk.END, risk_message + "\n")
+        self.results_text.insert(tk.END, "Reason: " + final['reason'] + "\n")
+        
+        self.results_text.insert(tk.END, "\n" + "-" * 40 + "\n")
+        self.results_text.insert(tk.END, "Click 'Get Detailed Explanation' for word-by-word analysis\n")
+        
         self.status_label.config(text="Analysis complete")
         
         # Add detailed explanation button
