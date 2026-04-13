@@ -1,51 +1,92 @@
-# Batch test script
-# Runs all emails through our detector to find the best weight settings
-# I wrote this to test different combinations of text, URL, and metadata scores
+"""
+Test Runner - Goes through all test emails and records results
+Run this to see how well your system is performing
+"""
 
 import os
 import sys
+import datetime
 from email import policy
 from email.parser import BytesParser
 
-# Add the src folder so we can import our code
+# Add parent folder to path
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from src.components.text_checkerAI import TextChecker
 from src.components.url_checker import URLChecker
 from src.components.metadata_checker import MetadataChecker
+from src.components.scorer import Scorer
 
-# Silence the loading messages so the output is clean
+# Hide loading messages
 import contextlib
 import io
 
-# These are the different weight combinations I want to test
-# Each one gives different importance to text, URL, and metadata
-WEIGHT_SETS = [
-    {"name": "Balanced", "text": 0.5, "url": 0.3, "meta": 0.2},
-    {"name": "Text Heavy", "text": 0.7, "url": 0.2, "meta": 0.1},
-    {"name": "URL Heavy", "text": 0.3, "url": 0.5, "meta": 0.2},
-    {"name": "Meta Heavy", "text": 0.3, "url": 0.2, "meta": 0.5},
-    {"name": "Aggressive", "text": 0.6, "url": 0.3, "meta": 0.3},
-]
-
-
-def split_email(file_content):
+def test_one_email(email_text, email_headers, expected_type, filename):
     """
-    Split an email file into headers and body
-    Headers are the lines before the first blank line
-    Body is everything after that
+    Test a single email and return the results
     """
-    lines = file_content.split('\n')
     
+    with contextlib.redirect_stdout(io.StringIO()):
+        textChecker = TextChecker()
+        textResult = textChecker.checkEmail(email_text)
+        
+        urlChecker = URLChecker()
+        urlResult = urlChecker.analyseEmail(email_text)
+        
+        metadataChecker = MetadataChecker()
+        metadataResult = metadataChecker.analyseEmail(email_headers)
+    
+    # Get sender domain for scorer
+    sender_domain = metadataResult.get('domain', '')
+    if '@' in sender_domain:
+        sender_domain = sender_domain.split('@')[-1]
+    
+    # Calculate final score
+    scorer = Scorer()
+    final = scorer.combine(
+        textScore=textResult["score"],
+        urlScore=urlResult["score"],
+        metaScore=metadataResult["score"],
+        urlBlacklisted=urlResult["blacklisted"],
+        senderSpoofed=metadataResult["spoofed"],
+        sender_domain=sender_domain
+    )
+    
+    # Determine if correct
+    if expected_type == "PHISHING":
+        correct = (final["verdict"] == "PHISHING")
+    else:
+        correct = (final["verdict"] != "PHISHING")
+    
+    return {
+        "filename": filename,
+        "expected": expected_type,
+        "verdict": final["verdict"],
+        "final_score": final["finalScore"],
+        "text_score": textResult["score"],
+        "url_score": urlResult["score"],
+        "meta_score": metadataResult["score"],
+        "spoofed": metadataResult["spoofed"],
+        "correct": correct
+    }
+
+
+def parse_email_file(filepath):
+    """
+    Read an email file and split into headers and body
+    """
+    with open(filepath, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    lines = content.split('\n')
     headers = []
     body = []
-    reading_headers = True
+    in_headers = True
     
     for line in lines:
-        if reading_headers:
-            # Empty line means headers are done
+        if in_headers:
             if line.strip() == "":
-                reading_headers = False
+                in_headers = False
             else:
                 headers.append(line)
         else:
@@ -54,199 +95,157 @@ def split_email(file_content):
     headers_text = '\n'.join(headers)
     body_text = '\n'.join(body)
     
-    return headers_text, body_text
-
-
-def make_email_message(headers_text):
-    """
-    Turn the headers text into an email message object
-    This is what the metadata checker needs
-    """
+    # Parse headers into email message object
     try:
         msg = BytesParser(policy=policy.default).parsebytes(headers_text.encode())
-        return msg
     except:
-        # If parsing fails, just make a simple message
         from email.message import EmailMessage
         msg = EmailMessage()
-        # Try to find the From header
-        for line in headers_text.split('\n'):
+        for line in headers:
             if line.lower().startswith('from:'):
                 msg['From'] = line[5:].strip()
-                break
-        return msg
+    
+    return body_text, msg
 
 
-def get_scores(body_text, headers_message):
+def run_all_tests():
     """
-    Run all three checkers on one email
-    Returns text score, URL score, and metadata score
-    """
-    
-    # Hide all the loading messages so they don't clutter the output
-    with contextlib.redirect_stdout(io.StringIO()):
-        # Text analysis
-        text_checker = TextChecker()
-        text_result = text_checker.checkEmail(body_text)
-        
-        # URL analysis
-        url_checker = URLChecker()
-        url_result = url_checker.analyseEmail(body_text)
-        
-        # Metadata analysis
-        meta_checker = MetadataChecker()
-        meta_result = meta_checker.analyseEmail(headers_message)
-    
-    return {
-        "text": text_result["score"],
-        "url": url_result["score"],
-        "meta": meta_result["score"],
-        "url_blacklisted": url_result["blacklisted"],
-        "sender_spoofed": meta_result["spoofed"]
-    }
-
-
-def run_tests():
-    """
-    Main function - finds all emails and tests different weight settings
+    Run all emails in the test_emails folder
     """
     
-    print("=" * 60)
-    print("BATCH TESTING - FINDING BEST WEIGHTS")
-    print("=" * 60)
+    test_dir = os.path.join(os.path.dirname(__file__), "test_emails")
     
-    # Where are the test emails stored?
-    test_folder = os.path.join(os.path.dirname(__file__), "test_emails")
-    
-    if not os.path.exists(test_folder):
-        print("\nError: test_emails folder not found")
+    if not os.path.exists(test_dir):
+        print(f"Error: {test_dir} not found")
         print("Create it and add some .txt email files")
-        return
+        return []
     
-    # Collect all emails
-    print("\nCollecting emails...")
-    print("-" * 40)
+    all_results = []
     
-    all_emails = []
-    categories = ["phishing", "legitimate", "custom"]
+    # Test phishing emails
+    phishing_folder = os.path.join(test_dir, "phishing")
+    if os.path.exists(phishing_folder):
+        for filename in os.listdir(phishing_folder):
+            if filename.endswith(".txt"):
+                filepath = os.path.join(phishing_folder, filename)
+                print(f"Testing phishing email: {filename}")
+                body, headers = parse_email_file(filepath)
+                result = test_one_email(body, headers, "PHISHING", filename)
+                all_results.append(result)
+    else:
+        print(f"Warning: {phishing_folder} not found")
     
-    for cat in categories:
-        folder = os.path.join(test_folder, cat)
-        if not os.path.exists(folder):
-            print(f"  {cat}: folder not found")
-            continue
-        
-        count = 0
-        for filename in os.listdir(folder):
-            if not filename.endswith(".txt"):
-                continue
-                
-            filepath = os.path.join(folder, filename)
-            count += 1
-            
-            # Read the file
-            with open(filepath, 'r', encoding='utf-8') as f:
-                content = f.read()
-            
-            # Split into headers and body
-            headers_text, body_text = split_email(content)
-            headers_msg = make_email_message(headers_text)
-            
-            # Get the scores
-            scores = get_scores(body_text, headers_msg)
-            scores["category"] = cat
-            scores["filename"] = filename
-            all_emails.append(scores)
-        
-        print(f"  {cat}: {count} emails found")
+    # Test legitimate emails
+    legit_folder = os.path.join(test_dir, "legitimate")
+    if os.path.exists(legit_folder):
+        for filename in os.listdir(legit_folder):
+            if filename.endswith(".txt"):
+                filepath = os.path.join(legit_folder, filename)
+                print(f"Testing legitimate email: {filename}")
+                body, headers = parse_email_file(filepath)
+                result = test_one_email(body, headers, "LEGITIMATE", filename)
+                all_results.append(result)
+    else:
+        print(f"Warning: {legit_folder} not found")
     
-    if not all_emails:
-        print("\nNo emails found. Add some .txt files to the test_emails folder.")
-        return
+    return all_results
+
+
+def print_results(results):
+    """
+    Print formatted results to screen
+    """
     
-    print(f"\nTotal emails collected: {len(all_emails)}")
+    print("\n" + "=" * 70)
+    print("TEST RESULTS")
+    print("=" * 70)
+    print(f"Run at: {datetime.datetime.now()}")
+    print("=" * 70)
     
-    # Show a sample of the scores
-    print("\nSample scores (first 5 emails):")
-    print("-" * 50)
-    for i, email in enumerate(all_emails[:5]):
-        print(f"  {email['filename']} ({email['category']}):")
-        print(f"    Text: {email['text']}% | URL: {email['url']}% | Meta: {email['meta']}%")
+    correct_count = 0
+    false_positives = 0
+    false_negatives = 0
     
-    # Test each weight combination
-    print("\n" + "=" * 60)
-    print("TESTING WEIGHT COMBINATIONS")
-    print("=" * 60)
-    
-    best_weights = None
-    best_accuracy = 0
-    best_correct = 0
-    best_total = 0
-    
-    for weights in WEIGHT_SETS:
-        print(f"\n{weights['name']}: text={weights['text']}, url={weights['url']}, meta={weights['meta']}")
-        
-        correct = 0
-        total = 0
-        false_pos = 0
-        false_neg = 0
-        suspicious = 0
-        
-        for email in all_emails:
-            # Calculate final score with these weights
-            final_score = (
-                email["text"] * weights["text"] +
-                email["url"] * weights["url"] +
-                email["meta"] * weights["meta"]
-            )
-            
-            # Determine the verdict
-            if final_score >= 70:
-                verdict = "PHISHING"
-            elif final_score >= 30:
-                verdict = "SUSPICIOUS"
+    for r in results:
+        if r["correct"]:
+            correct_count += 1
+            status = "PASS"
+        else:
+            status = "FAIL"
+            if r["expected"] == "PHISHING":
+                false_negatives += 1
             else:
-                verdict = "LEGITIMATE"
-            
-            # Check if it was correct
-            is_phish = (email["category"] == "phishing" or email["category"] == "custom")
-            is_legit = (email["category"] == "legitimate")
-            
-            if is_phish and verdict == "PHISHING":
-                correct += 1
-            elif is_legit and verdict == "LEGITIMATE":
-                correct += 1
-            elif is_phish and verdict == "SUSPICIOUS":
-                suspicious += 1
-            elif is_phish and verdict != "PHISHING" and verdict != "SUSPICIOUS":
-                false_neg += 1
-            elif is_legit and verdict != "LEGITIMATE":
-                false_pos += 1
-            
-            total += 1
+                false_positives += 1
         
-        accuracy = (correct / total * 100) if total > 0 else 0
-        print(f"  Correct: {correct}/{total} = {accuracy:.1f}%")
-        print(f"  Suspicious (partial): {suspicious}")
-        print(f"  False positives: {false_pos}")
-        print(f"  False negatives: {false_neg}")
-        
-        if accuracy > best_accuracy:
-            best_accuracy = accuracy
-            best_weights = weights
-            best_correct = correct
-            best_total = total
+        print(f"\n{status} | {r['filename']}")
+        print(f"  Expected: {r['expected']} | Got: {r['verdict']}")
+        print(f"  Scores: Text={r['text_score']}% URL={r['url_score']}% Meta={r['meta_score']}% Final={r['final_score']}%")
+        if r['spoofed']:
+            print(f"  [Spoofed sender detected]")
     
-    print("\n" + "=" * 60)
-    print("BEST WEIGHTS FOUND")
-    print("=" * 60)
-    print(f"Weights: text={best_weights['text']}, url={best_weights['url']}, meta={best_weights['meta']}")
-    print(f"Accuracy: {best_correct}/{best_total} = {best_accuracy:.1f}%")
-    print("\n" + "=" * 60)
-    print("Done")
-    print("=" * 60)
+    # Summary
+    total = len(results)
+    accuracy = (correct_count / total * 100) if total > 0 else 0
+    
+    print("\n" + "=" * 70)
+    print("SUMMARY")
+    print("=" * 70)
+    print(f"Total emails tested: {total}")
+    print(f"Correct: {correct_count}")
+    print(f"Accuracy: {accuracy:.1f}%")
+    print(f"False positives: {false_positives} (legitimate flagged as phishing)")
+    print(f"False negatives: {false_negatives} (phishing missed)")
+    print("=" * 70)
 
 
-# Run the tests
+def save_results_to_file(results, filename="test_results.txt"):
+    """
+    Save results to a text file
+    """
+    with open(filename, 'w') as f:
+        f.write("=" * 70 + "\n")
+        f.write("PHISHING DETECTOR TEST RESULTS\n")
+        f.write("=" * 70 + "\n")
+        f.write(f"Run at: {datetime.datetime.now()}\n")
+        f.write("=" * 70 + "\n\n")
+        
+        for r in results:
+            status = "PASS" if r["correct"] else "FAIL"
+            f.write(f"{status} | {r['filename']}\n")
+            f.write(f"  Expected: {r['expected']} | Got: {r['verdict']}\n")
+            f.write(f"  Scores: Text={r['text_score']}% URL={r['url_score']}% Meta={r['meta_score']}% Final={r['final_score']}%\n")
+            if r['spoofed']:
+                f.write(f"  [Spoofed sender detected]\n")
+            f.write("\n")
+        
+        correct = sum(1 for r in results if r["correct"])
+        total = len(results)
+        accuracy = (correct / total * 100) if total > 0 else 0
+        
+        f.write("=" * 70 + "\n")
+        f.write("SUMMARY\n")
+        f.write("=" * 70 + "\n")
+        f.write(f"Total emails tested: {total}\n")
+        f.write(f"Correct: {correct}\n")
+        f.write(f"Accuracy: {accuracy:.1f}%\n")
+        f.write("=" * 70 + "\n")
+    
+    print(f"\nResults saved to {filename}")
+
+
+# Main
 if __name__ == "__main__":
-    run_tests()
+    print("=" * 70)
+    print("PHISHING DETECTOR TEST SUITE")
+    print("=" * 70)
+    print()
+    
+    results = run_all_tests()
+    
+    if results:
+        print_results(results)
+        save_results_to_file(results)
+    else:
+        print("No tests were run. Make sure you have email files in:")
+        print("  tests/test_emails/phishing/")
+        print("  tests/test_emails/legitimate/")

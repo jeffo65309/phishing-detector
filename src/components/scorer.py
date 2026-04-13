@@ -70,18 +70,24 @@ class Scorer:
                 }
             }
         
-        # Override 2: Sender spoofed with threshold
-        if senderSpoofed and metaScore >= self.spoofedThreshold:
-            return {
-                "finalScore": 100,
-                "verdict": "PHISHING",
-                "reason": "Spoofed sender detected",
-                "components": {
-                    "text": textScore,
-                    "url": urlScore,
-                    "metadata": metaScore
+        # Override 2: Sender is spoofed with suspicious content
+        if senderSpoofed:
+            # Check if any other component is suspicious (>20%)
+            text_suspicious = textScore > 20
+            url_suspicious = urlScore > 20
+            
+            if text_suspicious or url_suspicious:
+                return {
+                    "finalScore": 100,
+                    "verdict": "PHISHING",
+                    "reason": "Spoofed sender with suspicious content",
+                    "components": {
+                        "text": textScore,
+                        "url": urlScore,
+                        "metadata": metaScore
+                    }
                 }
-            }
+            # If spoofed but everything else clean, continue to normal scoring (will be caught later)
         
         trusted = self.is_whitelisted(sender_domain)
         
@@ -98,6 +104,25 @@ class Scorer:
                          (metaScore * self.meta_weight_normal)
         
         finalScore = round(finalScore, 1)
+        
+        # Special case: Spoofed sender but clean content
+        if senderSpoofed and textScore <= 20 and urlScore <= 20:
+            finalScore = max(finalScore, 25)
+            verdict = "SUSPICIOUS"
+            reason = "Spoofed sender - content appears normal but verify sender before replying"
+            return {
+                "finalScore": finalScore,
+                "verdict": verdict,
+                "reason": reason,
+                "components": {
+                    "text": textScore,
+                    "url": urlScore,
+                    "metadata": metaScore
+                },
+                "highCount": 0,
+                "boosted": False,
+                "whitelisted": trusted
+            }
         
         highCount = 0
         if textScore >= self.highThreshold:

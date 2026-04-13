@@ -1,0 +1,15 @@
+From: "Lloyds Bank" <security@lloyds-alert.net>
+Subject: Critical Security Alert - Unusual Activity
+
+Dear customer,
+
+We detected an unusual login from an unrecognized device.
+
+Your online banking access has been temporarily restricted.
+
+Please verify your identity immediately:
+https://lloyds-security-verify.com/login
+
+Failure to verify within 24 hours will result in account suspension.
+
+Lloyds Bank Security Team

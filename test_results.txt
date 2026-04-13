@@ -1,0 +1,75 @@
+======================================================================
+PHISHING DETECTOR TEST RESULTS
+======================================================================
+Run at: 2026-04-13 23:27:19.202154
+======================================================================
+
+FAIL | acmecorp_invoice.txt
+  Expected: PHISHING | Got: SUSPICIOUS
+  Scores: Text=2% URL=0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | amaz0n_security.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | lloyds_phishing.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=20.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | netflix_overdue.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | sample_phishing.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=20.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | acme_security.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | chase_transaction.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=3% URL=0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | dropbox_share.txt
+  Expected: LEGITIMATE | Got: LEGITIMATE
+  Scores: Text=0% URL=0% Meta=0% Final=0.0%
+
+PASS | hr_benefits.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0.0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | microsoft_alert.txt
+  Expected: LEGITIMATE | Got: LEGITIMATE
+  Scores: Text=99% URL=20.0% Meta=0% Final=10.0%
+
+PASS | sharepoint_invite.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | streamsync_invoice.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=2% URL=0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | uni_email.txt
+  Expected: LEGITIMATE | Got: LEGITIMATE
+  Scores: Text=0% URL=0.0% Meta=0% Final=0.0%
+
+======================================================================
+SUMMARY
+======================================================================
+Total emails tested: 13
+Correct: 12
+Accuracy: 92.3%
+======================================================================

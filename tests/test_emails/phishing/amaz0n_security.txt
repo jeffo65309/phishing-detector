@@ -1,0 +1,12 @@
+From: support@amaz0n-security.net
+Subject: Your Account Will Be Locked in 2 Hours!
+
+Dear Customer,
+
+We detected unusual login activity from a new device. To prevent suspension of your Amazon account, verify your identity now:
+
+Click here to secure your account
+
+Failure to act within 2 hours will result in permanent account lock.
+
+Amazon Support

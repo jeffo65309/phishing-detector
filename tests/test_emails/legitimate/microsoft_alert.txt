@@ -1,0 +1,10 @@
+From: security@microsoft.com
+Subject: ALERT: Unauthorized Login Attempt on your Account!
+
+Dear user,
+
+Our systems detected an unusual login attempt from an unrecognized IP address in Moscow, Russia. To protect your data, your account has been temporarily locked.
+
+You must verify your identity within the next 4 hours or your account will be permanently deleted.
+
+Click here to secure your account: http://login-verification-secure-portal.net/update

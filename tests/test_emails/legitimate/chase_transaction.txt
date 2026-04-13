@@ -1,0 +1,11 @@
+From: alerts@chase.com
+Subject: Recent Debit Card Transaction
+
+Dear Ms. Thompson,
+
+A transaction of £47.99 was made using your Chase debit card ending in 1234 on March 25, 2026, at Amazon.com.
+
+If this was you, no action is needed.
+If you don't recognize this charge, please securely report it here.
+
+Chase Bank | 1-800-935-9935

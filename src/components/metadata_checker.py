@@ -28,7 +28,6 @@ class MetadataChecker:
         except Exception as e:
             print(f"[DEBUG] Error loading whitelist: {e}")
             return []
-    
     def getSenderInfo(self, email_headers):
         # Extract sender email and domain from email headers
         sender_email = ""
@@ -47,7 +46,6 @@ class MetadataChecker:
             sender_domain = sender_email.split('@')[-1]
         
         return sender_email, sender_domain
-    
     def checkSPF(self, domain):
         # Check if domain has an SPF record
         if not domain or domain == "unknown":
@@ -114,12 +112,18 @@ class MetadataChecker:
         spoofed = False
         
         sender_email, sender_domain = self.getSenderInfo(email_headers)
+
+        # Write debug to file
+        with open('domain_debug.txt', 'w') as f:
+            f.write(f"Sender domain: '{sender_domain}'\n")
+            f.write(f"Sender email: '{sender_email}'\n")
+
         
         # Load whitelist to check later
         trusted_domains = self.loadWhitelist()
         is_whitelisted = sender_domain in trusted_domains
         
-        # Write debug to file
+        # Write debug to file 9testing can be removed later)
         with open('debug.txt', 'a') as f:
             f.write(f"\n{datetime.datetime.now()}\n")
             f.write(f"Sender domain: '{sender_domain}'\n")

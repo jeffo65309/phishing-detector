@@ -1,0 +1,11 @@
+From: No-Reply@bussiness.com
+Subject: Security Update: Your password has been successfully changed
+
+Hello Michael,
+
+This is an automated confirmation that the password for your Acme Corp account was changed on March 27, 2026, at 1:45 PM.
+
+If you made this change, no further action is required. If you did not change your password, please log in to your account at acme-corp.com/security or contact our support team immediately.
+
+Stay safe,
+The Acme Security Team

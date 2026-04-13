@@ -1,0 +1,11 @@
+From: no-reply@dropbox.com
+Subject: Your file has been shared successfully
+
+Hi Alex,
+
+You've successfully shared the file "Project_Proposal.pdf" with jessica.smith@example.com. They'll receive an email notification with a secure link to view or download the file.
+
+You can manage access to this file at any time by visiting your shared files.
+
+Thanks,
+The Dropbox Team

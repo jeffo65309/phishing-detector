@@ -1,0 +1,11 @@
+From: accounts@acmecorp.com
+Subject: ACTION REQUIRED: Invoice #9920 is 30 days OVERDUE
+
+To whom it may concern,
+
+Please find the attached invoice for services rendered last month. This payment is now significantly past due and will be sent to collections if not settled by EOD.
+
+Please open the attached document Invoice_9920_Final.zip to view payment instructions.
+
+Regards,
+Accounts Payable

@@ -1,0 +1,11 @@
+From: no-reply@streamsync.com
+Subject: Your monthly invoice from StreamSync (Inv #88291)
+
+Hi Karl,
+
+Thanks for using StreamSync! Your payment for the current billing cycle was processed successfully.
+
+Amount: £14.99
+Method: Visa ending in 1234
+
+You can download your full PDF receipt by logging into your dashboard at streamsync.io/billing.
