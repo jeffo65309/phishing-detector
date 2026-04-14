@@ -1,7 +1,8 @@
 # AI Text Checker
 # Uses a pre-trained model to detect phishing emails
 # I got this from Hugging Face - it's DistilBERT fine-tuned on phishing emails
-
+from dotenv import load_dotenv
+load_dotenv()  # This loads .env file
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 

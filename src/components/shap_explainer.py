@@ -1,6 +1,7 @@
 # SHAP/FAST Explainer - Dual Mode with Proper Word Grouping
 # Change the SELECTED_MODEL line below to switch between models
-
+from dotenv import load_dotenv
+load_dotenv()  # This loads .env file
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline
 import torch
 import re
