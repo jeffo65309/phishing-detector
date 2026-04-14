@@ -1,2 +1,0 @@
-Sender domain: 'voicecupfish.shop'
-Sender email: 'atc_fzk@voicecupfish.shop'

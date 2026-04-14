@@ -9,7 +9,6 @@ from email.parser import BytesParser
 import re
 import json
 import os
-import datetime
 
 class MetadataChecker:
     
@@ -19,7 +18,6 @@ class MetadataChecker:
     
     def loadWhitelist(self):
         """Load trusted domains from whitelist.json"""
-        # Go up two levels: from src/components to project root
         config_path = os.path.join(os.path.dirname(__file__), '..', '..', 'whitelist.json')
         try:
             with open(config_path, 'r') as f:
@@ -28,8 +26,9 @@ class MetadataChecker:
         except Exception as e:
             print(f"[DEBUG] Error loading whitelist: {e}")
             return []
+    
     def getSenderInfo(self, email_headers):
-        # Extract sender email and domain from email headers
+        """Extract sender email and domain from email headers"""
         sender_email = ""
         sender_domain = ""
         
@@ -46,13 +45,13 @@ class MetadataChecker:
             sender_domain = sender_email.split('@')[-1]
         
         return sender_email, sender_domain
+    
     def checkSPF(self, domain):
-        # Check if domain has an SPF record
+        """Check if domain has an SPF record"""
         if not domain or domain == "unknown":
             return False, "No domain to check"
         
         try:
-            # Look up TXT records for the domain
             records = dns.resolver.resolve(domain, 'TXT')
             for rdata in records:
                 txt = rdata.strings[0].decode('utf-8')
@@ -63,7 +62,7 @@ class MetadataChecker:
             return False, "SPF check failed"
     
     def checkDKIM(self, email_message):
-        # Check if email has a valid DKIM signature
+        """Check if email has a valid DKIM signature"""
         try:
             dkim_header = email_message.get('DKIM-Signature', '')
             if not dkim_header:
@@ -88,7 +87,7 @@ class MetadataChecker:
             return False, f"DKIM check failed: {str(e)[:50]}"
     
     def checkDMARC(self, domain):
-        # Check DMARC policy for the domain
+        """Check DMARC policy for the domain"""
         if not domain or domain == "unknown":
             return "none", "No domain to check"
         
@@ -106,33 +105,18 @@ class MetadataChecker:
             return "none", "No DMARC record found"
     
     def analyseEmail(self, email_headers, raw_bytes=None):
-        # Main function - analyse email headers
+        """Main function - analyse email headers and return score"""
         score = 0
         issues = []
         spoofed = False
         
         sender_email, sender_domain = self.getSenderInfo(email_headers)
-
-        # Write debug to file
-        with open('domain_debug.txt', 'w') as f:
-            f.write(f"Sender domain: '{sender_domain}'\n")
-            f.write(f"Sender email: '{sender_email}'\n")
-
         
         # Load whitelist to check later
         trusted_domains = self.loadWhitelist()
         is_whitelisted = sender_domain in trusted_domains
         
-        # Write debug to file 9testing can be removed later)
-        with open('debug.txt', 'a') as f:
-            f.write(f"\n{datetime.datetime.now()}\n")
-            f.write(f"Sender domain: '{sender_domain}'\n")
-            f.write(f"In whitelist? {is_whitelisted}\n")
-        
         if not sender_domain:
-            with open('debug.txt', 'a') as f:
-                f.write(f"No sender domain - returning 50%\n")
-                f.write("-" * 40 + "\n")
             return {
                 "score": 50,
                 "spoofed": True,
@@ -166,16 +150,8 @@ class MetadataChecker:
         dmarc_policy, dmarc_msg = self.checkDMARC(sender_domain)
         issues.append(f"[INFO] {dmarc_msg}")
         
-        # Write debug after checks
-        with open('debug.txt', 'a') as f:
-            f.write(f"SPF ok: {spf_ok}\n")
-            f.write(f"DKIM ok: {dkim_ok}\n")
-            f.write(f"Raw score before whitelist: {score}\n")
-            f.write(f"Spoofed: {spoofed}\n")
-        
-        # Apply whitelist override at the end
+        # Apply whitelist override
         if is_whitelisted:
-            # Build warning message if any checks failed
             warning_msg = ""
             failed_checks = []
             if not spf_ok:
@@ -186,12 +162,6 @@ class MetadataChecker:
             if failed_checks:
                 warning_msg = f"Authentication failed ({', '.join(failed_checks)}) but domain is whitelisted"
             
-            with open('debug.txt', 'a') as f:
-                f.write(f"Whitelist override - setting score to 0%\n")
-                if warning_msg:
-                    f.write(f"Warning: {warning_msg}\n")
-                f.write("-" * 40 + "\n")
-            
             return {
                 "score": 0,
                 "spoofed": False,
@@ -201,11 +171,6 @@ class MetadataChecker:
                 "sender": sender_email,
                 "domain": sender_domain
             }
-        
-        # Final debug for non-whitelisted emails
-        with open('debug.txt', 'a') as f:
-            f.write(f"Final score: {min(score, 100)}\n")
-            f.write("-" * 40 + "\n")
         
         if spoofed:
             summary = "Sender authentication failed - likely spoofed"

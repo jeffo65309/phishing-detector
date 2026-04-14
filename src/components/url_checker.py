@@ -136,10 +136,6 @@ class URLChecker:
         # Look at one URL and give it a suspicion score
         # Higher score = more likely to be phishing
         
-        # Debug to file
-        with open('url_debug.txt', 'a') as f:
-            f.write(f"\n[DEBUG] Original URL: {url}\n")
-        
         # Store original for return
         original_url = url
         was_safelink = False  # Flag to track if this was a safelink
@@ -147,8 +143,6 @@ class URLChecker:
         # Decode safelink once
         decoded = self.decode_safelink(url)
         if decoded != url:
-            with open('url_debug.txt', 'a') as f:
-                f.write(f"[DEBUG] Decoded URL: {decoded}\n")
             url = decoded
             was_safelink = True  # Mark that this was a safelink
         
@@ -188,8 +182,6 @@ class URLChecker:
         # Check 5: Does it have a suspicious TLD?
         has_suspicious_tld, tld = self.check_suspicious_tld(url_lower)
         if has_suspicious_tld:
-            with open('url_debug.txt', 'a') as f:
-                f.write(f"[DEBUG] Suspicious TLD found: {tld} for URL: {url}\n")
             score += 40
             issues.append(f"Suspicious domain extension ({tld}) - common in phishing")
         
@@ -198,15 +190,12 @@ class URLChecker:
         if was_safelink and len(issues) > 0:
             score += 15
             issues.append("URL hidden behind Microsoft Safelinks - verify the real destination")
-            with open('url_debug.txt', 'a') as f:
-                f.write(f"[DEBUG] Safelink bonus applied (+15) because decoded URL had issues\n")
         
-        # Check 6: Is it in URLhaus database? (free threat feed)
-        # This is optional - might be slow, but catches known bad sites
-        # in_urlhaus, msg = self.checkURLhaus(url)
-        # if in_urlhaus:
-        #     score += 50
-        #     issues.append(msg)
+        # Check 6: Is it in URLhaus database? (free threat feed) can disable if slow
+        in_urlhaus, msg = self.checkURLhaus(url)
+        if in_urlhaus:
+            score += 50
+            issues.append(msg)
         
         if score > 100:
             score = 100

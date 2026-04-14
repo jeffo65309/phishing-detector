@@ -1,5 +1,5 @@
 # Phishing Detection GUI
-# Simple window where you can paste an email or load from file
+# Paste an email, click analyse, and see if it's phishing
 
 import tkinter as tk
 from tkinter import scrolledtext, filedialog, messagebox
@@ -30,7 +30,7 @@ class PhishingDetectorGUI:
         root.title("Phishing Email Detector")
         root.geometry("800x700")
         
-        # Colour settings
+        # Colours for the interface
         self.bg_colour = '#f0f0f0'
         self.button_colour = '#4CAF50'
         self.button_text_colour = 'white'
@@ -41,63 +41,58 @@ class PhishingDetectorGUI:
         
         root.configure(bg=self.bg_colour)
         
-        # Email input label
+        # Email input box
         tk.Label(root, text="Paste Email Here:", font=("Arial", 12, "bold"), 
                  bg=self.bg_colour).pack(pady=(10,5))
         
-        # Email text box
         self.email_text = scrolledtext.ScrolledText(root, height=15, width=90, 
                                                      font=("Courier", 10),
                                                      bg=self.input_bg)
         self.email_text.pack(pady=5, padx=10)
         
-        # Button frame
+        # Buttons
         button_frame = tk.Frame(root, bg=self.bg_colour)
         button_frame.pack(pady=10)
         
-        # Load from file button
         tk.Button(button_frame, text="Load from File", command=self.load_file, 
                   width=15, bg=self.button_colour, fg=self.button_text_colour,
                   font=("Arial", 10)).pack(side=tk.LEFT, padx=5)
         
-        # Analyse email button
         tk.Button(button_frame, text="Analyse Email", command=self.analyse_email, 
                   width=15, bg=self.button_colour, fg=self.button_text_colour,
                   font=("Arial", 10)).pack(side=tk.LEFT, padx=5)
         
-        # Clear button
         tk.Button(button_frame, text="Clear", command=self.clear_text, 
                   width=10, bg=self.button_colour, fg=self.button_text_colour,
                   font=("Arial", 10)).pack(side=tk.LEFT, padx=5)
         
-        # Results label
+        # Results area
         tk.Label(root, text="Results:", font=("Arial", 12, "bold"), 
                  bg=self.bg_colour).pack(pady=(10,5))
         
-        # Results text box
         self.results_text = scrolledtext.ScrolledText(root, height=12, width=90, 
                                                        font=("Courier", 10),
                                                        bg=self.results_bg, 
                                                        fg=self.results_fg)
         self.results_text.pack(pady=5, padx=10)
         
-        # Status bar
+        # Status bar at the bottom
         self.status_label = tk.Label(root, text="Ready", bd=1, relief=tk.SUNKEN, 
                                       anchor=tk.W, bg=self.status_bg)
         self.status_label.pack(side=tk.BOTTOM, fill=tk.X)
         
-        # Store results
+        # Store results for later use (like detailed explanation)
         self.last_scores = None
         self.last_email = None
         self.last_headers = None
         self.last_raw = None
         self.detail_button = None
         
-        # Add sample email
+        # Put a sample email in the box so users see an example
         self.add_sample_email()
     
     def add_sample_email(self):
-        """Add a sample phishing email for testing"""
+        """Add a sample phishing email so users know what to paste"""
         sample = """From: "PayPal Security" <security@paypal-security.com>
 Subject: URGENT: Your Account Has Been Limited
 
@@ -113,7 +108,7 @@ PayPal Security Team"""
         self.email_text.insert(tk.END, sample)
     
     def load_file(self):
-        """Load email from a text file"""
+        """Open a text file and load its contents into the email box"""
         filename = filedialog.askopenfilename(
             title="Select email file",
             filetypes=[("Text files", "*.txt"), ("All files", "*.*")]
@@ -129,48 +124,45 @@ PayPal Security Team"""
                 messagebox.showerror("Error", "Could not load file: " + str(e))
     
     def clear_text(self):
-        """Clear the email input area"""
+        """Clear both the email input and results area"""
         self.email_text.delete(1.0, tk.END)
         self.results_text.delete(1.0, tk.END)
         self.status_label.config(text="Cleared")
 
     def highlight_urgency_words(self, email_text):
-            """Return email text with urgency words highlighted in brackets"""
-            urgency_words = ["urgent", "immediately", "deadline", "expires", "limited", 
-                            "last chance", "today only", "now", "soon", "warning",
-                            "action required", "verify", "confirm", "suspended", "locked",
-                            "immediate", "failure", "permanent", "closure", "within",
-                            "click", "here", "update", "validate", "restore"]
-            
-            highlighted = email_text
-            
-            for word in urgency_words:
-            # Use regex to match whole words only (not parts of words)
-            # This prevents double bracketing
-                pattern = r'\b' + re.escape(word) + r'\b'
-                highlighted = re.sub(pattern, f'[{word.upper()}]', highlighted, flags=re.IGNORECASE)
-            
-            return highlighted
+        """Put brackets around suspicious words like [URGENT] or [VERIFY]"""
+        urgency_words = ["urgent", "immediately", "deadline", "expires", "limited", 
+                        "last chance", "today only", "now", "soon", "warning",
+                        "action required", "verify", "confirm", "suspended", "locked",
+                        "immediate", "failure", "permanent", "closure", "within",
+                        "click", "here", "update", "validate", "restore"]
+        
+        highlighted = email_text
+        
+        for word in urgency_words:
+            # Match whole words only, not parts of words
+            pattern = r'\b' + re.escape(word) + r'\b'
+            highlighted = re.sub(pattern, f'[{word.upper()}]', highlighted, flags=re.IGNORECASE)
+        
+        return highlighted
 
     def disable_links(self, text, score):
-        """Replace URLs with plain text if score is high risk (RED)"""
-        import re
-        
-        # Only disable links for HIGH RISK (RED) emails
+        """If score is high risk (RED), replace clickable links with plain text"""
+        # Only disable links for high risk emails (71% and above)
         if score < 71:
             return text
         
-        # Find all URLs and replace them with plain text
+        # Find all URLs and replace them
         url_pattern = r'https?://[^\s<>"{}|\\^`\[\]]+'
         
         def replace_url(match):
             url = match.group(0)
             return f"[LINK DISABLED: {url}]"
         
-        return re.sub(url_pattern, replace_url, text)    
+        return re.sub(url_pattern, replace_url, text)
     
     def parse_email(self, content):
-        """Split email content into headers and body, keep raw bytes for DKIM"""
+        """Split the email into headers (who it's from) and body (the message)"""
         lines = content.split('\n')
         headers = []
         body = []
@@ -179,7 +171,7 @@ PayPal Security Team"""
         for line in lines:
             if in_headers:
                 if line.strip() == "":
-                    in_headers = False
+                    in_headers = False  # Blank line separates headers from body
                 else:
                     headers.append(line)
             else:
@@ -191,7 +183,7 @@ PayPal Security Team"""
         # Keep raw bytes for DKIM verification
         raw_bytes = content.encode('utf-8')
         
-        # Parse headers into email message object
+        # Turn headers into an email object
         try:
             msg = BytesParser(policy=policy.default).parsebytes(headers_text.encode())
         except:
@@ -204,7 +196,7 @@ PayPal Security Team"""
         return body_text, msg, raw_bytes
     
     def analyse_email(self):
-        """Run the fast detection"""
+        """Start the analysis (runs in background so GUI doesn't freeze)"""
         email_content = self.email_text.get(1.0, tk.END).strip()
         if not email_content:
             messagebox.showwarning("No Email", "Please paste an email or load a file")
@@ -214,21 +206,21 @@ PayPal Security Team"""
         self.results_text.delete(1.0, tk.END)
         self.root.update()
         
-        # Run in background
+        # Run in background so the window doesn't freeze
         thread = threading.Thread(target=self._do_analysis, args=(email_content,))
         thread.daemon = True
         thread.start()
     
     def _do_analysis(self, email_content):
-        """Actually do the analysis (runs in background)"""
+        """Actually run the three checkers (text, URL, metadata)"""
         try:
-            # Parse email
+            # Split email into headers and body
             body_text, headers_msg, raw_bytes = self.parse_email(email_content)
             self.last_email = body_text
             self.last_headers = headers_msg
             self.last_raw = raw_bytes
             
-            # Run the three checkers
+            # Run the three checkers (hide their loading messages)
             with contextlib.redirect_stdout(io.StringIO()):
                 textChecker = TextChecker()
                 textResult = textChecker.checkEmail(body_text)
@@ -239,7 +231,7 @@ PayPal Security Team"""
                 metadataChecker = MetadataChecker()
                 metadataResult = metadataChecker.analyseEmail(headers_msg, raw_bytes)
             
-            # Store the scores
+            # Save all the scores
             self.last_scores = {
                 "textScore": textResult["score"],
                 "textVerdict": textResult["verdict"],
@@ -252,17 +244,12 @@ PayPal Security Team"""
                 "urlBlacklisted": urlResult["blacklisted"]
             }
 
-            # Extract domain from sender email
+            # Extract just the domain from the sender email (e.g., gmail.com)
             sender_domain = metadataResult.get('domain', '')
             if '@' in sender_domain:
                 sender_domain = sender_domain.split('@')[-1]
-
-            # Debug - write to file
-            with open('debug.txt', 'a') as f:
-                f.write(f"\n[GUI] About to call scorer.combine\n")
-                f.write(f"[GUI] sender_domain value: '{sender_domain}'\n")
             
-            # Calculate final score
+            # Combine the three scores into one final verdict
             scorer = Scorer()
             final = scorer.combine(
                 textScore=self.last_scores["textScore"],
@@ -273,7 +260,7 @@ PayPal Security Team"""
                 sender_domain=sender_domain
             )
             
-            # Show results
+            # Show results in the GUI
             self.root.after(0, self._display_results, final)
             
         except Exception as err:
@@ -281,10 +268,10 @@ PayPal Security Team"""
             self.root.after(0, lambda: self._show_error(error_msg))
     
     def _display_results(self, final):
-        """Display the results in the GUI"""
+        """Show the results in the results text box"""
         self.results_text.delete(1.0, tk.END)
         
-        # Configure colour tags
+        # Set up colours for risk levels
         self.results_text.tag_config("red", foreground="red")
         self.results_text.tag_config("green", foreground="green")
         self.results_text.tag_config("orange", foreground="orange")
@@ -294,27 +281,27 @@ PayPal Security Team"""
         self.results_text.insert(tk.END, "DETECTION RESULTS\n")
         self.results_text.insert(tk.END, "=" * 50 + "\n\n")
         
-        # Scores
+        # Show each score
         self.results_text.insert(tk.END, "Text score: " + str(self.last_scores['textScore']) + "% (" + self.last_scores['textVerdict'] + ")\n")
         self.results_text.insert(tk.END, "URL score:  " + str(self.last_scores['urlScore']) + "%\n")
         self.results_text.insert(tk.END, "Metadata:   " + str(self.last_scores['metaScore']) + "%\n\n")
         
-        # Spoofed warning (red)
+        # Warn if sender is spoofed
         if self.last_scores['spoofed']:
             self.results_text.insert(tk.END, "WARNING: Sender appears to be spoofed - " + self.last_scores['sender'] + "\n\n", "red")
         
-        # Whitelist warning (orange)
+        # Warn if domain is whitelisted but authentication failed
         if self.last_scores.get('warning'):
             self.results_text.insert(tk.END, "WARNING: " + self.last_scores['warning'] + "\n\n", "orange")
         
-        # URL issues
+        # List any URL issues found
         if self.last_scores['urlIssues']:
             self.results_text.insert(tk.END, "URL issues found:\n")
             for issue in self.last_scores['urlIssues'][:3]:
                 self.results_text.insert(tk.END, "  - " + issue + "\n")
             self.results_text.insert(tk.END, "\n")
 
-        # Show highlighted urgency words (with links disabled for high risk)
+        # Show the email with suspicious words highlighted
         email_to_show = self.last_email
         if final['finalScore'] >= 71:
             email_to_show = self.disable_links(email_to_show, final['finalScore'])
@@ -324,16 +311,16 @@ PayPal Security Team"""
         self.results_text.insert(tk.END, "SUSPICIOUS WORDS HIGHLIGHTED:\n")
         self.results_text.insert(tk.END, "-" * 40 + "\n")
         
+        # Only show first 400 characters to keep the display tidy
         if len(highlighted_email) > 400:
             self.results_text.insert(tk.END, highlighted_email[:400] + "...\n")
         else:
             self.results_text.insert(tk.END, highlighted_email + "\n")
         
-        # Final verdict
+        # Final verdict and risk level
         self.results_text.insert(tk.END, "FINAL VERDICT: " + final['verdict'] + "\n")
         self.results_text.insert(tk.END, "Confidence: " + str(final['finalScore']) + "%\n")
         
-        # Risk Level with colour
         self.results_text.insert(tk.END, "Risk Level: ")
         
         if final['finalScore'] >= 71:
@@ -354,7 +341,7 @@ PayPal Security Team"""
         
         self.status_label.config(text="Analysis complete")
         
-        # Add detailed explanation button
+        # Add the detailed explanation button if it doesn't exist yet
         if self.detail_button is None:
             self.detail_button = tk.Button(self.root, 
                                           text="Get Detailed Explanation (SHAP - 30-60 sec)", 
@@ -365,12 +352,12 @@ PayPal Security Team"""
             self.detail_button.pack(pady=5)
     
     def _show_error(self, error_msg):
-        """Show an error message"""
+        """Show an error popup"""
         messagebox.showerror("Error", "Analysis failed: " + error_msg)
         self.status_label.config(text="Error")
     
     def detailed_explanation(self):
-        """Run SHAP for detailed explanation"""
+        """Run SHAP to show which words influenced the decision"""
         if not self.last_email:
             messagebox.showwarning("No Email", "Analyse an email first")
             return
@@ -387,7 +374,7 @@ PayPal Security Team"""
         thread.start()
     
     def _run_shap(self):
-        """Run SHAP analysis in background"""
+        """Run SHAP in background"""
         try:
             with contextlib.redirect_stdout(io.StringIO()):
                 explainer = ShapExplainer()
@@ -402,7 +389,7 @@ PayPal Security Team"""
             self.root.after(0, lambda: self.detail_button.config(state=tk.NORMAL) if self.detail_button else None)
     
     def _display_shap_results(self, explanation):
-        """Display SHAP results in the results area"""
+        """Show the SHAP word-by-word explanation"""
         self.results_text.insert(tk.END, "\n\n" + "=" * 50 + "\n")
         self.results_text.insert(tk.END, "DETAILED EXPLANATION (SHAP)\n")
         self.results_text.insert(tk.END, "=" * 50 + "\n\n")
