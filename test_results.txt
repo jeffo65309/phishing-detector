@@ -1,17 +1,17 @@
 ======================================================================
 PHISHING DETECTOR TEST RESULTS
 ======================================================================
-Run at: 2026-04-14 01:03:26.873824
+Run at: 2026-04-14 11:50:11.050064
 ======================================================================
 
 PASS | acmecorp_invoice.txt
   Expected: PHISHING | Got: PHISHING
-  Scores: Text=1% URL=40.0% Meta=40% Final=100%
+  Scores: Text=0% URL=40.0% Meta=40% Final=100%
   [Spoofed sender detected]
 
 PASS | aldi_voucher.txt
   Expected: PHISHING | Got: PHISHING
-  Scores: Text=99% URL=60.0% Meta=40% Final=100%
+  Scores: Text=99% URL=75.0% Meta=40% Final=100%
   [Spoofed sender detected]
 
 PASS | amaz0n_security.txt
@@ -21,37 +21,37 @@ PASS | amaz0n_security.txt
 
 PASS | amazon_game.txt
   Expected: PHISHING | Got: PHISHING
-  Scores: Text=0% URL=40.0% Meta=40% Final=100%
+  Scores: Text=49% URL=55.0% Meta=40% Final=100%
   [Spoofed sender detected]
 
 PASS | amazon_receipt.txt
   Expected: PHISHING | Got: PHISHING
-  Scores: Text=14% URL=40.0% Meta=40% Final=100%
+  Scores: Text=99% URL=55.0% Meta=40% Final=100%
   [Spoofed sender detected]
 
 PASS | argos_prize.txt
   Expected: PHISHING | Got: PHISHING
-  Scores: Text=0% URL=40.0% Meta=40% Final=100%
+  Scores: Text=99% URL=55.0% Meta=40% Final=100%
   [Spoofed sender detected]
 
 PASS | booking_voucher.txt
   Expected: PHISHING | Got: PHISHING
-  Scores: Text=24% URL=40.0% Meta=40% Final=100%
+  Scores: Text=98% URL=55.0% Meta=40% Final=100%
   [Spoofed sender detected]
 
 PASS | boots_voucher.txt
   Expected: PHISHING | Got: PHISHING
-  Scores: Text=0% URL=40.0% Meta=40% Final=100%
+  Scores: Text=81% URL=55.0% Meta=40% Final=100%
   [Spoofed sender detected]
 
 PASS | clubcard_voucher.txt
   Expected: PHISHING | Got: PHISHING
-  Scores: Text=99% URL=0.0% Meta=40% Final=100%
+  Scores: Text=99% URL=55.0% Meta=40% Final=100%
   [Spoofed sender detected]
 
 PASS | johnlewis_credit.txt
   Expected: PHISHING | Got: PHISHING
-  Scores: Text=1% URL=60.0% Meta=40% Final=100%
+  Scores: Text=46% URL=75.0% Meta=40% Final=100%
   [Spoofed sender detected]
 
 PASS | lloyds_phishing.txt
@@ -61,17 +61,17 @@ PASS | lloyds_phishing.txt
 
 PASS | mcdonalds_relief.txt
   Expected: PHISHING | Got: PHISHING
-  Scores: Text=51% URL=40.0% Meta=40% Final=100%
+  Scores: Text=85% URL=55.0% Meta=40% Final=100%
   [Spoofed sender detected]
 
 PASS | netflix_overdue.txt
   Expected: PHISHING | Got: PHISHING
-  Scores: Text=99% URL=0% Meta=70% Final=100%
+  Scores: Text=72% URL=0% Meta=70% Final=100%
   [Spoofed sender detected]
 
 PASS | newyear_reward.txt
   Expected: PHISHING | Got: PHISHING
-  Scores: Text=90% URL=40.0% Meta=40% Final=100%
+  Scores: Text=99% URL=55.0% Meta=40% Final=100%
   [Spoofed sender detected]
 
 PASS | sample_phishing.txt
@@ -81,37 +81,37 @@ PASS | sample_phishing.txt
 
 PASS | tesco_final_notice.txt
   Expected: PHISHING | Got: PHISHING
-  Scores: Text=0% URL=40.0% Meta=40% Final=100%
+  Scores: Text=99% URL=55.0% Meta=40% Final=100%
   [Spoofed sender detected]
 
 PASS | tesco_quiet_relief.txt
   Expected: PHISHING | Got: PHISHING
-  Scores: Text=0% URL=20.0% Meta=40% Final=100%
+  Scores: Text=99% URL=20.0% Meta=40% Final=100%
   [Spoofed sender detected]
 
 PASS | tesco_support.txt
   Expected: PHISHING | Got: PHISHING
-  Scores: Text=0% URL=40.0% Meta=40% Final=100%
+  Scores: Text=99% URL=55.0% Meta=40% Final=100%
   [Spoofed sender detected]
 
 PASS | tesco_voucher_expiry.txt
   Expected: PHISHING | Got: PHISHING
-  Scores: Text=1% URL=40.0% Meta=40% Final=100%
+  Scores: Text=99% URL=55.0% Meta=40% Final=100%
   [Spoofed sender detected]
 
 PASS | tesco_wallet_bonus.txt
   Expected: PHISHING | Got: PHISHING
-  Scores: Text=0% URL=40.0% Meta=40% Final=100%
+  Scores: Text=99% URL=55.0% Meta=40% Final=100%
   [Spoofed sender detected]
 
 PASS | acme_security.txt
   Expected: LEGITIMATE | Got: SUSPICIOUS
-  Scores: Text=0% URL=0% Meta=40% Final=25%
+  Scores: Text=3% URL=0% Meta=40% Final=25%
   [Spoofed sender detected]
 
 PASS | chase_transaction.txt
   Expected: LEGITIMATE | Got: SUSPICIOUS
-  Scores: Text=3% URL=0% Meta=40% Final=25%
+  Scores: Text=98% URL=0% Meta=40% Final=57.0%
   [Spoofed sender detected]
 
 PASS | dropbox_share.txt
@@ -129,7 +129,7 @@ PASS | microsoft_alert.txt
 
 PASS | portswigger_registration.txt
   Expected: LEGITIMATE | Got: SUSPICIOUS
-  Scores: Text=0% URL=0.0% Meta=40% Final=25%
+  Scores: Text=97% URL=0.0% Meta=40% Final=56.5%
   [Spoofed sender detected]
 
 PASS | sharepoint_invite.txt
@@ -139,7 +139,7 @@ PASS | sharepoint_invite.txt
 
 PASS | streamsync_invoice.txt
   Expected: LEGITIMATE | Got: SUSPICIOUS
-  Scores: Text=2% URL=0% Meta=40% Final=25%
+  Scores: Text=0% URL=0% Meta=40% Final=25%
   [Spoofed sender detected]
 
 PASS | uni_email.txt
@@ -148,7 +148,7 @@ PASS | uni_email.txt
 
 PASS | volkswagen_video.txt
   Expected: LEGITIMATE | Got: LEGITIMATE
-  Scores: Text=82% URL=0.0% Meta=0% Final=2.0%
+  Scores: Text=0% URL=0.0% Meta=0% Final=0.0%
 
 ======================================================================
 SUMMARY

@@ -17,16 +17,16 @@ class Scorer:
         # ============================================================
         # WEIGHT SETTINGS - CHANGE THESE TO CALIBRATE
         # ============================================================
-        self.text_weight_normal = 0.5
-        self.url_weight_normal = 0.3
-        self.meta_weight_normal = 0.2
+        self.text_weight_normal = 0.5  # 50% of final score from AI text
+        self.url_weight_normal = 0.3   # % from URL analysis
+        self.meta_weight_normal = 0.2  # % from SPF/DKIM checks
         
-        self.text_weight_trusted = 0.2
-        self.url_weight_trusted = 0.4
-        self.meta_weight_trusted = 0.4
+        self.text_weight_trusted = 0.2  # Only 20% from text
+        self.url_weight_trusted = 0.4   # 40% from URLs 
+        self.meta_weight_trusted = 0.4  # 40% from metadata (this is set to 0% for whitelisted!)
         
         self.highThreshold = 70
-        self.boostAmount = 20
+        self.boostAmount = 20   # Up from 20 bigger boost when multiple signals
         self.whitelist_legit_threshold = 30
         self.whitelist_max_text = 10
         # ============================================================
@@ -72,8 +72,9 @@ class Scorer:
         
         # Override 2: Sender is spoofed with suspicious content
         if senderSpoofed:
-            # Check if any other component is suspicious (>20%)
-            text_suspicious = textScore >= 20
+            # Only trigger if metadata is also high (strong spoofing evidence)
+            # This prevents legitimate emails with weak spoofing (40%) from triggering
+            text_suspicious = textScore >= 20 and metaScore >= 70
             url_suspicious = urlScore >= 20
             
             if text_suspicious or url_suspicious:

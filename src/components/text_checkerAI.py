@@ -13,10 +13,45 @@ class TextChecker:
         # Load the model when we create this object
         print(" Loading AI model...")
         
-        # The model ID from Hugging Face
-        # This is the DistilBERT model fine-tuned on phishing emails
-        # Found it in my literature review - aamoshdahal's version
-        self.model_id = "aamoshdahal/email-phishing-distilbert-finetuned"
+        # ============================================================
+        # MODEL OPTIONS FOR TESTING
+        # ============================================================
+        
+        # MODEL 1: aamoshdahal/email-phishing-distilbert-finetuned
+        # - The original model from literature review
+        # - Text scores: HIGHLY INCONSISTENT (0%, 1%, 14%, 24%, 51%, 82%, 90%, 99%)
+        # - Some phishing emails scored 0-14% (amazon_game, tesco_final_notice)
+        # - Some legitimate emails scored 99% (microsoft_alert, volkswagen_video)
+        # - Before calibration: 100% accuracy (but relied heavily on URL + metadata)
+        # - After calibration: 100% accuracy
+        # - Verdict: Works but text scores are unreliable/unpredictable
+        # - Best for: When URL and metadata are strong (not recommended for text-only)
+        #self.model_id = "aamoshdahal/email-phishing-distilbert-finetuned"
+        
+        # MODEL 2: cybersectony/phishing-email-detection-distilbert_v2.4.1
+        # - Most popular alternative (688+ downloads per month - 9x more than Model 1)
+        # - Training: Diverse dataset with URLs + email content
+        # - Performance: Claims 99.58% accuracy, 99.58% F1-score
+        # - Text scores: TOO AGGRESSIVE (75-99% on EVERYTHING - phishing AND legitimate)
+        # - Legitimate emails scored 99% (acme_security, chase_transaction, portswigger, streamsync)
+        # - Before calibration: 86.7% accuracy (4 false positives on legitimate emails)
+        # - After calibration: 100% accuracy (fixed by metaScore ≥70 requirement in Override 2)
+        # - Verdict: Excellent phishing detection but cries wolf constantly
+        # - Best for: Maximum detection when false positives are acceptable
+        #self.model_id = "cybersectony/phishing-email-detection-distilbert_v2.4.1"
+        
+        # MODEL 3: rahulkothuri/phishing-email-disilBERT
+        # - Balanced alternative (SELECTED FOR FINAL SYSTEM)
+        # - Downloads: Moderate (between Model 1 and Model 2)
+        # - Training: 3 epochs, validation loss 0.0266
+        # - Performance: Claims 99.39% accuracy
+        # - Text scores: MOST BALANCED (46%, 49%, 72%, 81%, 85%, 97%, 98%, 99% on phishing)
+        # - Legitimate scores: LOW (0%, 3% on most - only microsoft_alert scored 99%)
+        # - Before calibration: 93.3% accuracy (2 false positives on chase_transaction, portswigger)
+        # - After calibration: 100% accuracy
+        # - Verdict: Best balance between sensitivity and specificity
+        # - Best for: Production use where both phishing and legitimate need accurate handling
+        self.model_id = "rahulkothuri/phishing-email-disilBERT"
         
         # Load the tokenizer (turns words into numbers)
         # 512 is the max on this model - enough for most emails

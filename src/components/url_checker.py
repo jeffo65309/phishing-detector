@@ -34,7 +34,7 @@ class URLChecker:
             ".live", ".site", ".work", ".rent", ".monster", 
             ".guru", ".life", ".beauty", ".click", ".win",
             ".bid", ".date", ".download", ".review", ".trade", 
-            ".fit", ".lat"
+            ".fit", ".lat", ".world" 
         ]
         
         # Safe domains that should not be penalized
@@ -113,6 +113,7 @@ class URLChecker:
         
         # Store original for return
         original_url = url
+        was_safelink = False  # Flag to track if this was a safelink
         
         # Decode safelink once
         decoded = self.decode_safelink(url)
@@ -120,6 +121,7 @@ class URLChecker:
             with open('url_debug.txt', 'a') as f:
                 f.write(f"[DEBUG] Decoded URL: {decoded}\n")
             url = decoded
+            was_safelink = True  # Mark that this was a safelink
         
         score = 0
         issues = []
@@ -161,6 +163,14 @@ class URLChecker:
                 f.write(f"[DEBUG] Suspicious TLD found: {tld} for URL: {url}\n")
             score += 40
             issues.append(f"Suspicious domain extension ({tld}) - common in phishing")
+        
+        # Added Safelink bonus only if the decoded URL was suspicious
+        # This gives a small boost when phishers hide behind safelinks
+        if was_safelink and len(issues) > 0:
+            score += 15
+            issues.append("URL hidden behind Microsoft Safelinks - verify the real destination")
+            with open('url_debug.txt', 'a') as f:
+                f.write(f"[DEBUG] Safelink bonus applied (+15) because decoded URL had issues\n")
         
         # Check 6: Is it in URLhaus database? (free threat feed)
         # This is optional - might be slow, but catches known bad sites
