@@ -1,0 +1,20 @@
+From:	5216COMP-202526-SEM-2 <notifications@instructure.com>
+Sent on:	Thursday, February 26, 2026 4:43:24 PM
+To:	N.Gatley@2024.ljmu.ac.uk
+Subject:	SecList Wordlist: 5216COMP-202526-SEM-2
+ 	 
+
+Dear All, 
+
+As promised, we have pushed the seclist_top-1000 wordlist to your Kali VMs. 
+
+You will find it /home/kali/Documents. 
+
+This wordlist contains the password you need to bypass the login page for your coursework. If there's any issue, please let us know. 
+
+Regards, 
+
+ 
+
+
+View announcement  |  Update your notification settings

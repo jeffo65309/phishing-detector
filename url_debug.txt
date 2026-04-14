@@ -1129,3 +1129,204 @@
 [DEBUG] Original URL: https://seemytutor.ljmu.ac.uk/
 
 [DEBUG] Original URL: https://video.citnow.com/vtHg94f4tdb
+
+[DEBUG] Original URL: http://paypal-security-verify.com/login
+
+[DEBUG] Original URL: http://paypal-security-verify.com/login
+
+[DEBUG] Original URL: https://cyberleaderschallenge.com/.
+
+[DEBUG] Original URL: https://www.ljmu.ac.uk/microsites/scienceplsu
+
+[DEBUG] Original URL: https://www.ljmu.ac.uk/microsites/scienceplsu
+
+[DEBUG] Original URL: https://www.ljmu.ac.uk/microsites/scienceplsu
+
+[DEBUG] Original URL: https://www.ljmu.ac.uk/microsites/scienceplsu
+
+[DEBUG] Original URL: https://www.ljmu.ac.uk/microsites/scienceplsu
+
+[DEBUG] Original URL: https://www.ljmu.ac.uk/microsites/scienceplsu
+
+[DEBUG] Original URL: https://emea01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fscalestepthroat.shop%2F05Yb4aW%2Fsecure-credit%2FJefferey&data=05%7C02%7C%7C1f518476a35f4e340b2a08de833d7dca%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639092497265583690%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=xykWPjbP0EUfG1B2CqK2%2FsDq4oyPEL0UKbPEKdTGDm0%3D&reserved=0
+[DEBUG] Decoded URL: http://scalestepthroat.shop/05Yb4aW/secure-credit/Jefferey
+[DEBUG] Suspicious TLD found: .shop for URL: http://scalestepthroat.shop/05Yb4aW/secure-credit/Jefferey
+[DEBUG] Safelink bonus applied (+15) because decoded URL had issues
+
+[DEBUG] Original URL: https://emea01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fscalestepthroat.shop%2F05Yb4aW%2Fsecure-credit%2FJefferey&data=05%7C02%7C%7C1f518476a35f4e340b2a08de833d7dca%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639092497265583690%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=xykWPjbP0EUfG1B2CqK2%2FsDq4oyPEL0UKbPEKdTGDm0%3D&reserved=0
+[DEBUG] Decoded URL: http://scalestepthroat.shop/05Yb4aW/secure-credit/Jefferey
+[DEBUG] Suspicious TLD found: .shop for URL: http://scalestepthroat.shop/05Yb4aW/secure-credit/Jefferey
+[DEBUG] Safelink bonus applied (+15) because decoded URL had issues
+
+[DEBUG] Original URL: https://www.ljmu.ac.uk/microsites/scienceplsu
+
+[DEBUG] Original URL: https://www.ljmu.ac.uk/microsites/scienceplsu
+
+[DEBUG] Original URL: https://www.ljmu.ac.uk/microsites/scienceplsu
+
+[DEBUG] Original URL: https://www.ljmu.ac.uk/microsites/scienceplsu
+
+[DEBUG] Original URL: https://www.ljmu.ac.uk/microsites/scienceplsu
+
+[DEBUG] Original URL: http://paypal-security-verify.com/login
+
+[DEBUG] Original URL: https://www.ljmu.ac.uk/microsites/scienceplsu
+
+[DEBUG] Original URL: http://paypal-security-verify.com/login
+
+[DEBUG] Original URL: https://www.ljmu.ac.uk/microsites/scienceplsu
+
+[DEBUG] Original URL: https://www.ljmu.ac.uk/microsites/scienceplsu
+
+[DEBUG] Original URL: https://www.ljmu.ac.uk/microsites/scienceplsu
+
+[DEBUG] Original URL: https://www.ljmu.ac.uk/microsites/scienceplsu
+
+[DEBUG] Original URL: https://emea01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fscalestepthroat.shop%2F05Yb4aW%2Fsecure-credit%2FJefferey&data=05%7C02%7C%7C1f518476a35f4e340b2a08de833d7dca%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639092497265583690%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=xykWPjbP0EUfG1B2CqK2%2FsDq4oyPEL0UKbPEKdTGDm0%3D&reserved=0
+[DEBUG] Decoded URL: http://scalestepthroat.shop/05Yb4aW/secure-credit/Jefferey
+[DEBUG] Suspicious TLD found: .shop for URL: http://scalestepthroat.shop/05Yb4aW/secure-credit/Jefferey
+[DEBUG] Safelink bonus applied (+15) because decoded URL had issues
+
+[DEBUG] Original URL: https://emea01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fscalestepthroat.shop%2F05Yb4aW%2Fsecure-credit%2FJefferey&data=05%7C02%7C%7C1f518476a35f4e340b2a08de833d7dca%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639092497265583690%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=xykWPjbP0EUfG1B2CqK2%2FsDq4oyPEL0UKbPEKdTGDm0%3D&reserved=0
+[DEBUG] Decoded URL: http://scalestepthroat.shop/05Yb4aW/secure-credit/Jefferey
+[DEBUG] Suspicious TLD found: .shop for URL: http://scalestepthroat.shop/05Yb4aW/secure-credit/Jefferey
+[DEBUG] Safelink bonus applied (+15) because decoded URL had issues
+
+[DEBUG] Original URL: https://paypal-security-verify.com/login
+
+[DEBUG] Original URL: https://paypal-security-verify.com/secure
+
+[DEBUG] Original URL: https://paypal-security-verify.com/update)
+
+[DEBUG] Original URL: https://paypal-security-verify.com/confirm
+
+[DEBUG] Original URL: https://paypal-security-verify.com/verify,
+
+[DEBUG] Original URL: https://paypal-security-verify.com/validate.
+
+[DEBUG] Original URL: https://paypal-security-verify.com/login?session=12345
+
+[DEBUG] Original URL: https://paypal-security-verify.com/account#security
+
+[DEBUG] Original URL: http://paypal-security-verify.com/insecure
+
+[DEBUG] Original URL: http://192.168.1.1/paypal
+
+[DEBUG] Original URL: https://bit.ly/3xYz7Qa
+
+[DEBUG] Original URL: https://paypal-verify.shop/login
+[DEBUG] Suspicious TLD found: .shop for URL: https://paypal-verify.shop/login
+
+[DEBUG] Original URL: https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpaypal-security-verify.com%2Flogin&data=05%7C02%7C...
+[DEBUG] Decoded URL: https://paypal-security-verify.com/login
+[DEBUG] Safelink bonus applied (+15) because decoded URL had issues
+
+[DEBUG] Original URL: https://paypal-security-verify.com/login?token=abc123&user=test
+
+[DEBUG] Original URL: https://paypal-security-verify.com/redeem)
+
+[DEBUG] Original URL: https://paypal-security-verify.com:8080/login
+
+[DEBUG] Original URL: https://paypal-security-verify.com@evil.com/login
+
+[DEBUG] Original URL: http://acmecorp-invoice.xyz/download
+[DEBUG] Suspicious TLD found: .xyz for URL: http://acmecorp-invoice.xyz/download
+
+[DEBUG] Original URL: https://emea01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fscalestepthroat.shop%2F05Yb4aW%2Fsecure-credit%2FJefferey&data=05%7C02%7C%7C1f518476a35f4e340b2a08de833d7dca%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639092497265583690%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=xykWPjbP0EUfG1B2CqK2%2FsDq4oyPEL0UKbPEKdTGDm0%3D&reserved=0
+[DEBUG] Decoded URL: http://scalestepthroat.shop/05Yb4aW/secure-credit/Jefferey
+[DEBUG] Suspicious TLD found: .shop for URL: http://scalestepthroat.shop/05Yb4aW/secure-credit/Jefferey
+[DEBUG] Safelink bonus applied (+15) because decoded URL had issues
+
+[DEBUG] Original URL: https://emea01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fcauseflagnut.monster%2FcWQ8lrt&data=05%7C02%7C%7C40e1814584d34d346f8e08de858c0239%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639095033533194784%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=UKwbNkr0T85u2qTK2HLKtZOMvX9IrAxZOInNg9fmqIQ%3D&reserved=0
+[DEBUG] Decoded URL: http://causeflagnut.monster/cWQ8lrt
+[DEBUG] Suspicious TLD found: .monster for URL: http://causeflagnut.monster/cWQ8lrt
+[DEBUG] Safelink bonus applied (+15) because decoded URL had issues
+
+[DEBUG] Original URL: https://emea01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fstatementovenregular.lat%2FWjWkpSE&data=05%7C02%7C%7Cb3638835e71c4102bbe008de8a87c2fa%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639100512848758424%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=fK%2FfEhmNXtc75ez%2B0vIRAJSEb1z55%2B0fdLqOLAzVG6c%3D&reserved=0
+[DEBUG] Decoded URL: http://statementovenregular.lat/WjWkpSE
+[DEBUG] Suspicious TLD found: .lat for URL: http://statementovenregular.lat/WjWkpSE
+[DEBUG] Safelink bonus applied (+15) because decoded URL had issues
+
+[DEBUG] Original URL: https://emea01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fbelieflovebranch.guru%2FCKMsxki&data=05%7C02%7C%7Cad358975e4074de17a8b08de8b512367%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639101377751221574%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=%2Bb9R%2B1iLEFbTvd%2Fgut9fMzDAE1WSJF5RNLiily1CQB8%3D&reserved=0
+[DEBUG] Decoded URL: http://belieflovebranch.guru/CKMsxki
+[DEBUG] Suspicious TLD found: .guru for URL: http://belieflovebranch.guru/CKMsxki
+[DEBUG] Safelink bonus applied (+15) because decoded URL had issues
+
+[DEBUG] Original URL: https://emea01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fvoicecupfish.shop%2FYn1QLio&data=05%7C02%7C%7C9ae8d5fb2f414f72ebb008de869a34bf%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639096194031357923%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=a1jaqTBVIgeDjm%2FBkzp%2BAYdLVd7Km2X8r1re9vLkIjc%3D&reserved=0
+[DEBUG] Decoded URL: http://voicecupfish.shop/Yn1QLio
+[DEBUG] Suspicious TLD found: .shop for URL: http://voicecupfish.shop/Yn1QLio
+[DEBUG] Safelink bonus applied (+15) because decoded URL had issues
+
+[DEBUG] Original URL: https://emea01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fbloodendstar.beauty%2FDyOGShH&data=05%7C02%7C%7C78cd25fd6961440dd6ce08de8368d80a%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639092683488240647%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=PFfTQ%2FHQTR3q%2BlUT7Z4mR5Gdsb4SkZ%2BXQAGoQCxDJXs%3D&reserved=0
+[DEBUG] Decoded URL: http://bloodendstar.beauty/DyOGShH
+[DEBUG] Suspicious TLD found: .beauty for URL: http://bloodendstar.beauty/DyOGShH
+[DEBUG] Safelink bonus applied (+15) because decoded URL had issues
+
+[DEBUG] Original URL: https://emea01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fclick.materialparallelpossible.world%2F8JZQaZu&data=05%7C02%7C%7C417c7dd7ab494672c0cf08de84bc6f44%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639094142013579213%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=jjFEr2mSKLECbuzqjMqdZgKjlYF8sp5Lv25TpqCAfJg%3D&reserved=0
+[DEBUG] Decoded URL: http://click.materialparallelpossible.world/8JZQaZu
+[DEBUG] Suspicious TLD found: .world for URL: http://click.materialparallelpossible.world/8JZQaZu
+[DEBUG] Safelink bonus applied (+15) because decoded URL had issues
+
+[DEBUG] Original URL: https://emea01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fscalestepthroat.shop%2F05Yb4aW%2Fsecure-credit%2FJefferey&data=05%7C02%7C%7C1f518476a35f4e340b2a08de833d7dca%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639092497265583690%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=xykWPjbP0EUfG1B2CqK2%2FsDq4oyPEL0UKbPEKdTGDm0%3D&reserved=0
+[DEBUG] Decoded URL: http://scalestepthroat.shop/05Yb4aW/secure-credit/Jefferey
+[DEBUG] Suspicious TLD found: .shop for URL: http://scalestepthroat.shop/05Yb4aW/secure-credit/Jefferey
+[DEBUG] Safelink bonus applied (+15) because decoded URL had issues
+
+[DEBUG] Original URL: https://lloyds-security-verify.com/login
+
+[DEBUG] Original URL: https://emea01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fwww.carerhythmtendency.life%2Fv7Yi33z&data=05%7C02%7C%7C4fa870e2da5a4ed720d908de89beb983%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639099649396834253%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=GKpcf2m7pxk7zqT2WMqq9B7YYHp5UFQYokXHqOOfK9A%3D&reserved=0
+[DEBUG] Decoded URL: http://www.carerhythmtendency.life/v7Yi33z
+[DEBUG] Suspicious TLD found: .life for URL: http://www.carerhythmtendency.life/v7Yi33z
+[DEBUG] Safelink bonus applied (+15) because decoded URL had issues
+
+[DEBUG] Original URL: https://www.carerhythmtendency.life%2Fv7Yi33z&data=05%7C02%7C%7C4fa870e2da5a4ed720d908de89beb983%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639099649396834253%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=GKpcf2m7pxk7zqT2WMqq9B7YYHp5UFQYokXHqOOfK9A%3D&reserved=0
+[DEBUG] Suspicious TLD found: .life for URL: https://www.carerhythmtendency.life%2Fv7Yi33z&data=05%7C02%7C%7C4fa870e2da5a4ed720d908de89beb983%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639099649396834253%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=GKpcf2m7pxk7zqT2WMqq9B7YYHp5UFQYokXHqOOfK9A%3D&reserved=0
+
+[DEBUG] Original URL: https://emea01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fcopperlovereward.rent%2F7LQCJTU&data=05%7C02%7C%7C21b5b8f0023d4dc4743108de843d0a06%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639093594862177998%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=l4iXLk7g87F%2BVRsUHirsaztt6ayOmRaQkDqMqlxz7x8%3D&reserved=0
+[DEBUG] Decoded URL: http://copperlovereward.rent/7LQCJTU
+[DEBUG] Suspicious TLD found: .rent for URL: http://copperlovereward.rent/7LQCJTU
+[DEBUG] Safelink bonus applied (+15) because decoded URL had issues
+
+[DEBUG] Original URL: http://paypal-security-verify.com/login
+
+[DEBUG] Original URL: https://emea01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fdiscoveryprocessfloor.fit%2FvAqOToa&data=05%7C02%7C%7Cb4c43ca901484c493c3908de89c0aeec%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639099657805638491%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=%2FU%2BYA6FKx0ISX5eYLvKToI50RZuGAMooNCoV0Sc%2FBI4%3D&reserved=0
+[DEBUG] Decoded URL: http://discoveryprocessfloor.fit/vAqOToa
+[DEBUG] Suspicious TLD found: .fit for URL: http://discoveryprocessfloor.fit/vAqOToa
+[DEBUG] Safelink bonus applied (+15) because decoded URL had issues
+
+[DEBUG] Original URL: https://www.tesco.co.uk/my-account/voucher/id1774454469/Slaven
+
+[DEBUG] Original URL: https://emea01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fcrimehearingblade.work%2FPe6Q5Dx&data=05%7C02%7C%7C40ff928e7819467b98e308de8269668b%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639091586367523826%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=mLyEUt1BNRIll%2BFmdfJ0w9IbEXDCerUkqW87dILH%2FTA%3D&reserved=0
+[DEBUG] Decoded URL: http://crimehearingblade.work/Pe6Q5Dx
+[DEBUG] Suspicious TLD found: .work for URL: http://crimehearingblade.work/Pe6Q5Dx
+[DEBUG] Safelink bonus applied (+15) because decoded URL had issues
+
+[DEBUG] Original URL: https://emea01.safelinks.protection.outlook.com/?url=http%3A%2F%2Finsectinterestdog.rent%2FA9eTeki&data=05%7C02%7C%7C9bed7e87de194c538fb008de84c52411%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639094179424680861%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=qpmwA3i7fyYlzZfDW2%2F50LHbI6zJb%2F9938P2F084F40%3D&reserved=0
+[DEBUG] Decoded URL: http://insectinterestdog.rent/A9eTeki
+[DEBUG] Suspicious TLD found: .rent for URL: http://insectinterestdog.rent/A9eTeki
+[DEBUG] Safelink bonus applied (+15) because decoded URL had issues
+
+[DEBUG] Original URL: https://emea01.safelinks.protection.outlook.com/?url=http%3A%2F%2Fdevelopmentdoubtrice.monster%2FcP2215A&data=05%7C02%7C%7Cc0a70f01400f421f759508de8986d749%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639099409401149847%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=JdllwRb2rwJZZVLrxKGPIfEZkQD8q5VSrMugOe1vD%2Bg%3D&reserved=0
+[DEBUG] Decoded URL: http://developmentdoubtrice.monster/cP2215A
+[DEBUG] Suspicious TLD found: .monster for URL: http://developmentdoubtrice.monster/cP2215A
+[DEBUG] Safelink bonus applied (+15) because decoded URL had issues
+
+[DEBUG] Original URL: https://hr-portal-docs.glitch.me/sign-in
+
+[DEBUG] Original URL: http://login-verification-secure-portal.net/update
+
+[DEBUG] Original URL: https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fportswigger.net%2Fblog%3Ftid%3DPBmib6lpqGuHlVgvtXaD7lGs8zo216y5e39IOcY17CqIGTn6dcTbavohTFeqb29j&data=05%7C02%7C%7Cb9466d48bdd04f2d963108de97235f00%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639114375333697704%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=h1aCd3o1RcGqIRpZO3s%2BuAHcaEWOHTHEmDKGadSI3qM%3D&reserved=0
+[DEBUG] Decoded URL: https://portswigger.net/blog?tid=PBmib6lpqGuHlVgvtXaD7lGs8zo216y5e39IOcY17CqIGTn6dcTbavohTFeqb29j
+
+[DEBUG] Original URL: https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fportswigger.net%2Fsupport%3Ftid%3D8DXQTwwpFa8-AiGpMG1jthie5Oe8HJNk0oGS92We77b5UNUZQc97lmy4IwCTShy6&data=05%7C02%7C%7Cb9466d48bdd04f2d963108de97235f00%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639114375333686528%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=U%2Buttm0dYxhsR4kLQMwFLFGahF974I8NqGNpsFINlZs%3D&reserved=0
+[DEBUG] Decoded URL: https://portswigger.net/support?tid=8DXQTwwpFa8-AiGpMG1jthie5Oe8HJNk0oGS92We77b5UNUZQc97lmy4IwCTShy6
+
+[DEBUG] Original URL: https://seemytutor.ljmu.ac.uk/
+
+[DEBUG] Original URL: https://cyberleaderschallenge.com/
+
+[DEBUG] Original URL: https://www.ljmu.ac.uk
+
+[DEBUG] Original URL: https://www.ljmu.ac.uk/microsites/scienceplsu
+
+[DEBUG] Original URL: https://video.citnow.com/vtHg94f4tdb

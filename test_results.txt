@@ -1,7 +1,7 @@
 ======================================================================
 PHISHING DETECTOR TEST RESULTS
 ======================================================================
-Run at: 2026-04-14 11:50:11.050064
+Run at: 2026-04-14 14:48:57.601379
 ======================================================================
 
 PASS | acmecorp_invoice.txt
@@ -61,7 +61,7 @@ PASS | lloyds_phishing.txt
 
 PASS | mcdonalds_relief.txt
   Expected: PHISHING | Got: PHISHING
-  Scores: Text=85% URL=55.0% Meta=40% Final=100%
+  Scores: Text=85% URL=52.5% Meta=40% Final=100%
   [Spoofed sender detected]
 
 PASS | netflix_overdue.txt
@@ -146,6 +146,23 @@ PASS | uni_email.txt
   Expected: LEGITIMATE | Got: LEGITIMATE
   Scores: Text=0% URL=0.0% Meta=0% Final=0.0%
 
+PASS | Uni_ITDeveloperPlacement.txt
+  Expected: LEGITIMATE | Got: LEGITIMATE
+  Scores: Text=0% URL=0% Meta=0% Final=0.0%
+
+PASS | Uni_NationalCyberSecurityHackingCompetition.txt
+  Expected: LEGITIMATE | Got: LEGITIMATE
+  Scores: Text=0% URL=0.0% Meta=0% Final=0.0%
+
+PASS | Uni_SecListWordlist.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | Uni_VACANCY_ MerseysidePolice.txt
+  Expected: LEGITIMATE | Got: LEGITIMATE
+  Scores: Text=86% URL=0.0% Meta=0% Final=2.0%
+
 PASS | volkswagen_video.txt
   Expected: LEGITIMATE | Got: LEGITIMATE
   Scores: Text=0% URL=0.0% Meta=0% Final=0.0%
@@ -153,7 +170,7 @@ PASS | volkswagen_video.txt
 ======================================================================
 SUMMARY
 ======================================================================
-Total emails tested: 30
-Correct: 30
+Total emails tested: 34
+Correct: 34
 Accuracy: 100.0%
 ======================================================================

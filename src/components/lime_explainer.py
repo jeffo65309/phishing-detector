@@ -21,7 +21,8 @@ class LimeExplainer:
         
         # Load the AI model
         print("      [LimeExplainer] Loading AI model...")
-        self.modelId = "aamoshdahal/email-phishing-distilbert-finetuned"
+        #self.modelId = "aamoshdahal/email-phishing-distilbert-finetuned"
+        self.modelId = "rahulkothuri/phishing-email-disilBERT"
         self.tokenizer = AutoTokenizer.from_pretrained(self.modelId)
         self.model = AutoModelForSequenceClassification.from_pretrained(self.modelId)
         

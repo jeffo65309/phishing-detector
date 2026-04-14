@@ -74,7 +74,36 @@ class URLChecker:
         # This regex looks for http:// or https://
         url_pattern = r'https?://[^\s<>"{}|\\^`\[\]]+'
         urls = re.findall(url_pattern, text)
-        return urls
+        
+        # Also look for URLs without protocol (starting with www.)
+        www_pattern = r'www\.[^\s<>"{}|\\^`\[\]]+'
+        www_urls = re.findall(www_pattern, text)
+        for url in www_urls:
+            urls.append('https://' + url)
+        
+        # Also look for shortened URLs without protocol (bit.ly, tinyurl, etc.)
+        shortener_pattern = r'(?:bit\.ly|tinyurl\.com|t\.co|goo\.gl|ow\.ly|is\.gd)/[^\s<>"{}|\\^`\[\]]+'
+        short_urls = re.findall(shortener_pattern, text)
+        for url in short_urls:
+            if not url.startswith('http'):
+                urls.append('https://' + url)
+        
+        # Also look for markdown links [text](url)
+        markdown_pattern = r'\]\((https?://[^\)]+)\)'
+        markdown_urls = re.findall(markdown_pattern, text)
+        urls.extend(markdown_urls)
+        
+        # Clean up trailing punctuation and extra text from URLs
+        cleaned_urls = []
+        for url in urls:
+            # Remove trailing punctuation
+            url = re.sub(r'[.,;:!?)\]>,]+$', '', url)
+            # Remove common extra text like ",then" or ".after" that got attached
+            url = re.sub(r'(,then|\.after|\.com\w+)$', '', url)
+            cleaned_urls.append(url)
+        
+        # Remove duplicates
+        return list(set(cleaned_urls))
     
     def getDomain(self, url):
         # Get the main domain from a URL
