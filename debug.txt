@@ -1,134 +1,5 @@
 
-2026-04-14 13:58:31.205189
-Sender domain: 'ljmu.ac.uk'
-In whitelist? True
-SPF ok: True
-DKIM ok: False
-Raw score before whitelist: 40
-Spoofed: True
-Whitelist override - setting score to 0%
-Warning: Authentication failed (DKIM) but domain is whitelisted
-----------------------------------------
-
-[GUI] About to call scorer.combine
-[GUI] sender_domain value: 'ljmu.ac.uk'
-
-2026-04-14 14:01:34.302228
-Sender domain: 'ljmu.ac.uk'
-In whitelist? True
-SPF ok: True
-DKIM ok: False
-Raw score before whitelist: 40
-Spoofed: True
-Whitelist override - setting score to 0%
-Warning: Authentication failed (DKIM) but domain is whitelisted
-----------------------------------------
-
-[GUI] About to call scorer.combine
-[GUI] sender_domain value: 'ljmu.ac.uk'
-
-2026-04-14 14:03:41.832077
-Sender domain: 'ljmu.ac.uk'
-In whitelist? True
-SPF ok: True
-DKIM ok: False
-Raw score before whitelist: 40
-Spoofed: True
-Whitelist override - setting score to 0%
-Warning: Authentication failed (DKIM) but domain is whitelisted
-----------------------------------------
-
-[GUI] About to call scorer.combine
-[GUI] sender_domain value: 'ljmu.ac.uk'
-
-2026-04-14 14:10:53.768182
-Sender domain: 'paypal-security.com'
-In whitelist? False
-SPF ok: False
-DKIM ok: False
-Raw score before whitelist: 70
-Spoofed: True
-Final score: 70
-----------------------------------------
-
-[GUI] About to call scorer.combine
-[GUI] sender_domain value: 'paypal-security.com'
-
-2026-04-14 14:11:05.171018
-Sender domain: 'ljmu.ac.uk'
-In whitelist? True
-SPF ok: True
-DKIM ok: False
-Raw score before whitelist: 40
-Spoofed: True
-Whitelist override - setting score to 0%
-Warning: Authentication failed (DKIM) but domain is whitelisted
-----------------------------------------
-
-[GUI] About to call scorer.combine
-[GUI] sender_domain value: 'ljmu.ac.uk'
-
-2026-04-14 14:22:44.547343
-Sender domain: 'paypal-security.com'
-In whitelist? False
-SPF ok: False
-DKIM ok: False
-Raw score before whitelist: 70
-Spoofed: True
-Final score: 70
-----------------------------------------
-
-[GUI] About to call scorer.combine
-[GUI] sender_domain value: 'paypal-security.com'
-
-2026-04-14 14:22:56.194806
-Sender domain: 'ljmu.ac.uk'
-In whitelist? True
-SPF ok: True
-DKIM ok: False
-Raw score before whitelist: 40
-Spoofed: True
-Whitelist override - setting score to 0%
-Warning: Authentication failed (DKIM) but domain is whitelisted
-----------------------------------------
-
-[GUI] About to call scorer.combine
-[GUI] sender_domain value: 'ljmu.ac.uk'
-
-2026-04-14 14:26:07.425454
-Sender domain: 'ljmu.ac.uk'
-In whitelist? True
-SPF ok: True
-DKIM ok: False
-Raw score before whitelist: 40
-Spoofed: True
-Whitelist override - setting score to 0%
-Warning: Authentication failed (DKIM) but domain is whitelisted
-----------------------------------------
-
-[GUI] About to call scorer.combine
-[GUI] sender_domain value: 'ljmu.ac.uk'
-
-2026-04-14 14:28:31.760363
-Sender domain: 'leadheadheart.shop'
-In whitelist? False
-SPF ok: True
-DKIM ok: False
-Raw score before whitelist: 40
-Spoofed: True
-Final score: 40
-----------------------------------------
-
-[GUI] About to call scorer.combine
-[GUI] sender_domain value: 'leadheadheart.shop'
-
-2026-04-14 14:35:41.194236
-Sender domain: ''
-In whitelist? False
-No sender domain - returning 50%
-----------------------------------------
-
-2026-04-14 14:47:43.545717
+2026-04-14 15:01:33.362328
 Sender domain: 'acmecorp.com'
 In whitelist? False
 SPF ok: True
@@ -138,7 +9,7 @@ Spoofed: True
 Final score: 40
 ----------------------------------------
 
-2026-04-14 14:47:46.266193
+2026-04-14 15:01:36.092791
 Sender domain: 'leadheadheart.shop'
 In whitelist? False
 SPF ok: True
@@ -148,7 +19,7 @@ Spoofed: True
 Final score: 40
 ----------------------------------------
 
-2026-04-14 14:47:48.297982
+2026-04-14 15:01:38.026715
 Sender domain: 'amaz0n-security.net'
 In whitelist? False
 SPF ok: False
@@ -158,7 +29,7 @@ Spoofed: True
 Final score: 70
 ----------------------------------------
 
-2026-04-14 14:47:50.368698
+2026-04-14 15:01:39.961104
 Sender domain: 'causeflagnut.monster'
 In whitelist? False
 SPF ok: True
@@ -168,7 +39,7 @@ Spoofed: True
 Final score: 40
 ----------------------------------------
 
-2026-04-14 14:47:52.597456
+2026-04-14 15:01:42.245558
 Sender domain: 'statementovenregular.lat'
 In whitelist? False
 SPF ok: True
@@ -178,7 +49,7 @@ Spoofed: True
 Final score: 40
 ----------------------------------------
 
-2026-04-14 14:47:54.634238
+2026-04-14 15:01:44.877657
 Sender domain: 'belieflovebranch.guru'
 In whitelist? False
 SPF ok: True
@@ -188,7 +59,7 @@ Spoofed: True
 Final score: 40
 ----------------------------------------
 
-2026-04-14 14:47:56.728581
+2026-04-14 15:01:47.407092
 Sender domain: 'voicecupfish.shop'
 In whitelist? False
 SPF ok: True
@@ -198,7 +69,7 @@ Spoofed: True
 Final score: 40
 ----------------------------------------
 
-2026-04-14 14:47:59.011967
+2026-04-14 15:01:50.183490
 Sender domain: 'bloodendstar.beauty'
 In whitelist? False
 SPF ok: True
@@ -208,7 +79,7 @@ Spoofed: True
 Final score: 40
 ----------------------------------------
 
-2026-04-14 14:48:01.352331
+2026-04-14 15:01:52.858911
 Sender domain: 'materialparallelpossible.world'
 In whitelist? False
 SPF ok: True
@@ -218,7 +89,7 @@ Spoofed: True
 Final score: 40
 ----------------------------------------
 
-2026-04-14 14:48:03.990030
+2026-04-14 15:01:55.710842
 Sender domain: 'scalestepthroat.shop'
 In whitelist? False
 SPF ok: True
@@ -228,7 +99,7 @@ Spoofed: True
 Final score: 40
 ----------------------------------------
 
-2026-04-14 14:48:06.164622
+2026-04-14 15:01:58.147450
 Sender domain: 'lloyds-alert.net'
 In whitelist? False
 SPF ok: False
@@ -238,7 +109,7 @@ Spoofed: True
 Final score: 70
 ----------------------------------------
 
-2026-04-14 14:48:08.483160
+2026-04-14 15:02:00.894872
 Sender domain: 'carerhythmtendency.life'
 In whitelist? False
 SPF ok: True
@@ -248,7 +119,7 @@ Spoofed: True
 Final score: 40
 ----------------------------------------
 
-2026-04-14 14:48:10.754841
+2026-04-14 15:02:03.064690
 Sender domain: 'netflix-support.org'
 In whitelist? False
 SPF ok: False
@@ -258,7 +129,7 @@ Spoofed: True
 Final score: 70
 ----------------------------------------
 
-2026-04-14 14:48:13.186688
+2026-04-14 15:02:05.626880
 Sender domain: 'copperlovereward.rent'
 In whitelist? False
 SPF ok: True
@@ -268,7 +139,7 @@ Spoofed: True
 Final score: 40
 ----------------------------------------
 
-2026-04-14 14:48:14.799894
+2026-04-14 15:02:07.662780
 Sender domain: 'paypal-security.com'
 In whitelist? False
 SPF ok: False
@@ -278,7 +149,7 @@ Spoofed: True
 Final score: 70
 ----------------------------------------
 
-2026-04-14 14:48:17.554802
+2026-04-14 15:02:10.656043
 Sender domain: 'discoveryprocessfloor.fit'
 In whitelist? False
 SPF ok: True
@@ -288,7 +159,7 @@ Spoofed: True
 Final score: 40
 ----------------------------------------
 
-2026-04-14 14:48:19.742015
+2026-04-14 15:02:13.391550
 Sender domain: 'timeangryyellow.monster'
 In whitelist? False
 SPF ok: True
@@ -298,7 +169,7 @@ Spoofed: True
 Final score: 40
 ----------------------------------------
 
-2026-04-14 14:48:22.092875
+2026-04-14 15:02:16.301722
 Sender domain: 'crimehearingblade.work'
 In whitelist? False
 SPF ok: True
@@ -308,7 +179,7 @@ Spoofed: True
 Final score: 40
 ----------------------------------------
 
-2026-04-14 14:48:24.517996
+2026-04-14 15:02:18.359848
 Sender domain: 'insectinterestdog.rent'
 In whitelist? False
 SPF ok: True
@@ -318,7 +189,7 @@ Spoofed: True
 Final score: 40
 ----------------------------------------
 
-2026-04-14 14:48:26.570242
+2026-04-14 15:02:20.536688
 Sender domain: 'developmentdoubtrice.monster'
 In whitelist? False
 SPF ok: True
@@ -328,7 +199,7 @@ Spoofed: True
 Final score: 40
 ----------------------------------------
 
-2026-04-14 14:48:28.257960
+2026-04-14 15:02:22.474397
 Sender domain: 'bussiness.com'
 In whitelist? False
 SPF ok: True
@@ -338,7 +209,7 @@ Spoofed: True
 Final score: 40
 ----------------------------------------
 
-2026-04-14 14:48:30.389777
+2026-04-14 15:02:24.970572
 Sender domain: 'chase.com'
 In whitelist? False
 SPF ok: True
@@ -348,7 +219,7 @@ Spoofed: True
 Final score: 40
 ----------------------------------------
 
-2026-04-14 14:48:32.302156
+2026-04-14 15:02:27.123787
 Sender domain: 'dropbox.com'
 In whitelist? True
 SPF ok: True
@@ -359,7 +230,7 @@ Whitelist override - setting score to 0%
 Warning: Authentication failed (DKIM) but domain is whitelisted
 ----------------------------------------
 
-2026-04-14 14:48:34.369879
+2026-04-14 15:02:28.844700
 Sender domain: 'yourcompany.com'
 In whitelist? False
 SPF ok: True
@@ -369,7 +240,7 @@ Spoofed: True
 Final score: 40
 ----------------------------------------
 
-2026-04-14 14:48:37.482287
+2026-04-14 15:02:31.497412
 Sender domain: 'microsoft.com'
 In whitelist? True
 SPF ok: True
@@ -380,7 +251,7 @@ Whitelist override - setting score to 0%
 Warning: Authentication failed (DKIM) but domain is whitelisted
 ----------------------------------------
 
-2026-04-14 14:48:40.222887
+2026-04-14 15:02:33.605996
 Sender domain: 'portswigger.net'
 In whitelist? False
 SPF ok: True
@@ -390,7 +261,7 @@ Spoofed: True
 Final score: 40
 ----------------------------------------
 
-2026-04-14 14:48:42.056403
+2026-04-14 15:02:35.383689
 Sender domain: 'yourcompany.com'
 In whitelist? False
 SPF ok: True
@@ -400,7 +271,7 @@ Spoofed: True
 Final score: 40
 ----------------------------------------
 
-2026-04-14 14:48:44.175573
+2026-04-14 15:02:37.344633
 Sender domain: 'streamsync.com'
 In whitelist? False
 SPF ok: True
@@ -410,7 +281,7 @@ Spoofed: True
 Final score: 40
 ----------------------------------------
 
-2026-04-14 14:48:46.731426
+2026-04-14 15:02:39.809053
 Sender domain: 'ljmu.ac.uk'
 In whitelist? True
 SPF ok: True
@@ -421,7 +292,7 @@ Whitelist override - setting score to 0%
 Warning: Authentication failed (DKIM) but domain is whitelisted
 ----------------------------------------
 
-2026-04-14 14:48:48.627258
+2026-04-14 15:02:41.918832
 Sender domain: 'ljmu.ac.uk'
 In whitelist? True
 SPF ok: True
@@ -432,7 +303,7 @@ Whitelist override - setting score to 0%
 Warning: Authentication failed (DKIM) but domain is whitelisted
 ----------------------------------------
 
-2026-04-14 14:48:50.773084
+2026-04-14 15:02:44.393920
 Sender domain: 'ljmu.ac.uk'
 In whitelist? True
 SPF ok: True
@@ -443,7 +314,7 @@ Whitelist override - setting score to 0%
 Warning: Authentication failed (DKIM) but domain is whitelisted
 ----------------------------------------
 
-2026-04-14 14:48:52.765476
+2026-04-14 15:02:46.396002
 Sender domain: 'instructure.com'
 In whitelist? False
 SPF ok: True
@@ -453,7 +324,7 @@ Spoofed: True
 Final score: 40
 ----------------------------------------
 
-2026-04-14 14:48:54.866212
+2026-04-14 15:02:48.717450
 Sender domain: 'ljmu.ac.uk'
 In whitelist? True
 SPF ok: True
@@ -464,7 +335,7 @@ Whitelist override - setting score to 0%
 Warning: Authentication failed (DKIM) but domain is whitelisted
 ----------------------------------------
 
-2026-04-14 14:48:56.592355
+2026-04-14 15:02:50.828041
 Sender domain: 'group1auto.co.uk'
 In whitelist? True
 SPF ok: True
@@ -474,3 +345,16 @@ Spoofed: True
 Whitelist override - setting score to 0%
 Warning: Authentication failed (DKIM) but domain is whitelisted
 ----------------------------------------
+
+2026-04-14 15:04:20.130091
+Sender domain: 'voicecupfish.shop'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+[GUI] About to call scorer.combine
+[GUI] sender_domain value: 'voicecupfish.shop'

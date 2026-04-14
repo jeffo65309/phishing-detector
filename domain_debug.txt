@@ -1,2 +1,2 @@
-Sender domain: 'group1auto.co.uk'
-Sender email: 'Natasza.Maciejczyk@group1auto.co.uk'
+Sender domain: 'voicecupfish.shop'
+Sender email: 'atc_fzk@voicecupfish.shop'
