@@ -73,8 +73,8 @@ class Scorer:
         # Override 2: Sender is spoofed with suspicious content
         if senderSpoofed:
             # Check if any other component is suspicious (>20%)
-            text_suspicious = textScore > 20
-            url_suspicious = urlScore > 20
+            text_suspicious = textScore >= 20
+            url_suspicious = urlScore >= 20
             
             if text_suspicious or url_suspicious:
                 return {

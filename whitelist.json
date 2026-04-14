@@ -15,7 +15,8 @@
         "netflix.com",
         "vanquis.co.uk",
         "customer.vanquis.co.uk",
-        "nhs.uk"
+        "nhs.uk",
+        "group1auto.co.uk"
     ],
     "spoofed_override_threshold": 40
 }

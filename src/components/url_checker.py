@@ -4,7 +4,7 @@
 
 import re
 import requests
-from urllib.parse import urlparse
+from urllib.parse import urlparse, unquote, parse_qs
 
 class URLChecker:
     
@@ -28,7 +28,46 @@ class URLChecker:
             "tiny.cc", "tr.im", "shortlink"
         ]
         
+        # Suspicious TLDs commonly used in phishing
+        self.suspicious_tlds = [
+            ".shop", ".xyz", ".top", ".club", ".online", 
+            ".live", ".site", ".work", ".rent", ".monster", 
+            ".guru", ".life", ".beauty", ".click", ".win",
+            ".bid", ".date", ".download", ".review", ".trade", 
+            ".fit", ".lat"
+        ]
+        
+        # Safe domains that should not be penalized
+        self.safe_domains = [
+            "safelinks.protection.outlook.com",
+            "click.email.microsoft.com",
+            "links.aws.amazon.com"
+        ]
+        
         print("      [URLChecker] Ready!")
+    
+    def decode_safelink(self, url):
+        """Extract the real URL from Microsoft safelinks and similar services"""
+        try:
+            # Check for Microsoft safelinks
+            if "safelinks.protection.outlook.com" in url:
+                parsed = urlparse(url)
+                params = parse_qs(parsed.query)
+                if 'url' in params:
+                    real_url = unquote(params['url'][0])
+                    return real_url
+            
+            # Check for other redirect services (add more as needed)
+            if "click.email.microsoft.com" in url:
+                parsed = urlparse(url)
+                params = parse_qs(parsed.query)
+                if 'u' in params:
+                    real_url = unquote(params['u'][0])
+                    return real_url
+            
+            return url
+        except:
+            return url
     
     def extractURLs(self, text):
         # Find every web link in the email text
@@ -50,9 +89,37 @@ class URLChecker:
         except:
             return "unknown"
     
+    def is_safe_domain(self, domain):
+        """Check if the domain is in the safe list"""
+        for safe in self.safe_domains:
+            if safe in domain:
+                return True
+        return False
+    
+    def check_suspicious_tld(self, url_lower):
+        """Check if URL has a suspicious TLD"""
+        for tld in self.suspicious_tlds:
+            if tld in url_lower:
+                return True, tld
+        return False, None
+    
     def checkOneURL(self, url):
         # Look at one URL and give it a suspicion score
         # Higher score = more likely to be phishing
+        
+        # Debug to file
+        with open('url_debug.txt', 'a') as f:
+            f.write(f"\n[DEBUG] Original URL: {url}\n")
+        
+        # Store original for return
+        original_url = url
+        
+        # Decode safelink once
+        decoded = self.decode_safelink(url)
+        if decoded != url:
+            with open('url_debug.txt', 'a') as f:
+                f.write(f"[DEBUG] Decoded URL: {decoded}\n")
+            url = decoded
         
         score = 0
         issues = []
@@ -87,7 +154,15 @@ class URLChecker:
             score += 10
             issues.append("Unusually long URL")
         
-        # Check 5: Is it in URLhaus database? (free threat feed)
+        # Check 5: Does it have a suspicious TLD?
+        has_suspicious_tld, tld = self.check_suspicious_tld(url_lower)
+        if has_suspicious_tld:
+            with open('url_debug.txt', 'a') as f:
+                f.write(f"[DEBUG] Suspicious TLD found: {tld} for URL: {url}\n")
+            score += 40
+            issues.append(f"Suspicious domain extension ({tld}) - common in phishing")
+        
+        # Check 6: Is it in URLhaus database? (free threat feed)
         # This is optional - might be slow, but catches known bad sites
         # in_urlhaus, msg = self.checkURLhaus(url)
         # if in_urlhaus:
@@ -100,7 +175,8 @@ class URLChecker:
         domain = self.getDomain(url)
         
         return {
-            "url": url,
+            "url": original_url,
+            "decoded_url": url if url != original_url else None,
             "domain": domain,
             "score": score,
             "issues": issues

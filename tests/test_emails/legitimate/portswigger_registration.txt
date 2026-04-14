@@ -1,0 +1,34 @@
+From: "PortSwigger" <licensing@portswigger.net>
+To: you@example.com
+Subject: Complete your registration
+
+Complete your registration
+
+Thank you for your request to register with our website.
+
+Click here to complete your registration.
+
+Here are some of the resources available to use as part of your registration:
+
+Web Security Academy
+This is a brand new learning resource providing free training on web security vulnerabilities, techniques for finding and exploiting bugs, and defensive measures for avoiding them.
+
+The Web Security Academy contains high-quality learning materials, interactive vulnerability labs, and video tutorials. You can learn at your own pace, wherever and whenever suits you.
+
+Click here to access the Web Security Academy.
+
+Burp Suite Support Center
+Have you seen the Burp Suite Support Center?
+
+https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fportswigger.net%2Fsupport%3Ftid%3D8DXQTwwpFa8-AiGpMG1jthie5Oe8HJNk0oGS92We77b5UNUZQc97lmy4IwCTShy6&data=05%7C02%7C%7Cb9466d48bdd04f2d963108de97235f00%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639114375333686528%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=U%2Buttm0dYxhsR4kLQMwFLFGahF974I8NqGNpsFINlZs%3D&reserved=0
+
+The Support Center contains a large number of articles and community discussions to help you get the most out of using Burp. If you have a question, the chances are the answer is here.
+
+You can also use the Support Center to send questions to our support team.
+
+Web Security Blog
+Learn about the very latest web application security vulnerabilities, new detection methods and top tips from our team of web security researchers.
+
+Click here to access our blog.
+
+https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fportswigger.net%2Fblog%3Ftid%3DPBmib6lpqGuHlVgvtXaD7lGs8zo216y5e39IOcY17CqIGTn6dcTbavohTFeqb29j&data=05%7C02%7C%7Cb9466d48bdd04f2d963108de97235f00%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C639114375333697704%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=h1aCd3o1RcGqIRpZO3s%2BuAHcaEWOHTHEmDKGadSI3qM%3D&reserved=0

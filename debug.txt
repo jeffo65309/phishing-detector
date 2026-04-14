@@ -1,0 +1,2127 @@
+
+2026-04-14 00:01:44.602629
+Sender domain: 'acmecorp.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:01:47.255934
+Sender domain: 'leadheadheart.shop'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:01:49.359664
+Sender domain: 'amaz0n-security.net'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:01:51.614218
+Sender domain: 'causeflagnut.monster'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:01:53.654985
+Sender domain: 'statementovenregular.lat'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:01:56.050961
+Sender domain: 'belieflovebranch.guru'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:01:58.169735
+Sender domain: 'voicecupfish.shop'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:02:00.158135
+Sender domain: 'bloodendstar.beauty'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:02:02.315350
+Sender domain: 'materialparallelpossible.world'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:02:04.568210
+Sender domain: 'scalestepthroat.shop'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:02:06.293162
+Sender domain: 'lloyds-alert.net'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:02:08.362107
+Sender domain: 'carerhythmtendency.life'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:02:10.280209
+Sender domain: 'netflix-support.org'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:02:12.346147
+Sender domain: 'copperlovereward.rent'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:02:14.146785
+Sender domain: 'paypal-security.com'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:02:16.529151
+Sender domain: 'discoveryprocessfloor.fit'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:02:18.661497
+Sender domain: 'timeangryyellow.monster'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:02:20.764243
+Sender domain: 'crimehearingblade.work'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:02:23.021107
+Sender domain: 'insectinterestdog.rent'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:02:25.057514
+Sender domain: 'developmentdoubtrice.monster'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:02:26.849507
+Sender domain: 'bussiness.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:02:29.212760
+Sender domain: 'chase.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:02:31.244951
+Sender domain: 'dropbox.com'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 00:02:33.105657
+Sender domain: 'yourcompany.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:02:35.641266
+Sender domain: 'microsoft.com'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 00:02:37.708287
+Sender domain: 'portswigger.net'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:02:40.322682
+Sender domain: 'yourcompany.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:02:42.284575
+Sender domain: 'streamsync.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:02:44.378951
+Sender domain: 'ljmu.ac.uk'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 00:02:46.039128
+Sender domain: 'group1auto.co.uk'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:14:29.515189
+Sender domain: 'acmecorp.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:14:32.108870
+Sender domain: 'leadheadheart.shop'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:14:34.232734
+Sender domain: 'amaz0n-security.net'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:14:36.162705
+Sender domain: 'causeflagnut.monster'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:14:38.642182
+Sender domain: 'statementovenregular.lat'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:14:41.154802
+Sender domain: 'belieflovebranch.guru'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:14:43.366573
+Sender domain: 'voicecupfish.shop'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:14:45.816056
+Sender domain: 'bloodendstar.beauty'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:14:48.197643
+Sender domain: 'materialparallelpossible.world'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:14:50.659851
+Sender domain: 'scalestepthroat.shop'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:14:52.999203
+Sender domain: 'lloyds-alert.net'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:14:55.309623
+Sender domain: 'carerhythmtendency.life'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:14:57.388850
+Sender domain: 'netflix-support.org'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:14:59.450260
+Sender domain: 'copperlovereward.rent'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:15:01.522860
+Sender domain: 'paypal-security.com'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:15:03.995338
+Sender domain: 'discoveryprocessfloor.fit'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:15:06.409422
+Sender domain: 'timeangryyellow.monster'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:15:08.766818
+Sender domain: 'crimehearingblade.work'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:15:11.293144
+Sender domain: 'insectinterestdog.rent'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:15:13.548302
+Sender domain: 'developmentdoubtrice.monster'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:15:15.549009
+Sender domain: 'bussiness.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:15:18.108055
+Sender domain: 'chase.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:15:20.385648
+Sender domain: 'dropbox.com'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 00:15:22.719099
+Sender domain: 'yourcompany.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:15:25.164597
+Sender domain: 'microsoft.com'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 00:15:27.498637
+Sender domain: 'portswigger.net'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:15:29.501335
+Sender domain: 'yourcompany.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:15:31.520689
+Sender domain: 'streamsync.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:15:33.801027
+Sender domain: 'ljmu.ac.uk'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 00:15:35.793991
+Sender domain: 'group1auto.co.uk'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 00:34:11.561337
+Sender domain: 'acmecorp.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:34:14.242484
+Sender domain: 'leadheadheart.shop'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:34:15.851885
+Sender domain: 'amaz0n-security.net'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:34:17.899452
+Sender domain: 'causeflagnut.monster'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:34:19.911593
+Sender domain: 'statementovenregular.lat'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:34:21.981174
+Sender domain: 'belieflovebranch.guru'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:34:23.839607
+Sender domain: 'voicecupfish.shop'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:34:25.908459
+Sender domain: 'bloodendstar.beauty'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:34:28.087726
+Sender domain: 'materialparallelpossible.world'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:34:30.054445
+Sender domain: 'scalestepthroat.shop'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:34:31.776305
+Sender domain: 'lloyds-alert.net'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:34:33.796889
+Sender domain: 'carerhythmtendency.life'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:34:35.797856
+Sender domain: 'netflix-support.org'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:34:37.659206
+Sender domain: 'copperlovereward.rent'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:34:39.461069
+Sender domain: 'paypal-security.com'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:34:41.514225
+Sender domain: 'discoveryprocessfloor.fit'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:34:43.388921
+Sender domain: 'timeangryyellow.monster'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:34:45.510137
+Sender domain: 'crimehearingblade.work'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:34:47.279483
+Sender domain: 'insectinterestdog.rent'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:34:49.168529
+Sender domain: 'developmentdoubtrice.monster'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:34:50.856873
+Sender domain: 'bussiness.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:34:53.163478
+Sender domain: 'chase.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:34:55.229483
+Sender domain: 'dropbox.com'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 00:34:57.166440
+Sender domain: 'yourcompany.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:34:59.527524
+Sender domain: 'microsoft.com'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 00:35:01.554708
+Sender domain: 'portswigger.net'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:35:03.371053
+Sender domain: 'yourcompany.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:35:05.247469
+Sender domain: 'streamsync.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:35:07.334191
+Sender domain: 'ljmu.ac.uk'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 00:35:09.286008
+Sender domain: 'group1auto.co.uk'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 00:42:05.957419
+Sender domain: 'acmecorp.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:42:08.311768
+Sender domain: 'leadheadheart.shop'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:42:10.257511
+Sender domain: 'amaz0n-security.net'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:42:12.597149
+Sender domain: 'causeflagnut.monster'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:42:14.834176
+Sender domain: 'statementovenregular.lat'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:42:17.221446
+Sender domain: 'belieflovebranch.guru'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:42:19.421184
+Sender domain: 'voicecupfish.shop'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:42:21.661450
+Sender domain: 'bloodendstar.beauty'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:42:24.103553
+Sender domain: 'materialparallelpossible.world'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:42:26.517792
+Sender domain: 'scalestepthroat.shop'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:42:28.431590
+Sender domain: 'lloyds-alert.net'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:42:30.771242
+Sender domain: 'carerhythmtendency.life'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:42:32.938317
+Sender domain: 'netflix-support.org'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:42:35.234040
+Sender domain: 'copperlovereward.rent'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:42:37.557039
+Sender domain: 'paypal-security.com'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:42:40.018684
+Sender domain: 'discoveryprocessfloor.fit'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:42:42.415829
+Sender domain: 'timeangryyellow.monster'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:42:44.675330
+Sender domain: 'crimehearingblade.work'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:42:46.995060
+Sender domain: 'insectinterestdog.rent'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:42:49.279249
+Sender domain: 'developmentdoubtrice.monster'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:42:51.374541
+Sender domain: 'bussiness.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:42:53.858416
+Sender domain: 'chase.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:42:55.969588
+Sender domain: 'dropbox.com'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 00:42:58.216156
+Sender domain: 'yourcompany.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:43:00.727069
+Sender domain: 'microsoft.com'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 00:43:02.987342
+Sender domain: 'portswigger.net'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:43:04.961162
+Sender domain: 'yourcompany.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:43:07.343298
+Sender domain: 'streamsync.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:43:09.436539
+Sender domain: 'ljmu.ac.uk'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 00:43:11.595790
+Sender domain: 'group1auto.co.uk'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 00:46:06.613477
+Sender domain: 'acmecorp.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:46:08.843191
+Sender domain: 'leadheadheart.shop'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:46:10.986543
+Sender domain: 'amaz0n-security.net'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:46:13.249161
+Sender domain: 'causeflagnut.monster'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:46:15.564246
+Sender domain: 'statementovenregular.lat'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:46:17.855317
+Sender domain: 'belieflovebranch.guru'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:46:20.200912
+Sender domain: 'voicecupfish.shop'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:46:22.602940
+Sender domain: 'bloodendstar.beauty'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:46:24.945226
+Sender domain: 'materialparallelpossible.world'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:46:27.272075
+Sender domain: 'scalestepthroat.shop'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:46:29.434741
+Sender domain: 'lloyds-alert.net'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:46:32.005495
+Sender domain: 'carerhythmtendency.life'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:46:33.992901
+Sender domain: 'netflix-support.org'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:46:36.567145
+Sender domain: 'copperlovereward.rent'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:46:40.364017
+Sender domain: 'paypal-security.com'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:46:42.703848
+Sender domain: 'discoveryprocessfloor.fit'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:46:45.117147
+Sender domain: 'timeangryyellow.monster'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:46:47.358855
+Sender domain: 'crimehearingblade.work'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:46:49.597345
+Sender domain: 'insectinterestdog.rent'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:46:52.031064
+Sender domain: 'developmentdoubtrice.monster'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:46:54.105695
+Sender domain: 'bussiness.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:46:56.299242
+Sender domain: 'chase.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:46:58.649642
+Sender domain: 'dropbox.com'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 00:47:00.902988
+Sender domain: 'yourcompany.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:47:03.724594
+Sender domain: 'microsoft.com'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 00:47:05.918485
+Sender domain: 'portswigger.net'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:47:07.993820
+Sender domain: 'yourcompany.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:47:09.909467
+Sender domain: 'streamsync.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:47:12.015542
+Sender domain: 'ljmu.ac.uk'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 00:47:14.300219
+Sender domain: 'group1auto.co.uk'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 00:56:32.453337
+Sender domain: 'acmecorp.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:56:34.812708
+Sender domain: 'leadheadheart.shop'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:56:36.779279
+Sender domain: 'amaz0n-security.net'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:56:38.824967
+Sender domain: 'causeflagnut.monster'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:56:40.670905
+Sender domain: 'statementovenregular.lat'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:56:42.740944
+Sender domain: 'belieflovebranch.guru'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:56:44.869586
+Sender domain: 'voicecupfish.shop'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:56:46.881539
+Sender domain: 'bloodendstar.beauty'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:56:48.871010
+Sender domain: 'materialparallelpossible.world'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:56:50.811148
+Sender domain: 'scalestepthroat.shop'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:56:52.599928
+Sender domain: 'lloyds-alert.net'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:56:54.701741
+Sender domain: 'carerhythmtendency.life'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:56:56.517164
+Sender domain: 'netflix-support.org'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:56:58.461455
+Sender domain: 'copperlovereward.rent'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:57:00.271150
+Sender domain: 'paypal-security.com'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 00:57:02.552291
+Sender domain: 'discoveryprocessfloor.fit'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:57:04.734443
+Sender domain: 'timeangryyellow.monster'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:57:06.677283
+Sender domain: 'crimehearingblade.work'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:57:08.470309
+Sender domain: 'insectinterestdog.rent'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:57:10.420088
+Sender domain: 'developmentdoubtrice.monster'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:57:12.088211
+Sender domain: 'bussiness.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:57:14.012078
+Sender domain: 'chase.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:57:16.035716
+Sender domain: 'dropbox.com'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 00:57:17.965811
+Sender domain: 'yourcompany.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:57:20.293252
+Sender domain: 'microsoft.com'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 00:57:22.566215
+Sender domain: 'portswigger.net'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:57:24.254656
+Sender domain: 'yourcompany.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:57:25.861012
+Sender domain: 'streamsync.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 00:57:27.883569
+Sender domain: 'ljmu.ac.uk'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 00:57:29.658375
+Sender domain: 'group1auto.co.uk'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 01:02:18.604462
+Sender domain: 'acmecorp.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 01:02:21.360480
+Sender domain: 'leadheadheart.shop'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 01:02:23.449437
+Sender domain: 'amaz0n-security.net'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 01:02:25.893535
+Sender domain: 'causeflagnut.monster'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 01:02:28.240336
+Sender domain: 'statementovenregular.lat'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 01:02:30.714776
+Sender domain: 'belieflovebranch.guru'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 01:02:32.834054
+Sender domain: 'voicecupfish.shop'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 01:02:35.031026
+Sender domain: 'bloodendstar.beauty'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 01:02:37.342433
+Sender domain: 'materialparallelpossible.world'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 01:02:39.645190
+Sender domain: 'scalestepthroat.shop'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 01:02:41.817291
+Sender domain: 'lloyds-alert.net'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 01:02:43.981208
+Sender domain: 'carerhythmtendency.life'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 01:02:46.007255
+Sender domain: 'netflix-support.org'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 01:02:48.290459
+Sender domain: 'copperlovereward.rent'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 01:02:50.288007
+Sender domain: 'paypal-security.com'
+In whitelist? False
+SPF ok: False
+DKIM ok: False
+Raw score before whitelist: 70
+Spoofed: True
+Final score: 70
+----------------------------------------
+
+2026-04-14 01:02:52.984793
+Sender domain: 'discoveryprocessfloor.fit'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 01:02:55.399339
+Sender domain: 'timeangryyellow.monster'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 01:02:57.779462
+Sender domain: 'crimehearingblade.work'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 01:03:00.174538
+Sender domain: 'insectinterestdog.rent'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 01:03:02.461882
+Sender domain: 'developmentdoubtrice.monster'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 01:03:04.720681
+Sender domain: 'bussiness.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 01:03:07.056867
+Sender domain: 'chase.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 01:03:09.221757
+Sender domain: 'dropbox.com'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 01:03:11.365562
+Sender domain: 'yourcompany.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 01:03:13.918830
+Sender domain: 'microsoft.com'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 01:03:16.153341
+Sender domain: 'portswigger.net'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 01:03:18.410358
+Sender domain: 'yourcompany.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 01:03:20.533924
+Sender domain: 'streamsync.com'
+In whitelist? False
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Final score: 40
+----------------------------------------
+
+2026-04-14 01:03:22.824881
+Sender domain: 'ljmu.ac.uk'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
+
+2026-04-14 01:03:24.971081
+Sender domain: 'group1auto.co.uk'
+In whitelist? True
+SPF ok: True
+DKIM ok: False
+Raw score before whitelist: 40
+Spoofed: True
+Whitelist override - setting score to 0%
+Warning: Authentication failed (DKIM) but domain is whitelisted
+----------------------------------------
