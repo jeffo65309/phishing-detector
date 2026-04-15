@@ -1,8 +1,13 @@
 ======================================================================
 PHISHING DETECTOR TEST RESULTS
 ======================================================================
-Run at: 2026-04-14 18:01:34.768691
+Run at: 2026-04-15 16:35:22.843007
 ======================================================================
+
+PASS | ( nathangatley20 ) Your DeWalt 18V Combi Drill and Impact Driver Kit is waiting. Claim it now..txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=2.5% Meta=70% Final=100%
+  [Spoofed sender detected]
 
 PASS | acmecorp_invoice.txt
   Expected: PHISHING | Got: PHISHING
@@ -19,9 +24,14 @@ PASS | amaz0n_security.txt
   Scores: Text=99% URL=0% Meta=70% Final=100%
   [Spoofed sender detected]
 
+PASS | amazon2.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=92% URL=20.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
 PASS | amazon_game.txt
   Expected: PHISHING | Got: PHISHING
-  Scores: Text=49% URL=55.0% Meta=40% Final=100%
+  Scores: Text=49% URL=55.0% Meta=70% Final=100%
   [Spoofed sender detected]
 
 PASS | amazon_receipt.txt
@@ -42,6 +52,11 @@ PASS | booking_voucher.txt
 PASS | boots_voucher.txt
   Expected: PHISHING | Got: PHISHING
   Scores: Text=81% URL=55.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | cloudstorage.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=92% URL=0% Meta=70% Final=100%
   [Spoofed sender detected]
 
 PASS | clubcard_voucher.txt
@@ -74,6 +89,16 @@ PASS | newyear_reward.txt
   Scores: Text=99% URL=55.0% Meta=40% Final=100%
   [Spoofed sender detected]
 
+PASS | Payment Method Expired – Please Update.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=10.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | paypal2.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=20.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
 PASS | sample_phishing.txt
   Expected: PHISHING | Got: PHISHING
   Scores: Text=99% URL=20.0% Meta=70% Final=100%
@@ -101,7 +126,7 @@ PASS | tesco_voucher_expiry.txt
 
 PASS | tesco_wallet_bonus.txt
   Expected: PHISHING | Got: PHISHING
-  Scores: Text=99% URL=55.0% Meta=40% Final=100%
+  Scores: Text=99% URL=55.0% Meta=70% Final=100%
   [Spoofed sender detected]
 
 PASS | acme_security.txt
@@ -123,6 +148,11 @@ PASS | hr_benefits.txt
   Scores: Text=0% URL=0.0% Meta=40% Final=25%
   [Spoofed sender detected]
 
+PASS | microsoftx.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=99% URL=0.0% Meta=40% Final=57.5%
+  [Spoofed sender detected]
+
 PASS | microsoft_alert.txt
   Expected: LEGITIMATE | Got: LEGITIMATE
   Scores: Text=99% URL=20.0% Meta=0% Final=10.0%
@@ -141,6 +171,19 @@ PASS | streamsync_invoice.txt
   Expected: LEGITIMATE | Got: SUSPICIOUS
   Scores: Text=0% URL=0% Meta=40% Final=25%
   [Spoofed sender detected]
+
+PASS | uniemail1.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | uniemail2.txt
+  Expected: LEGITIMATE | Got: LEGITIMATE
+  Scores: Text=0% URL=0% Meta=0% Final=0.0%
+
+PASS | uniemail3.txt
+  Expected: LEGITIMATE | Got: LEGITIMATE
+  Scores: Text=0% URL=0.0% Meta=0% Final=0.0%
 
 PASS | uni_email.txt
   Expected: LEGITIMATE | Got: LEGITIMATE
@@ -170,7 +213,7 @@ PASS | volkswagen_video.txt
 ======================================================================
 SUMMARY
 ======================================================================
-Total emails tested: 34
-Correct: 34
+Total emails tested: 43
+Correct: 43
 Accuracy: 100.0%
 ======================================================================

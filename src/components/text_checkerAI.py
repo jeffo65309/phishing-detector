@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()  # This loads .env file
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
+import html2text  # For converting HTML emails to plain text
 
 class TextChecker:
     # Loads the AI model when we create it
@@ -63,9 +64,26 @@ class TextChecker:
         
         print(" AI model ready!")
     
+    def extract_plain_text(self, email_text):
+        """Convert HTML email to plain text so the AI can read it properly"""
+        # Check if it looks like HTML (contains html or body tags)
+        if '<html' in email_text.lower() or '<body' in email_text.lower():
+            # Set up HTML to text converter
+            converter = html2text.HTML2Text()
+            converter.ignore_links = False      # Keep URLs so they can be checked
+            converter.ignore_images = True      # Skip images, they're not text
+            converter.body_width = 0            # Don't wrap lines
+            plain_text = converter.handle(email_text)
+            return plain_text
+        # Not HTML, return as is
+        return email_text
+    
     def checkEmail(self, email_text):
         # Analyse an email and return a phishing score
         # This is the main method I'll call from other files
+        
+        # Convert HTML to plain text first (so the AI sees the message, not the code)
+        email_text = self.extract_plain_text(email_text)
         
         # Convert email to numbers that the model understands
         inputs = self.tokenizer(

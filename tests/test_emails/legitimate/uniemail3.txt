@@ -1,0 +1,35 @@
+From: "Berry, Thomas" <T.Berry@ljmu.ac.uk>
+To: 5216COMP <5216COMP@modules.ljmu.ac.uk>, 5205COMP
+	<5205COMP@modules.ljmu.ac.uk>
+CC: "Hashem Eiza, Max" <M.HashemEiza@ljmu.ac.uk>
+Subject: Guest Talk - Joe Williams
+
+Hi,
+
+ 
+
+I have asked Joe Williams to come into LJMU on Friday 13th of March at 11am in BS327 to give you a guest talk on Pen Testing and Incident Response.
+
+Joe works at Pen Test Partners, and you can find their blog at: https://www.pentestpartners.com/security-blog/
+
+They have plenty of stories related to devices and items that they have been able to break into.
+
+ 
+
+Joe will discuss how he got into Pen Testing and some of the work he has been doing.
+
+ 
+
+He has details of a summer placement at Pen Test Partners that has been successful in launching the careers of students into the pen test industry.
+
+ 
+
+I will be there on Friday as I want to hear what he has to say.
+
+
+Cheers
+
+
+Tom
+
+ 

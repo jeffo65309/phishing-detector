@@ -1,0 +1,338 @@
+Delivered-To: nathangatley20@gmail.com
+Date: Sat, 21 Mar 2026 14:53:30 +0000
+From: lbnzihmtnuqflmgrufmzd@kqjzophhswb.hh.509.misheradcv.me
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: amazonses
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Alert</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            color: #333333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        /* Top Warning Banner */
+        .top-banner {
+            color: #0000CD;
+            /* Medium Blue */
+            font-weight: bold;
+            font-size: 18px;
+            text-transform: uppercase;
+            text-decoration: underline;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+        }
+
+        /* Logo Section */
+        .logo-placeholder {
+            width: 80px;
+            height: 80px;
+            background-color: #f1f3f4;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #ccc;
+            color: #888;
+            font-size: 12px;
+        }
+
+        .divider {
+            height: 2px;
+            background-color: #4285f4;
+            border: none;
+            margin: 20px 0;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        /* Alert Box */
+        .alert-box {
+            background-color: #fce8e6;
+            border: 1px solid #ea4335;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .alert-title {
+            color: #c5221f;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .alert-text {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #3c4043;
+        }
+
+        /* Usage Stats */
+        .usage-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .usage-text-red {
+            color: #ea4335;
+        }
+
+        /* Progress Bar */
+        .progress-bar {
+            display: flex;
+            height: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 25px;
+        }
+
+        .bar-blue {
+            width: 40%;
+            background-color: #4285f4;
+        }
+
+        .bar-green {
+            width: 30%;
+            background-color: #34a853;
+        }
+
+        .bar-yellow {
+            width: 20%;
+            background-color: #fbbc05;
+        }
+
+        .bar-red {
+            width: 10%;
+            background-color: #ea4335;
+        }
+
+        /* Legend */
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            width: 40%;
+            /* creates 2 columns */
+            text-align: left;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+            margin-right: 8px;
+            display: inline-block;
+        }
+
+        .dot-blue {
+            background-color: #4285f4;
+        }
+
+        .dot-green {
+            background-color: #34a853;
+        }
+
+        .dot-yellow {
+            background-color: #fbbc05;
+        }
+
+        .dot-red {
+            background-color: #ea4335;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: block;
+            width: 100%;
+            background-color: #4285f4;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 15px;
+        }
+
+        .cta-button:hover {
+            background-color: #3367d6;
+        }
+
+        .secondary-link {
+            color: #4285f4;
+            font-size: 14px;
+            text-decoration: underline;
+            display: block;
+            margin-bottom: 40px;
+        }
+
+        /* Footer Box */
+        .footer-box {
+            background-color: #f8f9fa;
+            padding: 30px 20px;
+            font-size: 12px;
+            color: #5f6368;
+            margin-bottom: 20px;
+        }
+
+        .loyalty-badge {
+            display: inline-block;
+            border: 1px solid #34a853;
+            color: #34a853;
+            background-color: #e6f4ea;
+            padding: 5px 15px;
+            border-radius: 15px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 12px;
+        }
+
+        .footer-text {
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .address {
+            margin-bottom: 15px;
+        }
+
+        .unsub-link {
+            color: #5f6368;
+            text-decoration: underline;
+        }
+
+        /* Bottom Fine Print */
+        .bottom-print {
+            font-size: 10px;
+            color: #bdc1c6;
+            line-height: 1.4;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
+        .bottom-print a {
+            color: #bdc1c6;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="top-banner">
+            YOUR CLOUD STORAGE IS FULL. ACCESS AT RISK.
+        </div>
+
+        <!-- Cloud Icon -->
+        <tr>
+            <td class="logo-placeholder">
+          
+            </td>
+        </tr>
+
+        <hr class="divider">
+
+        <h1>Cloud Storage Full (100%)</h1>
+
+        <div class="alert-box">
+            <div class="alert-title">ACTION REQUIRED</div>
+            <div class="alert-text">
+                You have reached your 256 GB limit. Emails and file syncing are currently paused across all services.
+            </div>
+        </div>
+
+        <div class="usage-header">
+            <span>Current Usage</span>
+            <span class="usage-text-red">256 GB / 256 GB</span>
+        </div>
+
+        <div class="progress-bar">
+            <div class="bar-blue"></div>
+            <div class="bar-green"></div>
+            <div class="bar-yellow"></div>
+            <div class="bar-red"></div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item"><span class="dot dot-blue"></span> Drive: 112 GB</div>
+            <div class="legend-item"><span class="dot dot-green"></span> Photos: 84 GB</div>
+            <div class="legend-item"><span class="dot dot-yellow"></span> Gmail: 52 GB</div>
+            <div class="legend-item"><span class="dot dot-red"></span> System: 8 GB</div>
+        </div>
+
+        <a href="https://storage.googleapis.com/traditionall/homeownersassociation.html#4IRZEg136085grHj1583qeofvvvyog2770BCWTDZWLVXOGPPO1063284OGKB1655591R27" class="cta-button">GET MORE STORAGE</a>
+
+        <a href="https://storage.googleapis.com/traditionall/homeownersassociation.html#4SpXqm136085ZJCM1583vpaaknhocs2770ASDKQBVXRBJVWMP1063284SBSB1655591o27" class="secondary-link">Review files to free up space</a>
+
+        <div class="footer-box">
+            <div class="loyalty-badge">✓ 80% LOYALTY DISCOUNT APPLIED</div>
+
+            <p class="footer-text">
+                You are receiving this because your account has exceeded its allocated capacity.<br>
+                Upgrade to 1TB to restore all services immediately.
+            </p>
+
+            <p class="address">
+                © 2026 Cloud Storage Systems Inc.<br>
+            </p>
+
+            <a href="https://storage.googleapis.com/traditionall/homeownersassociation.html#5gVneq136085Vuqj1583rzjxbaggri2770GTAONSXWCTSDUAH1063284LFVI1655591X27" class="unsub-link">Unsubscribe from storage alerts</a>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+------=_Part_qxRazlRjQOiS_1129434735014.frqkvRcwiCF--

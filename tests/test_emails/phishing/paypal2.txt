@@ -1,0 +1,11 @@
+From: "PayPal Security" <security@paypal-security.com>
+Subject: URGENT: Your account has been compromised.
+
+URGENT: Your PayPal account has been compromised.
+
+Please click the link below to secure your account:
+http://paypal-security-verify.com/login
+
+If no action is taken, your account will be permanently closed.
+
+PayPal Security Team

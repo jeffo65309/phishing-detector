@@ -1,0 +1,14 @@
+From: acidtripper98 <acidtripper98-4931@vncta.222.sb007.glizu.biz.ua>
+to: jacobroyjessesmith@gmail.com
+
+CloudCloud Services
+Payment failed for your Cloud storage renewal
+We couldn’t renew your Cloud storage subscription because your payment method needs to be updated.
+Your payment method has expired.
+Please update your payment details to avoid service interruption.
+Subscription ID: CLDSTRG-92837465
+Product: Cloud Storage
+Without enough Cloud space, you may not be able to store all your data and files in the Cloud service. This service allows you to store photos, videos, documents, and more securely and access them from any device.
+Update payment method
+This message was sent automatically by Cloud Services.
+If you want to unsubscribe please click here

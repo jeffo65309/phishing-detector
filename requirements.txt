@@ -8,3 +8,4 @@ requests
 numpy
 python-dotenv
 shap
+html2text
