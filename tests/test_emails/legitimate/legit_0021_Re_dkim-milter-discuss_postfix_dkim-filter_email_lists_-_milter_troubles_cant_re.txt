@@ -1,0 +1,33 @@
+From: Daniel Black <vsfqdv.gwbd@internode.on.net>
+To: hyhv-powbpw-vxjvdmh@lists.sourceforge.net
+Subject: Re: [dkim-milter-discuss] postfix + dkim-filter + email lists - milter troubles (can't read SMFIC_HEADER
+Date: 2008-08-06 10:49:48
+
+On Fri, 8 Feb 2008 10:41:35 pm Tony Earnshaw wrote:
+
+> I notice you cite my post; I stick to what I wrote: Postfix (2.5 in my
+> case) has no trouble with dkim-milter 2.4.3 and mailings to over 1000
+> LDAP posixGroup based recipients at a time. But Unix sockets have given
+> problems in the past, inet none.
+
+I just assumed that unix vs inet problems were chroot related however i'm 
+willing to try the inet path (I was limited due to vserver firewall rules 
+when I don't control the host).
+
+> And all my dkim-milter based stuff is 
+> called out of master.cg, not main.cf. dkim-milter is called by my last
+> smtpd listener before the message goes to cleanup.
+
+Can you please provide the config you use?
+
+Cheers,
+
+
+-- 
+
+Daniel Black
+--
+Proudly a Gentoo Linux User.
+Gnu-PG/PGP signed and encrypted email preferred
+http://pgp.mit.edu:11371/pks/lookup?op=get&search=0x76677097
+GPG Signature D934 5397 A84A 6366 9687  9EB2 861A 4ABA 7667 7097

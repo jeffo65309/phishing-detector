@@ -1,0 +1,26 @@
+From: user2.12@gvc.ceas-challenge.cc
+To: iybz@pobox.com
+Subject: Re: [spambayes-dev] Subversion conversion?
+Date: 2008-08-06 12:40:34
+
+> My main motivation for switching sooner rather than later is that I  
+> have
+> been doing much of my recent work on the train.  Using Subversion  
+> would (I
+> believe - correct me if I'm wrong) allow me to check my current diffs
+> without being online.
+
++1 to switching, and +1 to doing it now.  This reason (diffing  
+offline) is really the only noticeable difference for me, with the  
+limited way that I use CVS/SVN, but it's a huge benefit (not just to  
+be able to do it offline, but the big speed up and removal of the  
+logging in requirement).
+
+Cheers,
+Tony
+_______________________________________________
+spambayes-dev mailing list
+bsfegmjrr-hnq@python.org
+http://mail.python.org/mailman/listinfo/spambayes-dev
+
+

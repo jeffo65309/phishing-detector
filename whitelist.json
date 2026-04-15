@@ -1,5 +1,7 @@
 {
     "trusted_domains": [
+        "halfords.com",
+        "halfords.co.uk",
         "ljmu.ac.uk",
         "google.com",
         "microsoft.com",
@@ -16,7 +18,16 @@
         "vanquis.co.uk",
         "customer.vanquis.co.uk",
         "nhs.uk",
-        "group1auto.co.uk"
+        "group1auto.co.uk",
+        "chase.com",
+        "trademe.co.nz",
+        "acnielsen.com",
+        "portswigger.net",
+        "standardbank.co.za",
+        "cesc.co.in",
+        "customermail.microsoft.com",
+        "vodafone.com",
+        "message.vodafone"
     ],
     "spoofed_override_threshold": 40
 }

@@ -1,0 +1,24 @@
+From: Joe Morris <zll_lspevj@ntm.org>
+To: wkilxloc@opensuse.org
+Subject: Re: [opensuse] openSUSE and faxes
+Date: 2008-08-06 08:37:54
+
+On 02/10/2008 03:48 AM, Stan Goodman wrote:
+> I would like to be able to send and receive faxes using my openSUSE v10.3 
+> system. A bit of looking around showed that there are not many 
+> applications to do this -- actually only one, HylaFax, which I thought 
+> likely to be more capable than the combination of sendfax+mgetty, I have 
+> downloaded and installed HylaFax.
+>   
+Depending on your hardware, there is at least one more.  If you have an 
+HP OfficeJet, that has fax capability, there is HPLIP, which provides 
+for scanning, printing, and faxing.  It sets up a printing queue for the 
+fax, so as you mention further down you print from the app to the "fax 
+printer", and then use HPLIP's GUI hp-toolbox to send the document.  It 
+works pretty well.  I use it with an OfficeJet 5610.  HTH
+
+-- 
+Joe Morris
+Registered Linux user 231871 running openSUSE 10.3 x86_64
+
+

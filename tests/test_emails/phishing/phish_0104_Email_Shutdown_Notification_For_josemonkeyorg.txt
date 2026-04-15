@@ -1,0 +1,6 @@
+From: "e-Mail Security"<mis.mcf@lemontengineering.com>
+To: jose@monkey.org
+Subject: Email Shutdown Notification For "jose@monkey.org"
+Date: 2022-08-04 10:04:47
+
+Verify your email address Hi jose@monkey.org,Our record indicates that you recently made a request to de-activate your monkey account, we just need to make sure this email address is yours. Are you sure you want to continue with this request? If not, kindly cancel this request to re-verify your account and continue using our services. Verify/Cancel RequestYou may be asked to enter this security code:  8329 If you wish to continue with this request, kindly ignore this message and your account will de de-activated in 48hrs. Thanks,The monkey account team  Virus-free.    www.avast.com

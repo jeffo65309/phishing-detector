@@ -1,0 +1,109 @@
+From: Goutam Baul <uelsuu.cjgy@cesc.co.in>
+To: rljdsng-xyqoh@postfix.org
+Subject: Mail Sending problem
+Date: 2008-08-06 05:12:35
+
+Hello Everybody,
+
+I am using RHEL 4 with postfix postfix-2.2.10-1.RHEL4.2. The authentication
+is being done using openldap and courier packages are being used for pop and
+imap. Maildrop is the mail delivery agent. The packages details are given
+below:
+
+mod_authz_ldap-0.26-2
+openldap-2.2.13-6.4E
+nss_ldap-226-13
+python-ldap-2.0.1-2
+openldap-clients-2.2.13-6.4E
+php-ldap-4.3.9-3.15
+courier-authlib-ldap-0.58-1.4AS
+openldap-devel-2.2.13-6.4E
+openldap-servers-2.2.13-6.4E
+
+courier-authlib-debuginfo-0.58-1.4AS
+courier-imap-4.1.1-1.4AS
+courier-authlib-0.58-1.4AS
+courier-authlib-devel-0.58-1.4AS
+courier-imap-debuginfo-4.1.1-1.4AS
+courier-authlib-ldap-0.58-1.4AS
+
+I have implemented SASL authetication. Trend Micro Net Suit is being used as
+the anti spam/anti virus software. Since last few days I am finding that
+some of the users (out of total 900+ users 3 has reported the issue so far)
+are not able to send mail to any address outside of my domain. The log entry
+that I am getting is something like
+
+Feb  8 15:54:29 mail postfix/smtpd[9334]: NOQUEUE: reject: RCPT from
+unknown[59.183.54.228]: 554 : Recipient address
+rejected: Access denied; from=
+to= proto=SMTP helo=
+
+>From the log I can see that many mails are getting delivered to outside
+domains without any problems. But the users who are getting the problem are
+not able to send any mail to outside world. But these same users are able to
+send mail to anyplace when they use IMAP. For web interface I am using
+squirrelmail.
+
+I am trying to get helps using google but not successful. May I request you
+to kindly give some clue on how I should proceed?
+
+I am giving below relevant (as per my understanding !!!) portion of main.cf
+
+
+alias_database = hash:/etc/postfix/aliases
+alias_maps = hash:/etc/postfix/aliases
+local_transport = maildrop
+virtual_mailbox_base = /home/vmail
+virtual_mailbox_maps = ldap:/etc/postfix/virtual-mailbox.ldap
+virtual_alias_maps = ldap:/etc/postfix/virtual-alias.ldap
+default_process_limit = 200
+imss_timeout=10m
+imss_connect_timeout=20s
+content_filter = imss:localhost:10025
+imss_destination_recipient_limit=200
+imss_destination_concurrency_limit=20
+relay_recipient_maps = ldap:/etc/postfix/virtual-mailbox.ldap
+transport_maps = hash:/etc/postfix/transport
+alias_maps = hash:/etc/postfix/aliases
+default_destination_recipient_limit = 200
+disable_vrfy_command = yes
+smtpd_helo_required = yes
+smtpd_sender_restrictions =
+        permit_mynetworks,
+        reject_unknown_sender_domain,
+        permit_sasl_authenticated
+smtpd_recipient_restrictions =
+         permit_mynetworks,
+         permit_auth_destination,
+         permit_sasl_authenticated,
+         reject
+smtpd_sasl_auth_enable = yes
+smtpd_sasl_security_options = noanonymous
+smtpd_sasl_local_domain = $myhostname
+broken_sasl_auth_clients = yes
+smtpd_tls_auth_only = no
+smtp_connect_time = 25s
+smtpd_recipient_limit = 250
+default_process_limit = 105
+smtpd_client_restrictions = check_sender_access
+hash:/etc/postfix/rbl_sender_exception,reject_rbl_client
+AS3DR6HRXQS7R599DVTE9X57CUF39TJ.r.mail-abuse.com,reject_rbl_client
+AS3DR6HRXQS7R599DVTE9X57CUF39TJ.q.mail-abuse.com
+rbl_reply_maps = hash:/etc/postfix/imss_rbl_reply
+virtual_alias_maps = ldap:forward
+forward_timeout = 60
+forward_server_host = 127.0.0.1
+forward_search_base = dc=rpg,dc=in
+forward_server_port = 389
+forward_query_filter = (&(|(mail=%s))(accountStatus=enable))
+forward_result_attribute = mailForwardingAddress
+
+
+
+
+
+Goutam Baul
+Corporate Information Systems
+CESC Limited
+
+

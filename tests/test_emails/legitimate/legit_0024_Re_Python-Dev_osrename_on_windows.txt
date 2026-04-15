@@ -1,0 +1,82 @@
+From: Andrew Bennetts <rkijua-qjbmqrgqp@puzzling.org>
+To: Raghuram Devarakonda <lngjjnbze@gmail.com>
+Subject: Re: [Python-Dev] os.rename on windows
+Date: 2008-08-06 09:48:21
+
+Raghuram Devarakonda wrote:
+> Hi,
+> 
+> I have submitted a patch (http://www.python.org/sf/1704547) that
+> allows os.rename to replace the destination file if it exists, on
+> windows. As part of discussion in the tracker, Martin suggested that
+> python-dev should discuss the change.
+
+Does MOVEFILE_REPLACE_EXISTING mean the rename over an existing file is actually
+atomic?  I cannot find any MSDN docs that say so (and I've seen some that
+suggest to me that it probably isn't).
+
+If it's not atomic, then this doesn't offer any advantage over shutil.move that
+I can see (and in fact would damage the usefulness of os.rename, which is
+currently atomic on all platforms AFAIK, even though it cannot succeed all the
+time).
+
+If MOVEFILE_REPLACE_EXISTING miraculously turns out to be atomic, then my
+opinion is:
+
+  * this feature would be very useful, and I would like a cross-platform way to
+    do this in Python.
+  * this feature should not be called "os.rename", which for years has done
+    something else on some platforms, and so changing it will invite unnecessary
+    breakage.  A new function would be better, or perhaps an optional flag.  I
+    propose "os.atomic_rename".
+
+Also, I assume this cannot replace files that are in use?
+
+> Currently, os.rename() on windows uses the API MoveFile() which fails
+> if the destination file exists. The patch replaces this API with
+> MoveFileEx() and uses the flag MOVEFILE_REPLACE_EXISTING which causes
+> the destination file to be replaced if it exists. However, this change
+> is subtle and if there is any existing code that depends on current
+> os.rename behaviour on windows, their code is silently broken with
+> (any) destination file being overwritten. But the functionality of
+> replacing is important and I would like to know the best of way of
+> supporting it. If it is deemed that this change is not good to go in
+> as-is, how about having an optional parameter to os.rename (say,
+> win_replace) that can be used by callers to explicitly request
+> replacing?
+
+I'd be ok with a flag, but it should have a cross-platform name.
+"require_atomic" or "replace" or something like that.  I think a new function
+makes more sense, though.
+
+> I must also point out that the patch uses another flag
+> MOVEFILE_COPY_ALLOWED effectively allowing renamed files to be on
+> separate file systems. The renaming in this case is not atomic and I
+> used this flag only to support current functionality. It is not a bad
+> idea to disallow such renames which brings it in line with the
+> behaviour on many unix flavors. This also has the potential to break
+> code but not silently.
+
+I don't quite follow what you're saying here, but I'd be against an operation
+called "rename" that sometimes was atomic and sometimes wasn't.
+
+> Lastly, I found an old discussion about the same topic by this list.
+> 
+> http://mail.python.org/pipermail/python-dev/2001-May/014957.html
+> 
+> Even though Guido indicated that he doesn't support API change in this
+> thread, I am posting again as I did not see any one mention
+> MoveFileEx() in that thread.
+
+Does MoveFileEx solve the atomicity problem that Guido raised in that thread?  I
+don't think it does, so I think the situation is still the same.
+
+-Andrew.
+
+_______________________________________________
+Python-Dev mailing list
+zvllln-eum@python.org
+http://mail.python.org/mailman/listinfo/python-dev
+Unsubscribe: http://mail.python.org/mailman/options/python-dev/python-dev%40tangomu.com
+
+

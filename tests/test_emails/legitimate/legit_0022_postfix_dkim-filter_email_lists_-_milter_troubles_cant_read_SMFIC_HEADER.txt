@@ -1,0 +1,49 @@
+From: Daniel Black <vsfqdv.gwbd@internode.on.net>
+To: hyhv-powbpw-vxjvdmh@lists.sourceforge.net
+Subject: postfix + dkim-filter + email lists - milter troubles (can't read SMFIC_HEADER
+Date: 2008-08-06 10:46:26
+
+
+Had some trouble deploying dkim-milter-2.4.4 on postfix-2.4.6 (debian etch backports - tried etch 2.3.8 and had the same troubles) and mailman_2.1.9-7.
+
+DKIM-milter is deployed and signing and verifing mode with its primary intent to sign emails on lists.cacert.org mailing lists.
+
+Feb  7 09:27:09 lists postfix/master[22912]: daemon started -- version 2.4.6, configuration /etc/postfix
+I deployed it as a typical and sole milter
+smtpd_milters = unix:extern-milter/dkim-filter.sock
+non_smtpd_milters = $smtpd_milters
+
+Testing on a tiny email list and the email came through signed by dkim.
+
+Feb  7 10:28:29
+an email when through to a larger email list poptem-kkrrvq@lists.cacert.org without any error
+
+after a significant number of hours without a peep out of dkim-filter I start to get.
+
+Feb  7 14:40:05 lists postfix/cleanup[15075]: F13C6108238: message-id=<95690946646473.5e95gt09s6@hlin.cacert.org>
+Feb  7 14:40:05 lists postfix/cleanup[15075]: warning: milter unix:extern-milter/dkim-filter.sock: can't read SMFIC_HEADER reply packet header: Connection reset by peer
+Feb  7 14:40:05 lists postfix/cleanup[15075]: F13C6108238: milter-reject: END-OF-MESSAGE from lists.cacert.org[172.16.2.17]: 4.7.1 Service unavailable - try again later; from= to= proto=ESMTP helo=
+Feb  7 14:40:05 lists postfix/smtpd[15071]: disconnect from lists.cacert.org[172.16.2.17]
+Feb  7 14:40:05 lists postfix/smtpd[15071]: connect from lists.cacert.org[172.16.2.17]
+Feb  7 14:40:05 lists postfix/smtpd[15071]: 05DE1108238: client=lists.cacert.org[172.16.2.17]
+Feb  7 14:40:05 lists postfix/cleanup[15075]: 05DE1108238: message-id=<95690946646473.5e95gt09s6@hlin.cacert.org>
+Feb  7 14:40:05 lists postfix/cleanup[15075]: warning: milter unix:extern-milter/dkim-filter.sock: can't read SMFIC_HEADER reply packet header: Connection reset by peer
+Feb  7 14:40:05 lists postfix/cleanup[15075]: 05DE1108238: milter-reject: END-OF-MESSAGE from lists.cacert.org[172.16.2.17]: 4.7.1 Service unavailable - try again later; from= to= proto=ESMTP helo=
+
+These occured for these same to email recipients, every 15 minutes from until Feb  7 21:00:15 when I woke up in a haze. noticed it was failing and turned it off.
+The dkim-milter still seems to be running happliy on its unix socket.
+
+This is also noted on 
+http://sourceforge.net/mailarchive/message.php?msg_id=476123D1.5000602%40hetnet.nl
+(the second error). I still can't get a total grasp of whats happing though.
+
+Any tips on how to isolate this error would be really welcome as I really don't want to be trialing on a live system too much.
+
+-- 
+
+Daniel Black
+--
+Proudly a Gentoo Linux User.
+Gnu-PG/PGP signed and encrypted email preferred
+http://pgp.mit.edu:11371/pks/lookup?op=get&search=0x76677097
+GPG Signature D934 5397 A84A 6366 9687  9EB2 861A 4ABA 7667 7097

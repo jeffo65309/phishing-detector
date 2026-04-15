@@ -1,0 +1,41 @@
+From: user2.12@gvc.ceas-challenge.cc
+To: iybz@pobox.com
+Subject: Re: [spambayes-dev] Website updated for 1.1a4
+Date: 2008-08-06 12:47:32
+
+Thanks for biting the bullet and doing 1.1a4!
+
+> I believe the website has been updated to reflect the 1.1a4 source  
+> release I
+> cut today.  The only sticking point was that I was unable to  
+> install the gpg
+> signature files in htdocs/sigs because of group permission  
+> problems.  I sent
+> a note to Tony (he's the owner of that directory).
+
+And this after I pointed out the same problem with another directory  
+to Mark just a few weeks ago :)  I believe this is fixed now - ping  
+me again if it isn't.
+
+> If someone could add an Outlook installer that would be great.  (Even
+> greater would be if I could create an Outlook installer on my Mac,  
+> but I
+> suppose that's not going to happen anytime soon. ;-)
+
+Unless Mark beats me to it, I should be able to do this in a day or  
+two (assuming the changes he made to py2exe removing the requirement  
+for Outlook 2000 work!).
+
+I'll also check the .zip file at the same time, but I'm pretty sure  
+we never had a problem with ones that Anthony did, so it should be fine.
+
+Cheers,
+Tony
+
+
+_______________________________________________
+spambayes-dev mailing list
+bsfegmjrr-hnq@python.org
+http://mail.python.org/mailman/listinfo/spambayes-dev
+
+

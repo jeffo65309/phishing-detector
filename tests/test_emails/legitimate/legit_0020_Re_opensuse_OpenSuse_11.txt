@@ -1,0 +1,66 @@
+From: Basil Chupin <oztzqpzo@tpg.com.au>
+To: SUSE Linux <wkilxloc@opensuse.org>
+Subject: Re: [opensuse] OpenSuse 11
+Date: 2008-08-06 11:14:47
+
+James Knott wrote:
+> Basil Chupin wrote:
+>   
+>> James Knott wrote:
+>>     
+>>> Is there no way to add another user?  I try to convince my friends to
+>>> create a user account, separate from the admin.  It sounds like another
+>>> security bomb is about to go off.
+>>>   
+>>>       
+>> I quote from a book I have on the XP:
+>>
+>> QUOTE
+>>
+>> Windows XP Home edition bestows Administrator rights on anyone who
+>> logs into the computer, giving full control to all system resources -
+>> this is not a satisfactory security model for business and power users.
+>>
+>>
+>> UNQUOTE.
+>>
+>> Answer your question? :-)
+>>
+>>     
+>
+> My question was about Vista.
+
+Sorry, must have missed this along the way - didn't see any reference to 
+Vista, the discussion I thought was all about XP.
+
+>  My ThinkPad came with XP Home and I have
+> both Admin and user accounts on it.  User accounts in XP Home do not
+> have admin rights.  However, most people never get past that first
+> account, which does have admin rights.
+
+A friend is using the Home edition and I haven't "played" with it 
+(because I didn't want to get tangled up with Home edition :-) ) so 
+cannot comment for or against that you have both Admin and user accounts 
+on it. All I know is what I heard, and read (and quoted above) about the 
+Home edition of XP.
+
+Of course, it is in XP Professional that most people who use it at home 
+who never get past the first account - the Administrator - and do not 
+create a user with limited access rights.
+
+The need to create a normal, limited access, user in XP Professional is 
+not something which is enforced in Professional which is why, I 
+understand, most XP Prof. setups are being run by a home user with full 
+Admin. rights. I cannot see why the Home edition should be more security 
+conscious than the Professional edition, and also cost much less, unless 
+SP1 and SP2 introduced the ability to create limited-access users in the 
+Home edition.
+
+Ciao.
+
+
+
+-- 
+Past experience, if not forgotten, is a guide for the future.
+
+

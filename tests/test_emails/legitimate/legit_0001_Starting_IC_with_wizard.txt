@@ -1,0 +1,13 @@
+From: Jesus Miguel Recuenco Ezquerra <JMRECU@teleline.es>
+To: handy board <handyboard@media.mit.edu>
+Subject: Starting IC with wizard
+Date: 2019-10-29 22:53:50
+
+Hi
+
+		I am running the IR test program from Max Davies. To do this I need to start
+IC with thw wizard option. As I have a macintosh, there is a wizard option for
+the mac version of IC?
+
+Jesus
+

@@ -1,0 +1,25 @@
+From: Mark Hammond <nkpmuffq@skippinet.com.au>
+To: 'Sjoerd Mullender' <puewsq@acm.org>, 'Spambayes Developers' <bsfegmjrr-hnq@python.org>
+Subject: Re: [spambayes-dev] spambayes crash due to bad image
+Date: 2008-08-06 09:44:55
+
+> I got this crash, probably due to a bad image.  The code in
+> ImageStripper.py that calls PIL is currently in a except IOError, but
+> should probably be in a bare except to catch any and all errors from
+> PIL.  In my case I got an IndexError.
+> 
+> I could make this change, if there is consensus and once Sourceforge
+> lets me get at the spambayes repository.
+
+That sounds perfectly reasonable to me.
+
+Cheers,
+
+Mark
+
+_______________________________________________
+spambayes-dev mailing list
+bsfegmjrr-hnq@python.org
+http://mail.python.org/mailman/listinfo/spambayes-dev
+
+

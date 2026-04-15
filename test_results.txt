@@ -1,7 +1,7 @@
 ======================================================================
 PHISHING DETECTOR TEST RESULTS
 ======================================================================
-Run at: 2026-04-15 16:35:22.843007
+Run at: 2026-04-16 00:03:05.566327
 ======================================================================
 
 PASS | ( nathangatley20 ) Your DeWalt 18V Combi Drill and Impact Driver Kit is waiting. Claim it now..txt
@@ -76,7 +76,7 @@ PASS | lloyds_phishing.txt
 
 PASS | mcdonalds_relief.txt
   Expected: PHISHING | Got: PHISHING
-  Scores: Text=85% URL=52.5% Meta=40% Final=100%
+  Scores: Text=85% URL=32.5% Meta=40% Final=100%
   [Spoofed sender detected]
 
 PASS | netflix_overdue.txt
@@ -97,6 +97,366 @@ PASS | Payment Method Expired – Please Update.txt
 PASS | paypal2.txt
   Expected: PHISHING | Got: PHISHING
   Scores: Text=99% URL=20.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0003_Netflix_Were_having_some_trouble_with_your_current_billing_information.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=9% URL=20.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0005_Receipt_for_Your_Payment_to_FTX.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0016_Your_recent_outgoing_messages_couldnt_be_delivered.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=98% URL=0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0025_Action_Required_UPS_Exception_Notification.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0027_CASE_ID_KTF-178-OxEoHbxIoEIMPORTANT_You_have_1_new_messages_in_your_josemonkeyor.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0029_Your_package_is_ready_for_delivery.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0032_Your_Parcel_Number_BN1018894701_is_on_the_way.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=32% URL=0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0037_utf-8b44CQUGF5UGF56YqA6KGM44CR6YCB6YeR5aSx5pWX6YCa55l.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=98% URL=0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0050_IMPORTANT_josemonkeyorg_Disconnection_Notification_Ref_IDD07834053074ND.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0056_monkeyorg_Password_update.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=0% URL=20.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0057_josemonkeyorg_Email_Address_is_temporarily_Blocked_by_Email_ADMIN_Report1066907.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=91% URL=30.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0070_Access_Locked.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=30.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0083_Your_Parcel_Number_RL001097064_is_on_the_way.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=33% URL=0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0084_Approve_Due_payment_Invoice-7876799.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=6.7% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0085_Last_reminder_Your_membership_will_be_cenceled_tomorrow.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=31% URL=0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0086_Your_account_is_on_hold.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=96% URL=0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0088_Your_Parcel_Number_RL001097064_is_on_the_way.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0090_AWG_Fwd_Paid_EbillTransfer_Payment_Receipt_For_Overdue_Invoices.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=79% URL=0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0091_New_Paystub_Encrypted_Message.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=98% URL=0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0099_UTF-8BVW5kZWxpdmVyZWQgRW1haWw.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=98% URL=0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0104_Email_Shutdown_Notification_For_josemonkeyorg.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=30.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0112_Customer_account_activation.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=45.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0124_You_may_be_involved_in_a_recent_data_leak.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=10.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0149_Blockchain_Failure_Notice.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=20.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0156_Account_Suspended.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=43% URL=50.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0157_Mail_Delivery_Failure_Incoming_Mail_Blocked.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=30.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0159_Low_cost_medical_coverage_for_families_and_individuals.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0160_Enjoy_great_sex_by_taking_viagra.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0165_UTF-8B4pqg77iPIFJlY292ZXJ5IE5vdGlmaWNhdGlvbiAgKE1vbmRh_UTF-8BeSwgRmVicnVhcnkgMjg.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=0% URL=45.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0174_Mailbox_Deactivation_Noticy_2102022.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0177_Review_Alert.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0191_monkeyorg_Server_Warning_4_Pending_undelivered_mails_for_josemonkeyorg.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0193_2_new_files_sent_via_We-Transfer_for_josemonkeyorg.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=10.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0196_Your_Smarsh_Email_Encryption_Activation_Information.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=65% URL=30.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0209_FW_Order_Signed_agreement.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0218_josemonkeyorg_-_You_have_received_3_pdf_files_via_WeTransfer_from_infoaevumglob.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=10.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0219_We_have_issues_with_your_shipping_address_to_re-deliver_your_package_please_conf.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=10.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0220_Account_josemonkeyorg_Email_Quata_Limit.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=11% URL=50.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0225_Account_Update_Notice.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=20.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0257_Nedbank_Credit_Card_monthly_Charges_eStatement.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=10.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0266_Envio_de_Burofax_Online_-_ultima_advertencia_-_id_77106725.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=97% URL=0.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0268_New_Recording_13913670.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=83% URL=0.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0269_New_Recording_13913670.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0281_CASE_X789703648.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0282_DHL_Express_Shipments_New_Parcel_Received.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=95% URL=0.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0283_Dear_Customer.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=20.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0293_4_New_Messages_1122020_85345_am_Notifications.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=98% URL=10.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0296_docu.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=0% URL=20.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0304_utf-8QMailbox_josemonkeyorg_E29C89_1_Storage_Capacity.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0319_UTF-8BUmV2aWV3IEFjY291bnQgQWN0aXZpdHnCoA.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=30.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0329_Re_New_Order_Inquiry.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=86% URL=0.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0330_RE_Aviso_importante_do_IT-Helpdesk_To_All_PT_Email_users.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0344_SSA_AlertUpdate_your_information.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=5% URL=20.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0347_RE_It-Support_Novo_2020_Microsoft_Outlook.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0356_Your_files_were_sent_successfully_to_josemonkeyorg.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=96% URL=0.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0359_AW_Novo_2020_Microsoft_Outlook.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=97% URL=0.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0360_Access_Lock.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0364_reSpecial_offer.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0371_RE_Highly_Important_-_Coronavirus_outbreak_in_your_city_Emergency.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=98% URL=0.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0373_Important_Document.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=98% URL=12.5% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0378_Contact_Us_-_2020_WhatsApp_New_e-Statement_File_029.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0387_Inward_Remittance_payment.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=96% URL=18.3% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0396_Avast_Internet_Security_Alert.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=30.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0397_Mail_User_Security_Alert.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+FAIL | phish_0398_P0492NH_-_Feb_10.txt
+  Expected: PHISHING | Got: SUSPICIOUS
+  Scores: Text=78% URL=8.0% Meta=40% Final=49.4%
+  [Spoofed sender detected]
+
+PASS | phish_0405_josemonkeyorg_you_received_files_via_WeTransfer.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=95% URL=0.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0409_Youve_received_a_new_file.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=30.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0426_Your_files_where_successfully_sent_via_WeTransfer.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=94% URL=0.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0429_saimasham11yahoocom_sent_you_files_via_WeTransfer.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=10.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0446_A_document_shared_on_OneDrive.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=30.0% Meta=70% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0464_Pending_incoming_emailsjosemonkeyorg.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=0.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | phish_0482_Standard_Bank_Account_eStatement_19-08-21.txt
+  Expected: PHISHING | Got: PHISHING
+  Scores: Text=99% URL=20.0% Meta=40% Final=100%
   [Spoofed sender detected]
 
 PASS | sample_phishing.txt
@@ -135,37 +495,209 @@ PASS | acme_security.txt
   [Spoofed sender detected]
 
 PASS | chase_transaction.txt
+  Expected: LEGITIMATE | Got: LEGITIMATE
+  Scores: Text=98% URL=0% Meta=0% Final=2.0%
+
+PASS | DHL_On_Demand_Delivery.txt
   Expected: LEGITIMATE | Got: SUSPICIOUS
-  Scores: Text=98% URL=0% Meta=40% Final=57.0%
+  Scores: Text=88% URL=0.7% Meta=40% Final=52.2%
   [Spoofed sender detected]
 
 PASS | dropbox_share.txt
   Expected: LEGITIMATE | Got: LEGITIMATE
   Scores: Text=0% URL=0% Meta=0% Final=0.0%
 
+PASS | Halfordsnewsletter@email.halfo.txt
+  Expected: LEGITIMATE | Got: LEGITIMATE
+  Scores: Text=99% URL=10.0% Meta=0% Final=6.0%
+
 PASS | hr_benefits.txt
   Expected: LEGITIMATE | Got: SUSPICIOUS
   Scores: Text=0% URL=0.0% Meta=40% Final=25%
   [Spoofed sender detected]
 
-PASS | microsoftx.txt
+PASS | legit_0001_Starting_IC_with_wizard.txt
   Expected: LEGITIMATE | Got: SUSPICIOUS
-  Scores: Text=99% URL=0.0% Meta=40% Final=57.5%
+  Scores: Text=0% URL=0% Meta=40% Final=25%
   [Spoofed sender detected]
+
+PASS | legit_0002_Trade_Me_--_A_question_on_your_auction_Auction_130939357_for_Small_bookshelf.txt
+  Expected: LEGITIMATE | Got: LEGITIMATE
+  Scores: Text=61% URL=0.0% Meta=0% Final=2.0%
+
+PASS | legit_0003_Trade_Me_-_A_request_from_a_Trade_Me_member_Auction_129227503.txt
+  Expected: LEGITIMATE | Got: LEGITIMATE
+  Scores: Text=99% URL=0% Meta=0% Final=2.0%
+
+PASS | legit_0004_RE_NorthTec_AccountPassword.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0.0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | legit_0005_2008_timetable.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | legit_0006_Time_sheet.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | legit_0007_Fwd_To_Sam.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0% Meta=70% Final=25%
+  [Spoofed sender detected]
+
+PASS | legit_0008_Please_help_your_Parents_Centre.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0% Meta=70% Final=25%
+  [Spoofed sender detected]
+
+PASS | legit_0009_Trade_Me_--_Please_place_feedback.txt
+  Expected: LEGITIMATE | Got: LEGITIMATE
+  Scores: Text=99% URL=0.0% Meta=0% Final=2.0%
+
+PASS | legit_0010_Re_spambayes-dev_Website_updated_for_11a4.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0.0% Meta=70% Final=25%
+  [Spoofed sender detected]
+
+PASS | legit_0011_PhD_6-monthly_reports.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=2% URL=0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | legit_0012_Call_for_Papers_-_NZCSRSC_08.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0.0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | legit_0013_Re_spambayes-dev_Subversion_conversion.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0.0% Meta=70% Final=25%
+  [Spoofed sender detected]
+
+PASS | legit_0014_Re_svn_commit_r619753_-_in_spamassassintrunk_libMailSpamAssassinPerMsgStatuspm_l.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | legit_0015_Supervisors_PhD_students_6-monthly_reports.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | legit_0016_PhD_6_monthly_reportsthanks.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | legit_0017_Re_opensuse_OpenSuse_11.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | legit_0018_Re_opensuse_A_Quick_Start_-_VirtualBox_Howto.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0.0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | legit_0019_Re_opensuse_OpenSuse_11.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | legit_0020_Re_opensuse_OpenSuse_11.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | legit_0021_Re_dkim-milter-discuss_postfix_dkim-filter_email_lists_-_milter_troubles_cant_re.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0.0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | legit_0022_postfix_dkim-filter_email_lists_-_milter_troubles_cant_read_SMFIC_HEADER.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0.0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | legit_0023_postfix_dkim-filter_email_lists_-_milter_troubles_cant_read_SMFIC_HEADER.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0.0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | legit_0024_Re_Python-Dev_osrename_on_windows.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0.0% Meta=70% Final=25%
+  [Spoofed sender detected]
+
+PASS | legit_0025_Re_spambayes-dev_spambayes_crash_due_to_bad_image.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0.0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | legit_0027_Re_opensuse_openSUSE_and_faxes.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | legit_0029_Re_opensuse_openSuse_11_Alpha.txt
+  Expected: LEGITIMATE | Got: SUSPICIOUS
+  Scores: Text=0% URL=0% Meta=40% Final=25%
+  [Spoofed sender detected]
+
+PASS | legit_0030_Re_opensuse_Warning_-_103XGL_repository_has_compizemerald_version_mismatch.txt
+  Expected: LEGITIMATE | Got: LEGITIMATE
+  Scores: Text=0% URL=0.0% Meta=0% Final=0.0%
+
+PASS | legit_0031_Mail_Sending_problem.txt
+  Expected: LEGITIMATE | Got: LEGITIMATE
+  Scores: Text=96% URL=0% Meta=0% Final=2.0%
+
+PASS | legit_0032_Re_perl5005_05-MAINT20070902.txt
+  Expected: LEGITIMATE | Got: LEGITIMATE
+  Scores: Text=0% URL=0.0% Meta=0% Final=0.0%
+
+PASS | legit_9_Trade_Me_--_Please_place_feedback.txt
+  Expected: LEGITIMATE | Got: LEGITIMATE
+  Scores: Text=99% URL=0.0% Meta=0% Final=2.0%
+
+PASS | microsoftx.txt
+  Expected: LEGITIMATE | Got: LEGITIMATE
+  Scores: Text=99% URL=0.0% Meta=0% Final=2.0%
 
 PASS | microsoft_alert.txt
   Expected: LEGITIMATE | Got: LEGITIMATE
   Scores: Text=99% URL=20.0% Meta=0% Final=10.0%
 
+PASS | Payment_confirmation_2022-04-20.txt
+  Expected: LEGITIMATE | Got: LEGITIMATE
+  Scores: Text=99% URL=13.3% Meta=0% Final=7.3%
+
 PASS | portswigger_registration.txt
+  Expected: LEGITIMATE | Got: LEGITIMATE
+  Scores: Text=97% URL=0.0% Meta=0% Final=2.0%
+
+PASS | Purchase_order_RFQ-HL51L05.txt
   Expected: LEGITIMATE | Got: SUSPICIOUS
-  Scores: Text=97% URL=0.0% Meta=40% Final=56.5%
+  Scores: Text=0% URL=0.0% Meta=70% Final=25%
   [Spoofed sender detected]
 
 PASS | sharepoint_invite.txt
   Expected: LEGITIMATE | Got: SUSPICIOUS
   Scores: Text=0% URL=0% Meta=40% Final=25%
   [Spoofed sender detected]
+
+FAIL | Skiddlenoreply@newsletter.skid.txt
+  Expected: LEGITIMATE | Got: PHISHING
+  Scores: Text=99% URL=11.2% Meta=40% Final=100%
+  [Spoofed sender detected]
+
+PASS | Standard_Bank_Account_eStatement_2020-03-11.txt
+  Expected: LEGITIMATE | Got: LEGITIMATE
+  Scores: Text=99% URL=20.0% Meta=0% Final=10.0%
 
 PASS | streamsync_invoice.txt
   Expected: LEGITIMATE | Got: SUSPICIOUS
@@ -206,6 +738,11 @@ PASS | Uni_VACANCY_ MerseysidePolice.txt
   Expected: LEGITIMATE | Got: LEGITIMATE
   Scores: Text=86% URL=0.0% Meta=0% Final=2.0%
 
+FAIL | Vodafonehello@message.vodafone.txt
+  Expected: LEGITIMATE | Got: PHISHING
+  Scores: Text=99% URL=5.0% Meta=40% Final=100%
+  [Spoofed sender detected]
+
 PASS | volkswagen_video.txt
   Expected: LEGITIMATE | Got: LEGITIMATE
   Scores: Text=0% URL=0.0% Meta=0% Final=0.0%
@@ -213,7 +750,7 @@ PASS | volkswagen_video.txt
 ======================================================================
 SUMMARY
 ======================================================================
-Total emails tested: 43
-Correct: 43
-Accuracy: 100.0%
+Total emails tested: 153
+Correct: 150
+Accuracy: 98.0%
 ======================================================================

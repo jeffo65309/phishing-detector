@@ -27,6 +27,26 @@ class MetadataChecker:
             print(f"[DEBUG] Error loading whitelist: {e}")
             return []
     
+    def is_whitelisted_domain(self, domain):
+        """Check if domain or any parent domain is whitelisted"""
+        if not domain:
+            return False
+        
+        trusted_domains = self.loadWhitelist()
+        
+        # Direct match
+        if domain in trusted_domains:
+            return True
+        
+        # Check parent domains (e.g., "email.halfords.com" -> "halfords.com")
+        parts = domain.split('.')
+        for i in range(1, len(parts)):
+            parent_domain = '.'.join(parts[i:])
+            if parent_domain in trusted_domains:
+                return True
+        
+        return False
+    
     def getSenderInfo(self, email_headers):
         """Extract sender email and domain from email headers"""
         sender_email = ""
@@ -112,9 +132,8 @@ class MetadataChecker:
         
         sender_email, sender_domain = self.getSenderInfo(email_headers)
         
-        # Load whitelist to check later
-        trusted_domains = self.loadWhitelist()
-        is_whitelisted = sender_domain in trusted_domains
+        # Load whitelist to check later - using parent domain matching
+        is_whitelisted = self.is_whitelisted_domain(sender_domain)
         
         if not sender_domain:
             return {

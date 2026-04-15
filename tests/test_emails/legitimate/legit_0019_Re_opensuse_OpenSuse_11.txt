@@ -1,0 +1,60 @@
+From: Basil Chupin <oztzqpzo@tpg.com.au>
+To: wkilxloc@opensuse.org
+Subject: Re: [opensuse] OpenSuse 11
+Date: 2008-08-06 11:15:50
+
+Rajko M. wrote:
+> On Friday 08 February 2008 05:50:33 pm Basil Chupin wrote:
+>   
+>> James Knott wrote:
+>>     
+>>> Basil Chupin wrote:
+>>>       
+> ....
+>   
+>>>> If you are using the Home Edition you have no other choice except to
+>>>> run it with Administrator rights.
+>>>>         
+>>> Is there no way to add another user?  I try to convince my friends to
+>>> create a user account, separate from the admin.  It sounds like another
+>>> security bomb is about to go off.
+>>>       
+>> I quote from a book I have on the XP:
+>>
+>> QUOTE
+>>
+>> Windows XP Home edition bestows Administrator rights on anyone who logs
+>> into the computer, giving full control to all system resources - this is
+>> not a satisfactory security model for business and power users.
+>>
+>>
+>> UNQUOTE.
+>>
+>> Answer your question? :-)
+>>     
+>
+> The book and practice seems to be out of phase :-)
+>
+> It is simple to create new user(s).
+
+Nowhere have I said anything about not being able to create new users.
+
+All the above quote is stating is, "....bestows Administrative rights on 
+*anyone* [my emphasis] who logs into the computer,....".
+>  They are by default administrators (well, 
+> elevated rights), so that has to be fixed manually.
+
+What you write is, of course, all very exciting - except that for the 
+Joe-in-the-street who buys a copy of the Home edition (AND Professional, 
+BTW) will not have a damn clue that you need to use the OS as a user 
+with NO Administrator privileges.
+
+Which is why openSUSE was created.
+
+Ciao.
+
+
+-- 
+Past experience, if not forgotten, is a guide for the future.
+
+

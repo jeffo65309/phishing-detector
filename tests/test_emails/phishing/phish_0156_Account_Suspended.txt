@@ -1,0 +1,6 @@
+From: Trust Wallet<noreply@coin.com>
+To: jose@monkey.org
+Subject: Account Suspended 
+Date: 2022-04-06 09:33:47
+
+Our system has shown that your Trust wallet has not yet been verified. This verification can be done easily via the page below.Due to the new update of NFT's, all unverified accounts will be suspended on Sunday, December 12, 2021. We're sorry for any inconvenience we cause with this, but please keep in mind that our intention is to keep our customers safe and happy.Thank you for your understanding. Verify your wallet  If the button above doesn't work, try the page below.https://trustwallet.com/accounts/wallet-verification=45181285156c45e305ca87a65ab9107a1eca7e00   For further assistance with this issue, please contact our support team here.    Terms of service  © Trust Wallet 2021

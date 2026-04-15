@@ -1,0 +1,38 @@
+From: Basil Chupin <oztzqpzo@tpg.com.au>
+To: "David C. Rankin" <vhdicqcdjjo@suddenlinkmail.com>
+Subject: Re: [opensuse] A Quick Start - VirtualBox Howto
+Date: 2008-08-06 11:18:39
+
+David C. Rankin wrote:
+> Listmates,
+>
+>     Just had my first experience with XP running in VirtualBox and 
+> ...wow... this is the greatest thing since sliced bread. Most all of 
+> the following information was taken from the VirtualBox help file 
+> provided in /usr/share/doc/packages/VirtualBox. Here is a quick howto 
+> I put together while installing and configuring virtualbox. I hope you 
+> find it useful:
+>
+>
+> Pre-Install:
+>
+> (1) If you would like to take a look at the user manual before taking 
+> the plunge, grab it here:
+>
+>     wget http://www.virtualbox.org/download/UserManual.pdf
+
+[rest pruned]
+
+Many thanks, David, for the above.
+
+It has now given me the courage to try out installing and using this 
+VirtualBox-thingie.
+
+Thanks.
+
+Ciao.
+
+-- 
+Past experience, if not forgotten, is a guide for the future.
+
+

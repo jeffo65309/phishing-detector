@@ -1,0 +1,22 @@
+From: CyberOrg <svwisx.oaotl@gmail.com>
+To: wkilxloc@opensuse.org
+Subject: Re: [opensuse] Warning - 10.3/XGL repository has compiz/emerald version mismatch
+Date: 2008-08-06 05:44:20
+
+* Dennis "onestone" Kasprzyk announced the release of  Compiz 0.7 ,
+lot of improvements including multi monitor support. Look out for the
+openSUSE packages on the Build Service X11:XGL repository.
+
+    * Install compiz-kde4 package if you would like to use kde4-window-decorator
+    * There is now 'compiz-decorator' shell script, that tries to
+guess the DE running and launch the decorator accordingly.
+    * Tons of new plugins: magnify, shelf, showmouse, mousepoll, new
+fishes in the cube, 3D plugin now in -extras package.
+    * Compiz packages are versioned 0.7 and fusion packages are 0.6.9_git080208
+    * This is a development release, it will be followed up by 0.8
+stable release
+
+
+Checkout http://dev.compiz-fusion.org/~cyberorg/2008/02/08/ for other stuff.
+
+

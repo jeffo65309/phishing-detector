@@ -1,0 +1,20 @@
+From: Alexandr Ciornii <ztoiqonrsa@gmail.com>
+To: Leon Brocard <fguh@astray.com>
+Subject: Re: perl5.005_05-MAINT20070902
+Date: 2008-08-06 03:22:04
+
+Hello, Leon.
+
+2007/10/2, Leon Brocard :
+> Please compile and make test this snapshot on as many platforms as possible:
+>
+>   http://perl5005.googlecode.com/files/perl5.005_05-MAINT20070902.tar.gz
+
+Compilation and tests ok on WinXP/MSVC6 and RedHat9/gcc.
+Installation of new version of Data::Dumper failed (tried only on
+RedHat - it is hard to try anything on Windows with this version).
+
+-- 
+Alexandr Ciornii, http://chorny.net
+
+

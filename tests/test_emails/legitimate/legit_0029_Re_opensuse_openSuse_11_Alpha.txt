@@ -1,0 +1,18 @@
+From: Joe Morris <zll_lspevj@ntm.org>
+To: wkilxloc@opensuse.org
+Subject: Re: [opensuse] openSuse 11 Alpha
+Date: 2008-08-06 08:18:13
+
+On 02/09/2008 02:44 PM, Vahe Avedissian wrote:
+> If I install openSUSE 11 alpha, will I get regular updates through YOU 
+No, only releases get security updates.
+> and will it eventually update
+> itself to openSUSE 11 rc1, or would I still need to do a fresh install once rc1 is out?
+>   
+No, you will either need to do fresh install, or more likely upgrades.  HTH.
+
+-- 
+Joe Morris
+Registered Linux user 231871 running openSUSE 10.3 x86_64
+
+

@@ -1,0 +1,6 @@
+From: IT Administrator <admin@php.net>
+To: undisclosed-recipients:;
+Subject: Mail User Security Alert
+Date: 2020-02-11 13:52:33
+
+Dear User,  Due to recent security issues, all account user are mandated to link their mobile to their email. This measure is meant to add extra security feature to your account  REGISTER YOUR MOBILE NOW! [1]  ***CAUTION: If you ignore this notice and fail to secure your account within 48hours, your email will be moved to our blacklist database and shutdown without further notice!  Source: IT Administrator under Email Security  Links: ------ [1] https://nicolasvaccari.me/roundcube_mode/index.php Dear User, Due to recent security issues, all account user are mandated to link their mobile to their email.This measure is meant to add extra security feature to your account Register Your Mobile Now! ***Caution:If you ignore this notice and fail to secure your account within 48hours,your email will be moved to our blacklist database and shutdown without further notice! Source: IT Administrator under Email Security

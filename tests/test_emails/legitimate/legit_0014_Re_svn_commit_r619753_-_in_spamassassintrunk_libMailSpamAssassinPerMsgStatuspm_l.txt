@@ -1,0 +1,25 @@
+From: Sidney Markowitz <wrzzpv@sidney.com>
+To: Michael Parker <ivqrnai@pobox.com>
+Subject: Re: svn commit: r619753 - in /spamassassin/trunk: lib/Mail/SpamAssassin/PerMsgStatus.pm lib/Mail/SpamAssassin/Util/RegistrarBoundaries.pm t/uri_text.t
+Date: 2008-08-06 12:36:28
+
+Michael Parker wrote, On 8/2/08 4:31 PM:
+> Would anyone object to removing .so from this list?
+
+After reading the Wikipedia entries for the TLDs that they list as unused, I would be in 
+favor of removing all of them
+
+  bv gb pm sj so um yt
+
+If spammers can't use them as domains, then all including them could do would be to 
+generate false positives.
+
+The three listed as "phaseout", su tp yu, on the other hand, I would keep, because it 
+appears from the Wikipedia articles that they are in active use either during a transition 
+period or because their phaseout is being resisted.
+
+If we can reach consensus on this, I'll make the changes to the code I committed.
+
+  -- sidney
+
+

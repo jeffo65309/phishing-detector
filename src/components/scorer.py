@@ -53,9 +53,18 @@ class Scorer:
     def is_whitelisted(self, sender_domain):
         if not sender_domain:
             return False
-        return sender_domain in self.whitelisted_domains
+        # Direct match
+        if sender_domain in self.whitelisted_domains:
+            return True
+        # Check parent domains (e.g., "email.halfords.com" -> "halfords.com")
+        parts = sender_domain.split('.')
+        for i in range(1, len(parts)):
+            parent_domain = '.'.join(parts[i:])
+            if parent_domain in self.whitelisted_domains:
+                return True
+        return False
     
-    def combine(self, textScore, urlScore, metaScore, urlBlacklisted=False, senderSpoofed=False, sender_domain=None):
+    def combine(self, textScore, urlScore, metaScore, urlBlacklisted=False, senderSpoofed=False, sender_domain=None, url_safe=False):
         
         # Override 1: URL blacklisted
         if urlBlacklisted:
@@ -70,7 +79,20 @@ class Scorer:
                 }
             }
         
-        # Override 2: Sender is spoofed with suspicious content
+        # Override 2: URL verified safe by reputation API (FIXES MARKETING EMAILS)
+        if url_safe and textScore >= 70 and urlScore <= 30:
+            return {
+                "finalScore": 15,
+                "verdict": "LEGITIMATE",
+                "reason": "Links verified safe by threat intelligence - likely marketing email",
+                "components": {
+                    "text": textScore,
+                    "url": urlScore,
+                    "metadata": metaScore
+                }
+            }
+        
+        # Override 3: Sender is spoofed with suspicious content
         if senderSpoofed:
             # Only trigger if metadata is also high (strong spoofing evidence)
             # This prevents legitimate emails with weak spoofing (40%) from triggering
@@ -89,6 +111,21 @@ class Scorer:
                     }
                 }
             # If spoofed but everything else clean, continue to normal scoring (will be caught later)
+        
+        # NEW RULE: Extremely high text confidence + spoofed sender = PHISHING
+        # This catches emails with 95%+ text score and at least weak spoofing (40%+ metadata)
+        # Does NOT apply to whitelisted domains (which have meta=0%)
+        if textScore >= 95 and metaScore >= 40 and not self.is_whitelisted(sender_domain):
+            return {
+                "finalScore": 100,
+                "verdict": "PHISHING",
+                "reason": "Extremely high confidence phishing text with spoofed sender",
+                "components": {
+                    "text": textScore,
+                    "url": urlScore,
+                    "metadata": metaScore
+                }
+            }
         
         trusted = self.is_whitelisted(sender_domain)
         

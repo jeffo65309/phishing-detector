@@ -241,7 +241,8 @@ PayPal Security Team"""
                 "spoofed": metadataResult["spoofed"],
                 "warning": metadataResult.get("warning", ""),
                 "sender": metadataResult["sender"],
-                "urlBlacklisted": urlResult["blacklisted"]
+                "urlBlacklisted": urlResult["blacklisted"],
+                "urlsSafe": urlResult.get("urls_safe", False)  # NEW: Track if URLs are safe
             }
 
             # Extract just the domain from the sender email (e.g., gmail.com)
@@ -257,7 +258,8 @@ PayPal Security Team"""
                 metaScore=self.last_scores["metaScore"],
                 urlBlacklisted=self.last_scores["urlBlacklisted"],
                 senderSpoofed=self.last_scores["spoofed"],
-                sender_domain=sender_domain
+                sender_domain=sender_domain,
+                url_safe=self.last_scores["urlsSafe"]  # NEW: Pass URL safety info
             )
             
             # Show results in the GUI
@@ -293,6 +295,10 @@ PayPal Security Team"""
         # Warn if domain is whitelisted but authentication failed
         if self.last_scores.get('warning'):
             self.results_text.insert(tk.END, "WARNING: " + self.last_scores['warning'] + "\n\n", "orange")
+        
+        # Show if URLs were verified safe
+        if self.last_scores.get('urlsSafe'):
+            self.results_text.insert(tk.END, "INFO: Links verified safe by threat intelligence\n\n", "green")
         
         # List any URL issues found
         if self.last_scores['urlIssues']:

@@ -1,0 +1,6 @@
+From: "AVAST" <buroservice@t-online.de>
+To: jose@monkey.org
+Subject: Avast Internet Security Alert!!!
+Date: 2020-02-12 10:07:28
+
+Security Alert!!!     Dear User   Our spider detected 5 deadly trojans in your mailbox today. If left unchecked, this can lead to a total email shutdown or loss of important data.   To protect your email data, follow the URL below to scan your E-mail for free.   http://scan.avast.com     *Note: This will serve as a final notification to this threat.   Source: Avast Internet Security    Security Alert!!!     Dear User   Our spider detected 5 deadly trojans in your mailbox today. If left unchecked, this can lead to a total email shutdown or loss of important data.   To protect your email data, follow the URL below to scan your E-mail for free.   http://scan.avast.com     *Note: This will serve as a final notification to this threat.   Source: Avast Internet Security

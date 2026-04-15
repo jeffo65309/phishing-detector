@@ -1,0 +1,73 @@
+From: "Guy K. Kloss" <r.xewwa@massey.ac.nz>
+To: tfyb-hkjvjeht@massey.ac.nz, iwrj-eda@massey.ac.nz, yrvc-tke@massey.ac.nz
+Subject: Call for Papers - NZCSRSC 08
+Date: 2008-08-06 12:42:57
+
+Another conference that may be of interest to those in computer science, 
+information technology, or otherwise computationally related fields. It has 
+been particularly pointed out, that also IS and other related fields are very 
+welcome.
+
+Last year the conference featured a "Geeks and Suits" event for career 
+planning contacts with the (related) industry. Additionally excellent New 
+Zealanders as key note speakers who have become internationally famous (Ian 
+Foster as the "godfather" of Grid Computing, Craig Neville-Manning from 
+Google, ...).
+
+It was definitely worth it, and I expect it to be good again.
+
+Guy
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+== Call for Papers ==
+
+We are now inviting submissions for full and short papers for the 6th
+New Zealand Computer Science Research Students Conference, to be held in
+April 2008 at the University of Canterbury.
+
+NZCSRSC 2008 is an opportunity for all Computer Science research
+students from around New Zealand to get together and learn more about
+cutting-edge research in different topics. Get your work known
+throughout the country and receive feedback from others engaged in the
+same area. Seize this chance of showcasing your research to the top
+Computer Science postgraduate students in New Zealand: submit your paper
+to NZCSRSC 2008.
+
+== Submission Details ==
+
+Submissions are now being accepted for:
+
+     * Full papers (with presentation) - not exceeding 8 pages
+     * Short papers (with poster) - not exceeding 4 pages
+
+The conference covers all fields of research in Computer Science and
+Software Engineering. See the NZCSRSC 2008 website for a comprehensive list.
+
+Each author who submits a paper will be required to participate in the
+review process. Each reviewer will be assigned three papers authored by
+his/her peers for blind-review. Further details concerning the
+review process will be made available closer to the review period.
+
+NZCSRSC 2008 website - Call for Papers:
+http://nzcsrsc08.canterbury.ac.nz/papers.html
+
+Our local contacts from Massey Albany are Chris Messom (C.H.Messom|at|
+massey.ac.nz) Guy Kloss (G.Kloss|at|massey.ac.nz)
+
+
+For general enquires, please contact Amali Weerasinghe (amali.weerasinghe|at|
+pg.canterbury.ac.nz)
+
+
+-- 
+Guy K. Kloss
+Institute of Information and Mathematical Sciences
+Te Kura Putaiao o Mohiohio me Pangarau
+Room 2.63, Quad Block A Building
+Massey University, Auckland, Albany
+Private Bag 102 904, North Shore Mail Centre
+voice: +64 9 414-0800 ext. 9585   fax: +64 9 441-8181
+eMail: r.xewwa@massey.ac.nz  http://iims.massey.ac.nz
+
+
